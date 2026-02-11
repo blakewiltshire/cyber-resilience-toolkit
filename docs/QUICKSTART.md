@@ -4,40 +4,89 @@ This guide covers first-run setup and initial orientation.
 
 ---
 
-## 1) Clone and set up
+## 1) Clone the Repository
 
 ```bash
-git clone https://github.com/your-org/cyber-resilience-toolkit.git
+git clone https://github.com/blakewiltshire/cyber-resilience-toolkit.git
 cd cyber-resilience-toolkit
-python -m venv env
-source env/bin/activate
+```
+
+---
+
+## 2) Create a Virtual Environment
+
+```bash
+python3 -m venv .venv
+```
+
+If `python3` is not available on your system, try:
+
+```bash
+python -m venv .venv
+```
+
+---
+
+## 3) Activate the Environment
+
+**macOS / Linux**
+
+```bash
+source .venv/bin/activate
+```
+
+**Windows (PowerShell)**
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+**Windows (cmd)**
+
+```bat
+.\.venv\Scripts\activate.bat
+```
+
+---
+
+## 4) Install Requirements
+
+```bash
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## 2) Launch
+---
+
+## 5) Launch the Application
 
 ```bash
 streamlit run app.py
 ```
 
-Open http://localhost:8501
+Open in your browser:
 
-## 3) First orientation
+http://localhost:8501
 
-Start with Structural Controls & Frameworks to understand the CRT backbone.
+---
+
+## 6) First Orientation
+
+Start with **Structural Controls & Frameworks** to understand the CRT backbone.
 
 Core CRT catalogues are read-only by design.
 
 Governance and operational catalogues may be extended locally where enabled.
 
-## 4) Outputs
+---
 
-Selected modules produce structured CSV/JSON artefacts suitable for
-documentation, review, or downstream reasoning workflows.
+## 7) Outputs
 
-> Note: CRT writes local artefacts (backups, JSON views, bundles) into the
-project directory. These are intended for local use and are not persisted
-across deployments.
+Selected modules produce structured CSV/JSON artefacts suitable for documentation, review, or AI-assisted interpretation workflows.
 
-Cyber Resilience Toolkit by Blake Wiltshire
+> Note: CRT writes local artefacts (backups, JSON views, bundles) into the project directory. These are intended for local use and are not persisted across deployments.
+
+---
+
+Cyber Resilience Toolkit by Blake Wiltshire  
 © Blake Media Ltd.
