@@ -16,7 +16,7 @@ Python: 3.11–3.12 (tested on 3.12.x)
 ## Quick Start (≈60 seconds)
 
 ```bash
-git clone https://github.com/your-org/cyber-resilience-toolkit.git
+git clone https://github.com/blakewiltshire/cyber-resilience-toolkit.git
 cd cyber-resilience-toolkit
 python -m venv env
 source env/bin/activate
