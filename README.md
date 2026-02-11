@@ -175,5 +175,21 @@ Refer to LICENSE for details.
 
 ---
 
+## Ecosystem Context
+
+The Cyber Resilience Toolkit forms part of a broader independent framework studio exploring complex systems through structured guides, modular tools, and applied insight.
+
+CRT aligns with the architectural concepts presented in:
+
+*Cyber Resilience in the Information Age* — a system-level exploration of resilience, governance, and adaptive control in interconnected digital environments.
+
+The toolkit can be used independently.  
+The guide provides deeper architectural framing for those exploring the underlying structural model.
+
+Further context:  
+www.blakewiltshire.com
+
+---
+
 Cyber Resilience Toolkit by Blake Wiltshire  
 © Blake Media Ltd.
