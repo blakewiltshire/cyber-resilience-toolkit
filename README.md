@@ -70,7 +70,6 @@ The application will launch at:
 
 http://localhost:8501
 
-
 ---
 
 ## What This Is (and Isn’t)
@@ -80,6 +79,55 @@ A structural, catalogue-first environment for exploring how governance, controls
 
 **Isn’t:**  
 An assessment engine, automated assurance tool, configuration system, or advisory product. CRT does not provide recommendations, scores, compliance outcomes, or operational instructions.
+
+---
+
+## Screenshots
+
+### 🧭 Portal Home — Structural Orientation
+
+![CRT Portal](docs/screenshots/01-portal.png)
+
+The home portal introduces the shared structural model and clarifies:
+
+- What the CRT brings into view  
+- What the environment produces  
+- How modules interrelate  
+- Where to begin  
+
+This is the conceptual anchor before moving into structured views.
+
+---
+
+### 📂 Structural Controls & Frameworks — Model Backbone
+
+![Structural Controls](docs/screenshots/02-structural-controls.png)
+
+The backbone view of CRT’s shared model:
+
+- Control architecture (CRT-C / CRT-F / CRT-N)
+- Governance intent and policy alignment
+- Requirements and structural mapping
+- Consistent catalogue relationships
+
+This module provides the structural grounding for downstream exports and artefacts.
+
+---
+
+### 🎛 Programme Builder & AI Export — Structured Artefact Assembly
+
+![Programme Builder](docs/screenshots/03-programme-builder.png)
+
+The Programme Builder organises catalogue elements into structured bundles suitable for:
+
+- Governance artefacts  
+- Policy and standard drafting  
+- Third-party questionnaires  
+- Control narratives  
+- Architecture notes  
+- AI-assisted interpretation workflows  
+
+Exports preserve lineage to the underlying CRT catalogues.
 
 ---
 
