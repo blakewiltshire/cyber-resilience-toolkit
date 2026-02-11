@@ -1,0 +1,247 @@
+controls:
+  - name: "Data Security and Privacy"
+    group_id: "CRT-G-01"
+    short_label: "DataSec"
+    description: >
+      Safeguards information assets across storage, processing, and transmission environments.
+      Focus areas include classification, encryption, integrity assurance, retention, and confidentiality.
+    linked_controls:
+      - "CRT-C-0001"
+      - "CRT-C-0002"
+      - "CRT-C-0003"
+      - "CRT-C-0004"
+      - "CRT-C-0005"
+      - "CRT-C-0006"
+    linked_series:
+      - "Data Security"
+    linked_modules:
+      - "🧮 Data Classification Registry"
+      - "🔐 Identity & Access Lens"
+      - "🎛 Programme Builder Export"
+    tags:
+      - data
+      - security
+      - privacy
+      - integrity
+
+  - name: "Access and Identity"
+    group_id: "CRT-G-02"
+    short_label: "AccessID"
+    description: >
+      Defines mechanisms governing authentication, authorisation, credential lifecycle, and
+      privilege enforcement across users, services, and machine identities.
+    linked_controls:
+      - "CRT-C-0007"
+      - "CRT-C-0008"
+      - "CRT-C-0009"
+      - "CRT-C-0010"
+      - "CRT-C-0011"
+      - "CRT-C-0012"
+    linked_series:
+      - "Identity and Access"
+    linked_modules:
+      - "🔐 Identity & Access Lens"
+      - "🎛 Programme Builder Export"
+    tags:
+      - identity
+      - access
+      - governance
+
+  - name: "Infrastructure and Connectivity"
+    group_id: "CRT-G-03"
+    short_label: "InfraRisk"
+    description: >
+      Ensures the resilience, reliability, and segmentation integrity of core infrastructure,
+      network pathways, and connectivity layers.
+    linked_controls:
+      - "CRT-C-0013"
+      - "CRT-C-0014"
+      - "CRT-C-0015"
+      - "CRT-C-0016"
+      - "CRT-C-0017"
+      - "CRT-C-0018"
+    linked_series:
+      - "Infrastructure and Connectivity"
+    linked_modules:
+      - "🧩 Attack Surface Mapper "
+      - "🔄 System Integrator Hub"
+      - "🎛 Programme Builder Export"
+    tags:
+      - infrastructure
+      - network
+      - connectivity
+      - segmentation
+
+  - name: "Application and Integration Risk Management"
+    group_id: "CRT-G-04"
+    short_label: "AppRisk"
+    description: >
+      Focuses on application-layer security, API trust boundaries, integration pathways, and
+      service-to-service change governance across digital ecosystems.
+    linked_controls:
+      - "CRT-C-0019"
+      - "CRT-C-0020"
+      - "CRT-C-0021"
+      - "CRT-C-0022"
+      - "CRT-C-0023"
+      - "CRT-C-0024"
+    linked_series:
+      - "Application and Integration"
+    linked_modules:
+      - "🔄 System Integrator Hub"
+      - "🧩 Attack Surface Mapper"
+      - "📡 Telemetry Signal Console"
+      - "🎛 Programme Builder Export"
+    tags:
+      - applications
+      - apis
+      - integration
+      - change-management
+
+  - name: "Third-Party and Vendor"
+    group_id: "CRT-G-05"
+    short_label: "VendorRisk"
+    description: >
+      Evaluates dependencies, supplier assurance, contractual resilience, and propagation risk
+      across vendor, platform, and service ecosystems.
+    linked_controls:
+      - "CRT-C-0025"
+      - "CRT-C-0026"
+      - "CRT-C-0027"
+      - "CRT-C-0028"
+      - "CRT-C-0029"
+      - "CRT-C-0030"
+    linked_series:
+      - "Supply-Chain Risk"
+    linked_modules:
+      - "🛰️ Supply-Chain Exposure Scanner"
+      - "🎛 Programme Builder Export"
+    tags:
+      - supply-chain
+      - third-party
+      - vendors
+      - dependencies
+
+  - name: "Behavioural and Human"
+    group_id: "CRT-G-06"
+    short_label: "HumanRisk"
+    description: >
+      Reinforces resilience through awareness, behavioural simulation, cultural reinforcement,
+      and human-centred mechanisms that influence system exposure.
+    linked_controls:
+      - "CRT-C-0031"
+      - "CRT-C-0032"
+      - "CRT-C-0033"
+      - "CRT-C-0034"
+      - "CRT-C-0035"
+      - "CRT-C-0036"
+    linked_series:
+      - "Human Factors"
+    linked_modules:
+      - "🎛 Programme Builder Export"
+      - "📂 Structural Controls & Frameworks"
+    tags:
+      - behaviour
+      - awareness
+      - training
+      - culture
+
+  - name: "Regulatory and Framework Alignment"
+    group_id: "CRT-G-07"
+    short_label: "RegAlign"
+    description: >
+      Defines compliance pathways, jurisdictional overlays, oversight requirements, and
+      governance-aligned policy structures.
+    linked_controls:
+      - "CRT-C-0037"
+      - "CRT-C-0038"
+      - "CRT-C-0039"
+      - "CRT-C-0040"
+      - "CRT-C-0041"
+      - "CRT-C-0042"
+    linked_series:
+      - "Governance and Compliance"
+    linked_modules:
+      - "🎛 Programme Builder Export"
+    tags:
+      - governance
+      - compliance
+      - regulation
+      - frameworks
+
+  - name: "Emerging Technologies and Systemic Risks"
+    group_id: "CRT-G-08"
+    short_label: "EmergingTech"
+    description: >
+      Addresses systemic risk arising from emerging technologies, automation, AI-driven
+      dependencies, and concentration risk across digital ecosystems.
+    linked_controls:
+      - "CRT-C-0043"
+      - "CRT-C-0044"
+      - "CRT-C-0045"
+      - "CRT-C-0046"
+      - "CRT-C-0063"
+      - "CRT-C-0064"
+      - "CRT-C-0047"
+      - "CRT-C-0048"
+    linked_series:
+      - "Emerging Technologies"
+    linked_modules:
+      - "🎛 Programme Builder Export"
+      - "🔄 System Integrator Hub"
+      - "📚 Reference Data & Trusted Sources"
+    tags:
+      - emerging-tech
+      - ai
+      - systemic-risk
+      - innovation
+
+  - name: "Crisis, Monitoring, and Response"
+    group_id: "CRT-G-09"
+    short_label: "CrisisResp"
+    description: >
+      Coordinates detection, triage, containment, and recovery activities, supported by telemetry
+      and signal aggregation across distributed environments.
+    linked_controls:
+      - "CRT-C-0049"
+      - "CRT-C-0050"
+      - "CRT-C-0051"
+      - "CRT-C-0052"
+      - "CRT-C-0053"
+      - "CRT-C-0054"
+      - "CRT-C-0061"
+    linked_series:
+      - "Incident Response, Monitoring and Telemetry"
+    linked_modules:
+      - "📡 Telemetry & Signal Console"
+      - "🎛 Programme Builder Export"
+    tags:
+      - incident-response
+      - monitoring
+      - containment
+      - telemetry
+
+  - name: "Physical and Environmental Security"
+    group_id: "CRT-G-10"
+    short_label: "PhysEnv"
+    description: >
+      Protects physical facilities and environmental conditions that underpin digital operations,
+      infrastructure resilience, and safe system continuity.
+    linked_controls:
+      - "CRT-C-0055"
+      - "CRT-C-0056"
+      - "CRT-C-0057"
+      - "CRT-C-0058"
+      - "CRT-C-0059"
+      - "CRT-C-0060"
+      - "CRT-C-0062"
+    linked_series:
+      - "Physical Security"
+    linked_modules:
+      - "🧩 Attack Surface Mapper"
+      - "🎛 Programme Builder Export"
+    tags:
+      - physical
+      - facilities
+      - environment
+      - resilience

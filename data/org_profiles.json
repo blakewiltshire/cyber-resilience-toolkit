@@ -1,0 +1,49 @@
+{
+  "active_org_profile": "Test Profile",
+  "profiles": {
+    "Test Profile": {
+      "profile_name": "Test Profile",
+      "profile_purpose": "Default Programme",
+      "org_name": "XYZ Org",
+      "industry": "Other / Mixed",
+      "environment": "Mixed / Other",
+      "jurisdiction_scope": {
+        "explicit": [],
+        "effective": [
+          "Global"
+        ]
+      },
+      "org_size": "Mid-size",
+      "notes": "",
+      "frameworks_in_scope": [],
+      "frameworks_mode": "overlay",
+      "obligations_ids_in_scope": [
+        "LR-ASSET-001",
+        "LR-BCP-002",
+        "LR-DATA-001",
+        "LR-DATA-002",
+        "LR-DATA-003",
+        "LR-DATA-004",
+        "LR-GOV-002",
+        "LR-HUM-001",
+        "LR-HUM-002",
+        "LR-HUM-003",
+        "LR-ID-001",
+        "LR-ID-002",
+        "LR-INC-004",
+        "LR-MON-001",
+        "LR-MON-002",
+        "LR-MON-003",
+        "LR-PRIV-004",
+        "LR-PRIV-005",
+        "LR-PRIV-007",
+        "LR-PRIV-008",
+        "LR-PRIV-009",
+        "LR-REP-003",
+        "LR-RISK-002",
+        "LR-TPR-001"
+      ],
+      "jurisdictions": []
+    }
+  }
+}

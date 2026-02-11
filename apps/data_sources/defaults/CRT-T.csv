@@ -1,0 +1,21 @@
+﻿telemetry_id,source_name,channel,signal_class,retention_days,parsing_status,linked_zones,enrichment_ready,notes,source_ref,mapped_control_ids
+T-0001,IdP Authentication Logs,logs,auth,365,native,corp;cloud,yes,Core identity telemetry,baseline,CRT-C-0007;CRT-C-0009;CRT-C-0011;CRT-C-0049
+T-0002,MFA Events,logs,auth,365,native,corp;cloud,yes,Used for anomaly detection,baseline,CRT-C-0007;CRT-C-0049;CRT-C-0032
+T-0003,Firewall Logs,logs,network,90,partial,net-edge,yes,Incoming/outgoing network telemetry,baseline,CRT-C-0016;CRT-C-0017;CRT-C-0049
+T-0004,WAF Events,events,network,90,native,net-edge,yes,Web filtering and threat detection,baseline,CRT-C-0023;CRT-C-0016;CRT-C-0049
+T-0005,EDR Alerts,events,endpoint,180,native,corp,yes,Endpoint threat telemetry,baseline,CRT-C-0049;CRT-C-0051;CRT-C-0032
+T-0006,Host Syslogs,logs,endpoint,30,partial,corp,no,System-level logs from Linux/Windows,baseline,CRT-C-0049;CRT-C-0065
+T-0007,API Gateway Logs,logs,api,180,native,cloud,yes,Used for API monitoring,baseline,CRT-C-0019;CRT-C-0049
+T-0008,Load Balancer Metrics,metrics,network,30,native,cloud,yes,Traffic and health metrics,baseline,CRT-C-0016;CRT-C-0049;CRT-C-0014
+T-0009,CloudTrail (AWS),logs,cloud,365,native,cloud,yes,Full cloud audit logs,baseline,CRT-C-0049;CRT-C-0011;CRT-C-0065;CRT-C-0038
+T-0010,Azure Activity Logs,logs,cloud,365,native,cloud,yes,Cloud control-plane logs,baseline,CRT-C-0049;CRT-C-0011;CRT-C-0065;CRT-C-0038
+T-0011,Database Query Logs,logs,endpoint,60,custom-parsed,prod,no,Query insights & anomaly detection,baseline,CRT-C-0008;CRT-C-0049;CRT-C-0032
+T-0012,Web Server Access Logs,logs,endpoint,30,custom-parsed,prod,no,High-volume telemetry,baseline,CRT-C-0023;CRT-C-0049
+T-0013,SIEM Ingestion Stream,events,auth,365,native,corp;prod,yes,Aggregated logs from multiple sources,baseline,CRT-C-0049;CRT-C-0052;CRT-C-0053
+T-0014,Monitoring Metrics (Datadog),metrics,endpoint,180,native,corp;prod,yes,Health/performance metrics,baseline,CRT-C-0018;CRT-C-0049;CRT-C-0051
+T-0015,CDN Logs,logs,network,30,native,edge,no,Caching and threat intel,baseline,CRT-C-0016;CRT-C-0017;CRT-C-0049
+T-0016,Email Security Logs,logs,auth,90,native,corp,yes,Phishing detection signals,baseline,CRT-C-0031;CRT-C-0032;CRT-C-0049
+T-0017,Backup Job Logs,logs,endpoint,180,partial,prod,no,Backup status and integrity logs,baseline,CRT-C-0062;CRT-C-0060;CRT-C-0049
+T-0018,Container Orchestrator Events,events,cloud,45,native,cloud,yes,K8s events,baseline,CRT-C-0065;CRT-C-0049;CRT-C-0018
+T-0019,CI/CD Pipeline Audit Logs,logs,auth,120,partial,corp,no,Build & deployment pipeline traces,baseline,CRT-C-0020;CRT-C-0065;CRT-C-0049
+T-0020,IoT Device Telemetry,metrics,endpoint,14,custom-parsed,iot-zone,no,Low-trust feeds,baseline,CRT-C-0043;CRT-C-0017;CRT-C-0049

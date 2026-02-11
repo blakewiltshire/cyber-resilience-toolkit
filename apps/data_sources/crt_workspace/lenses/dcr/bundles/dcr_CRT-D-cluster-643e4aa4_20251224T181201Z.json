@@ -1,0 +1,126 @@
+{
+  "bundle_type": "data",
+  "module": "🧮 Data Classification Registry",
+  "primary_entity": {
+    "type": "data_cluster",
+    "id": "CRT-D-cluster-643e4aa4"
+  },
+  "entities": {
+    "assets": [],
+    "identities": [],
+    "data_domains": [
+      {
+        "catalogue": "CRT-D",
+        "id": "CRT-D-0001",
+        "raw": {
+          "data_id": "CRT-D-0001",
+          "data_name": "Product Information",
+          "definition": "General product or service descriptions intended for external access",
+          "data_tier": "Public",
+          "classification_level": "Public",
+          "data_category": "Product Information",
+          "environment": "Public Web",
+          "description": "General product or service descriptions intended for external access",
+          "examples": "Product pages, documentation excerpts",
+          "propagation_rules": "Public _ CDN _ Web _ Analytics",
+          "confidentiality_impact": "low",
+          "integrity_impact": "low",
+          "availability_impact": "low",
+          "notes": NaN,
+          "mapped_control_ids": "CRT-C-0003; CRT-C-0016",
+          "mapped_control_count": 2,
+          "has_propagation_rules": true,
+          "linked_control_summary": "CRT-C-0003 — Data Encryption (In Transit); CRT-C-0016 — Public Network Access Hardening"
+        },
+        "tier": "Public",
+        "category": "Product Information",
+        "environment": "Public Web"
+      },
+      {
+        "catalogue": "CRT-D",
+        "id": "CRT-D-0003",
+        "raw": {
+          "data_id": "CRT-D-0003",
+          "data_name": "Operational Logs",
+          "definition": "Machine-generated logs used for troubleshooting and performance visibility",
+          "data_tier": "Internal",
+          "classification_level": "Internal",
+          "data_category": "Operational Logs",
+          "environment": "Prod / Internal",
+          "description": "Machine-generated logs used for troubleshooting and performance visibility",
+          "examples": "API logs, job execution logs",
+          "propagation_rules": "Service _ Log Agent _ SIEM",
+          "confidentiality_impact": "medium",
+          "integrity_impact": "medium",
+          "availability_impact": "medium",
+          "notes": NaN,
+          "mapped_control_ids": "CRT-C-0049; CRT-C-0005; CRT-C-0065; CRT-C-0006",
+          "mapped_control_count": 4,
+          "has_propagation_rules": true,
+          "linked_control_summary": "CRT-C-0005 — Data Integrity Monitoring; CRT-C-0006 — Data Retention and Destruction Policies; CRT-C-0049 — Security Monitoring and Anomaly Detection; CRT-C-0065 — Technical Baseline Governance"
+        },
+        "tier": "Internal",
+        "category": "Operational Logs",
+        "environment": "Prod / Internal"
+      },
+      {
+        "catalogue": "CRT-D",
+        "id": "CRT-D-0005",
+        "raw": {
+          "data_id": "CRT-D-0005",
+          "data_name": "Workflow Metadata",
+          "definition": "Describes process flow but does not contain sensitive data",
+          "data_tier": "Internal",
+          "classification_level": "Internal",
+          "data_category": "Workflow Metadata",
+          "environment": "Internal Apps",
+          "description": "Describes process flow but does not contain sensitive data",
+          "examples": "Ticket status, workflow IDs",
+          "propagation_rules": "App _ Database _ Reporting",
+          "confidentiality_impact": "medium",
+          "integrity_impact": "medium",
+          "availability_impact": "medium",
+          "notes": NaN,
+          "mapped_control_ids": "CRT-C-0008; CRT-C-0065; CRT-C-0049; CRT-C-0006",
+          "mapped_control_count": 4,
+          "has_propagation_rules": true,
+          "linked_control_summary": "CRT-C-0006 — Data Retention and Destruction Policies; CRT-C-0008 — Fine-Grained Authorisation; CRT-C-0049 — Security Monitoring and Anomaly Detection; CRT-C-0065 — Technical Baseline Governance"
+        },
+        "tier": "Internal",
+        "category": "Workflow Metadata",
+        "environment": "Internal Apps"
+      }
+    ],
+    "vendors": [],
+    "controls": [],
+    "failures": [],
+    "telemetry": []
+  },
+  "relationships": [],
+  "structural_findings": {
+    "gaps": [],
+    "compensations": [],
+    "coverage": {
+      "total_classes_in_scope": 3,
+      "distinct_tiers_in_scope": 2,
+      "distinct_categories_in_scope": 3,
+      "distinct_environments_in_scope": 3,
+      "classes_with_mapped_controls_in_scope": 3,
+      "classes_with_propagation_rules_in_scope": 3
+    },
+    "propagation_paths": []
+  },
+  "guardrails": {
+    "no_advice": true,
+    "no_configuration": true,
+    "no_assurance": true
+  },
+  "lens_meta": {
+    "lens_family": "dcr",
+    "lens_label": "🧮 DCR — Data Scope (data_cluster: CRT-D-cluster-643e4aa4)",
+    "built_at_utc": "2025-12-24T18:12:01+00:00Z",
+    "source_module": "🧮 Data Classification Registry",
+    "persisted_to_disk": true,
+    "shelf_path_hint": "lenses/dcr/bundles/dcr_CRT-D-cluster-643e4aa4_20251224T181201Z.json"
+  }
+}

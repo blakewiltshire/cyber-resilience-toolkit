@@ -1,0 +1,15 @@
+# -----------------------------------------------------------------------------
+# Cyber Resilience Toolkit (CRT) — runtime dependencies
+#
+# CRT is a Streamlit-based, catalogue-driven decision-support environment.
+# Requirements are intentionally minimal and focus on stability + longevity.
+# -----------------------------------------------------------------------------
+
+# Core UI framework
+streamlit>=1.51,<1.60
+
+# Data layer
+pandas>=2.2,<2.4
+
+# YAML configuration / references
+PyYAML>=6.0,<7.0

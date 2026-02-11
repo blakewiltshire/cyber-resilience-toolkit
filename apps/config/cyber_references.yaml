@@ -1,0 +1,586 @@
+# cyber_references.yaml
+# Catalogue of external frameworks, regulators, and reference sources
+# used by the Cyber Resilience Toolkit (CRT).
+
+- id: iso_27001_27000
+  group_key: standards
+  group_label: "🧱 Cybersecurity Standards and Control Frameworks"
+  sort_order: 10
+  name: "ISO/IEC 27001 & 27000-series"
+  url: "https://www.iso.org/isoiec-27001-information-security.html"
+  is_core: true
+  tags: ["iso", "isms", "controls", "information_security"]
+  description: >
+    International standards for information security management systems (ISMS),
+    with control objectives and domains extended across the wider 27000-series.
+
+- id: nist_csf_20
+  group_key: standards
+  group_label: "🧱 Cybersecurity Standards and Control Frameworks"
+  sort_order: 20
+  name: "NIST Cybersecurity Framework (CSF 2.0)"
+  url: "https://www.nist.gov/cyberframework"
+  is_core: true
+  tags: ["nist", "csf", "framework"]
+  description: >
+    Function-based framework (Identify, Protect, Detect, Respond, Recover)
+    providing outcomes, categories, and subcategories for managing cyber risk.
+
+- id: nist_sp_800_series
+  group_key: standards
+  group_label: "🧱 Cybersecurity Standards and Control Frameworks"
+  sort_order: 30
+  name: "NIST Special Publication 800-series"
+  url: "https://csrc.nist.gov/publications/sp800"
+  is_core: true
+  tags: ["nist", "special_publications", "controls", "risk_management"]
+  description: >
+    Detailed guidance on security controls, risk management, zero trust, and
+    sectoral implementations (including SP 800-53, SP 800-37, SP 800-207).
+
+- id: cobit
+  group_key: standards
+  group_label: "🧱 Cybersecurity Standards and Control Frameworks"
+  sort_order: 40
+  name: "COBIT — Governance of Enterprise IT"
+  url: "https://www.isaca.org/resources/cobit"
+  is_core: true
+  tags: ["governance", "it_management", "controls"]
+  description: >
+    IT governance and management framework aligning processes, controls, and
+    performance metrics with enterprise objectives.
+
+- id: cis_controls
+  group_key: standards
+  group_label: "🧱 Cybersecurity Standards and Control Frameworks"
+  sort_order: 50
+  name: "CIS Critical Security Controls"
+  url: "https://www.cisecurity.org/controls"
+  is_core: true
+  tags: ["cis", "controls", "prioritised"]
+  description: >
+    Prioritised set of technical and organisational safeguards designed to
+    reduce common cyber attack surfaces.
+
+- id: csa_ccm
+  group_key: standards
+  group_label: "🧱 Cybersecurity Standards and Control Frameworks"
+  sort_order: 60
+  name: "CSA Cloud Controls Matrix (CCM)"
+  url: "https://cloudsecurityalliance.org/research/cloud-controls-matrix"
+  is_core: false
+  tags: ["cloud", "controls", "csa"]
+  description: >
+    Cloud-focused control framework mapping to multiple standards such as ISO,
+    NIST, and PCI DSS for SaaS, PaaS, and IaaS environments.
+
+# -------------------------------------------------------------------
+# Regulatory and Supervisory Authorities
+# -------------------------------------------------------------------
+
+- id: eu_dora
+  group_key: regulators
+  group_label: "⚖️ Regulatory and Supervisory Authorities"
+  sort_order: 10
+  name: "Digital Operational Resilience Act (DORA)"
+  url: "https://finance.ec.europa.eu/regulation-and-supervision/financial-services-digital-resilience-dora_en"
+  is_core: true
+  tags: ["eu", "operational_resilience", "financial_services"]
+  description: >
+    EU framework for ICT risk management, testing, incident reporting, and
+    oversight of critical third-party providers in financial services.
+
+- id: eu_nis2
+  group_key: regulators
+  group_label: "⚖️ Regulatory and Supervisory Authorities"
+  sort_order: 20
+  name: "NIS2 Directive"
+  url: "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive"
+  is_core: true
+  tags: ["eu", "critical_infrastructure", "cybersecurity"]
+  description: >
+    EU-wide baseline for cybersecurity risk management and incident reporting
+    across essential and important entities.
+
+- id: eu_gdpr
+  group_key: regulators
+  group_label: "⚖️ Regulatory and Supervisory Authorities"
+  sort_order: 30
+  name: "General Data Protection Regulation (GDPR)"
+  url: "https://gdpr.eu/"
+  is_core: true
+  tags: ["eu", "data_protection", "privacy"]
+  description: >
+    Data protection and privacy regulation with requirements for security of
+    processing, breach notification, and accountability.
+
+- id: eu_ai_act
+  group_key: regulators
+  group_label: "⚖️ Regulatory and Supervisory Authorities"
+  sort_order: 40
+  name: "EU AI Act"
+  url: "https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence"
+  is_core: false
+  tags: ["eu", "ai", "governance"]
+  description: >
+    Risk-tiered framework for AI systems introducing requirements around safety,
+    transparency, governance, and oversight.
+
+- id: us_sec
+  group_key: regulators
+  group_label: "⚖️ Regulatory and Supervisory Authorities"
+  sort_order: 50
+  name: "U.S. Securities and Exchange Commission (SEC)"
+  url: "https://www.sec.gov/"
+  is_core: true
+  tags: ["us", "securities", "disclosure", "cyber_rules"]
+  description: >
+    U.S. securities regulator defining requirements for incident disclosures,
+    governance reporting, and operational resilience in market participants.
+
+- id: us_cisa
+  group_key: regulators
+  group_label: "⚖️ Regulatory and Supervisory Authorities"
+  sort_order: 60
+  name: "Cybersecurity and Infrastructure Security Agency (CISA)"
+  url: "https://www.cisa.gov/"
+  is_core: true
+  tags: ["us", "critical_infrastructure", "advisories"]
+  description: >
+    National coordinator for critical infrastructure security, issuing alerts,
+    advisories, and joint defence initiatives.
+
+- id: us_nist
+  group_key: regulators
+  group_label: "⚖️ Regulatory and Supervisory Authorities"
+  sort_order: 70
+  name: "National Institute of Standards and Technology (NIST)"
+  url: "https://www.nist.gov/"
+  is_core: true
+  tags: ["us", "standards", "frameworks"]
+  description: >
+    U.S. standards body publishing the Cybersecurity Framework and SP 800-series
+    guidance under FISMA and related mandates.
+
+- id: uk_fca
+  group_key: regulators
+  group_label: "⚖️ Regulatory and Supervisory Authorities"
+  sort_order: 80
+  name: "UK Financial Conduct Authority (FCA)"
+  url: "https://www.fca.org.uk/"
+  is_core: true
+  tags: ["uk", "financial_services", "operational_resilience"]
+  description: >
+    UK regulator setting expectations on operational resilience, outsourcing,
+    and ICT risk management for authorised firms.
+
+- id: uk_pra
+  group_key: regulators
+  group_label: "⚖️ Regulatory and Supervisory Authorities"
+  sort_order: 90
+  name: "Prudential Regulation Authority (PRA)"
+  url: "https://www.bankofengland.co.uk/prudential-regulation"
+  is_core: true
+  tags: ["uk", "prudential", "resilience"]
+  description: >
+    Supervisory authority for banks and insurers with requirements around
+    resilience, recovery, and risk management.
+
+- id: uk_ncsc
+  group_key: regulators
+  group_label: "⚖️ Regulatory and Supervisory Authorities"
+  sort_order: 100
+  name: "National Cyber Security Centre (NCSC UK)"
+  url: "https://www.ncsc.gov.uk/"
+  is_core: true
+  tags: ["uk", "guidance", "incident_response"]
+  description: >
+    UK authority providing technical guidance, incident response support, and
+    sector-specific cybersecurity advice.
+
+- id: sg_mas_trm
+  group_key: regulators
+  group_label: "⚖️ Regulatory and Supervisory Authorities"
+  sort_order: 110
+  name: "Monetary Authority of Singapore — Technology Risk Management Guidelines"
+  url: "https://www.mas.gov.sg/regulation/guidelines/technology-risk-management"
+  is_core: false
+  tags: ["singapore", "financial_services", "technology_risk"]
+  description: >
+    Guidelines setting expectations for governance, risk management, and
+    control of technology and cyber risks in financial institutions.
+
+# -------------------------------------------------------------------
+# Operational Resilience and Continuity Frameworks
+# -------------------------------------------------------------------
+
+- id: iso_22301
+  group_key: continuity
+  group_label: "🏛️ Operational Resilience and Continuity Frameworks"
+  sort_order: 10
+  name: "ISO 22301 — Business Continuity Management Systems"
+  url: "https://www.iso.org/iso-22301-business-continuity.html"
+  is_core: true
+  tags: ["business_continuity", "resilience", "iso"]
+  description: >
+    International standard specifying requirements for planning, implementing,
+    and improving business continuity and organisational resilience.
+
+- id: iso_27031
+  group_key: continuity
+  group_label: "🏛️ Operational Resilience and Continuity Frameworks"
+  sort_order: 20
+  name: "ISO/IEC 27031 — ICT Readiness for Business Continuity"
+  url: "https://www.iso.org/standard/44374.html"
+  is_core: true
+  tags: ["ict", "continuity", "iso"]
+  description: >
+    Guidance for preparing ICT services and capabilities to support business
+    continuity objectives.
+
+- id: enisa_operational_resilience
+  group_key: continuity
+  group_label: "🏛️ Operational Resilience and Continuity Frameworks"
+  sort_order: 30
+  name: "ENISA Operational Resilience Resources"
+  url: "https://www.enisa.europa.eu/topics"
+  is_core: false
+  tags: ["enisa", "eu", "operational_resilience"]
+  description: >
+    Publications and thematic resources from the EU Agency for Cybersecurity on
+    continuity, critical infrastructure, and systemic resilience.
+
+- id: ncsc_resilience_guidance
+  group_key: continuity
+  group_label: "🏛️ Operational Resilience and Continuity Frameworks"
+  sort_order: 40
+  name: "NCSC UK Resilience & Continuity Guidance"
+  url: "https://www.ncsc.gov.uk/section/guidance-category/all-topics"
+  is_core: false
+  tags: ["uk", "ncsc", "guidance"]
+  description: >
+    Practical guidance on incident response, system hardening, and recovery
+    planning for organisations of different sizes.
+
+- id: dora_operational_resilience
+  group_key: continuity
+  group_label: "🏛️ Operational Resilience and Continuity Frameworks"
+  sort_order: 50
+  name: "DORA — Operational Resilience Requirements"
+  url: "https://finance.ec.europa.eu/regulation-and-supervision/financial-services-digital-resilience-dora_en"
+  is_core: true
+  tags: ["eu", "operational_resilience", "testing"]
+  description: >
+    EU requirements for testing, incident classification, outsourcing risk,
+    and ICT third-party management in financial entities.
+
+# -------------------------------------------------------------------
+# Industry Reports and Research Portals
+# -------------------------------------------------------------------
+
+- id: enisa_threat_landscape
+  group_key: research
+  group_label: "📊 Industry Reports and Research Portals"
+  sort_order: 10
+  name: "ENISA Threat Landscape Reports"
+  url: "https://www.enisa.europa.eu/topics/threat-risk-management/threats-and-trends"
+  is_core: true
+  tags: ["enisa", "threats", "reports"]
+  description: >
+    Periodic analyses of top threats, attack techniques, and trends impacting
+    the EU and broader global ecosystem.
+
+- id: wef_global_cybersecurity_outlook
+  group_key: research
+  group_label: "📊 Industry Reports and Research Portals"
+  sort_order: 20
+  name: "World Economic Forum — Global Cybersecurity Outlook"
+  url: "https://www.weforum.org/centre-for-cybersecurity"
+  is_core: false
+  tags: ["wef", "strategy", "risk"]
+  description: >
+    Strategic insights on cyber risk, governance, and resilience developed
+    through public–private collaboration.
+
+- id: oecd_digital_security_trust
+  group_key: research
+  group_label: "📊 Industry Reports and Research Portals"
+  sort_order: 50
+  name: "OECD — Digital Security and Trust"
+  url: "https://www.oecd.org/digital/trust/"
+  is_core: false
+  tags: ["oecd", "policy", "digital_trust"]
+  description: >
+    Policy papers and guidance on digital security, privacy, and trust in
+    data-driven economies.
+
+# -------------------------------------------------------------------
+# International Organisations and Multilateral Initiatives
+# -------------------------------------------------------------------
+
+- id: oecd_digital_security_policy
+  group_key: international
+  group_label: "🌐 International Organisations and Multilateral Initiatives"
+  sort_order: 10
+  name: "OECD Digital Security Policy Framework"
+  url: "https://www.oecd.org/digital/digital-security/"
+  is_core: true
+  tags: ["oecd", "policy", "framework"]
+  description: >
+    Principles and guidance for digital security risk management and economic
+    resilience across member countries.
+
+- id: itu_global_cybersecurity_index
+  group_key: international
+  group_label: "🌐 International Organisations and Multilateral Initiatives"
+  sort_order: 20
+  name: "ITU Global Cybersecurity Index"
+  url: "https://www.itu.int/itu-d/cybersecurity/global-cybersecurity-index/"
+  is_core: true
+  tags: ["itu", "index", "comparative"]
+  description: >
+    Comparative assessment of national cybersecurity commitments and
+    capabilities across legal, technical, and organisational dimensions.
+
+- id: world_bank_cyber_programme
+  group_key: international
+  group_label: "🌐 International Organisations and Multilateral Initiatives"
+  sort_order: 30
+  name: "World Bank — Cybersecurity & Digital Development"
+  url: "https://www.worldbank.org/en/topic/digitaldevelopment/brief/cybersecurity"
+  is_core: false
+  tags: ["world_bank", "development", "resilience"]
+  description: >
+    Programmes and guidance supporting cyber resilience, critical infrastructure
+    protection, and digital public infrastructure.
+
+- id: un_oewg_ict_security
+  group_key: international
+  group_label: "🌐 International Organisations and Multilateral Initiatives"
+  sort_order: 40
+  name: "United Nations Open-Ended Working Group on ICT Security"
+  url: "https://disarmament.un.org/oewg-ict-security"
+  is_core: false
+  tags: ["un", "norms", "international_security"]
+  description: >
+    Multilateral dialogue on responsible state behaviour, norms, and
+    confidence-building measures in cyberspace.
+
+# -------------------------------------------------------------------
+# Taxonomies, Classifications, and Identifier Systems
+# -------------------------------------------------------------------
+
+- id: nist_csf_taxonomy
+  group_key: taxonomies
+  group_label: "🧩 Taxonomies, Classifications, and Identifier Systems"
+  sort_order: 10
+  name: "NIST CSF Functions, Categories, and Subcategories"
+  url: "https://www.nist.gov/cyberframework"
+  is_core: true
+  tags: ["nist", "taxonomy", "csf"]
+  description: >
+    Structured hierarchy of functions, categories, and subcategories used to
+    align cybersecurity activities, outcomes, and control objectives.
+
+- id: iso_27001_annex_a
+  group_key: taxonomies
+  group_label: "🧩 Taxonomies, Classifications, and Identifier Systems"
+  sort_order: 20
+  name: "ISO/IEC 27001 Annex A Control Themes"
+  url: "https://www.iso.org/isoiec-27001-information-security.html"
+  is_core: true
+  tags: ["iso", "annex_a", "controls"]
+  description: >
+    Grouping of information security controls into thematic domains mapped into
+    CRT control domains where appropriate.
+
+- id: enisa_reference_taxonomies
+  group_key: taxonomies
+  group_label: "🧩 Taxonomies, Classifications, and Identifier Systems"
+  sort_order: 30
+  name: "ENISA Reference Taxonomies"
+  url: "https://www.enisa.europa.eu/topics/threat-risk-management"
+  is_core: false
+  tags: ["enisa", "threats", "assets", "incidents"]
+  description: >
+    Classifications for threats, assets, and incidents supporting cross-framework
+    mapping, consistent reporting, and shared terminology.
+
+- id: mitre_attack_d3fend_taxonomies
+  group_key: taxonomies
+  group_label: "🧩 Taxonomies, Classifications, and Identifier Systems"
+  sort_order: 40
+  name: "MITRE ATT&CK & D3FEND Taxonomies"
+  url: "https://attack.mitre.org/"
+  is_core: false
+  tags: ["mitre", "tactics", "defensive_patterns"]
+  description: >
+    Structured enumeration of adversary behaviours and defensive patterns used
+    to maintain consistent labelling in scenarios and control mappings.
+
+# -------------------------------------------------------------------
+# National Cybersecurity Centres & CSIRTs (Supplementary)
+# -------------------------------------------------------------------
+
+- id: enisa_csirts_network
+  group_key: csirts
+  group_label: "🇺🇳 National Cybersecurity Centres & CSIRTs (Supplementary)"
+  sort_order: 10
+  name: "ENISA CSIRTs Network"
+  url: "https://www.enisa.europa.eu/topics/csirts-in-europe"
+  is_core: false
+  tags: ["enisa", "csirt", "eu"]
+  description: >
+    Cooperation platform for national and governmental CSIRTs across EU Member
+    States, supporting coordinated incident response.
+
+- id: first_forum
+  group_key: csirts
+  group_label: "🇺🇳 National Cybersecurity Centres & CSIRTs (Supplementary)"
+  sort_order: 20
+  name: "FIRST — Forum of Incident Response and Security Teams"
+  url: "https://www.first.org/"
+  is_core: false
+  tags: ["first", "csirt", "global"]
+  description: >
+    Global association of incident response and security teams sharing best
+    practice and coordinated response approaches.
+
+- id: uk_ncsc_csirt
+  group_key: csirts
+  group_label: "🇺🇳 National Cybersecurity Centres & CSIRTs (Supplementary)"
+  sort_order: 30
+  name: "NCSC UK"
+  url: "https://www.ncsc.gov.uk/"
+  is_core: false
+  tags: ["uk", "ncsc", "csirt"]
+  description: >
+    UK national technical authority for cyber security, providing guidance and
+    incident response coordination.
+
+- id: us_cert_cisa
+  group_key: csirts
+  group_label: "🇺🇳 National Cybersecurity Centres & CSIRTs (Supplementary)"
+  sort_order: 40
+  name: "US-CERT / CISA"
+  url: "https://www.cisa.gov/"
+  is_core: false
+  tags: ["us", "cert", "cisa"]
+  description: >
+    U.S. national cyber incident coordination hub for critical infrastructure
+    and federal partners.
+
+# -------------------------------------------------------------------
+# Application Security & Best-Practice Communities (Supplementary)
+# -------------------------------------------------------------------
+
+- id: owasp
+  group_key: appsec
+  group_label: "🛠️ Application Security & Best-Practice Communities (Supplementary)"
+  sort_order: 10
+  name: "OWASP — Open Worldwide Application Security Project"
+  url: "https://owasp.org/"
+  is_core: false
+  tags: ["owasp", "application_security", "best_practices"]
+  description: >
+    Community-driven project providing resources on web, API, and software
+    security, including OWASP Top 10 and ASVS.
+
+- id: cert_cc
+  group_key: appsec
+  group_label: "🛠️ Application Security & Best-Practice Communities (Supplementary)"
+  sort_order: 20
+  name: "CERT Coordination Center (CERT/CC)"
+  url: "https://www.sei.cmu.edu/about/divisions/cert/"
+  is_core: false
+  tags: ["cert", "vulnerabilities", "coordination"]
+  description: >
+    Vulnerability disclosure, incident coordination, and research into software
+    assurance and operational resilience.
+
+- id: csa_cloud_security_alliance
+  group_key: appsec
+  group_label: "🛠️ Application Security & Best-Practice Communities (Supplementary)"
+  sort_order: 30
+  name: "Cloud Security Alliance (CSA)"
+  url: "https://cloudsecurityalliance.org/"
+  is_core: false
+  tags: ["cloud", "security", "community"]
+  description: >
+    Community and research body focused on secure cloud adoption, including
+    best practices and shared responsibility guidance.
+
+# -------------------------------------------------------------------
+# 🔍 Vulnerability, Exposure, and Threat Reference Systems
+# group_key: vulnerability_refs
+# -------------------------------------------------------------------
+
+- id: REF-VULN-001
+  group_key: vulnerability_refs
+  group_label: Vulnerability, Exposure, and Threat Reference Systems
+  sort_order: 10
+  name: Common Vulnerabilities and Exposures (CVE)
+  url: https://www.cve.org/
+  description: Canonical identifier system for publicly disclosed vulnerabilities.
+  is_core: true
+  tags: [vulnerability, identifiers, public-reference]
+
+- id: REF-VULN-002
+  group_key: vulnerability_refs
+  group_label: Vulnerability, Exposure, and Threat Reference Systems
+  sort_order: 20
+  name: National Vulnerability Database (NVD)
+  url: https://nvd.nist.gov/
+  description: NIST-maintained vulnerability repository with metadata, scoring, and categorisation.
+  is_core: true
+  tags: [vulnerability, nist, scoring, public-reference]
+
+- id: REF-VULN-003
+  group_key: vulnerability_refs
+  group_label: Vulnerability, Exposure, and Threat Reference Systems
+  sort_order: 30
+  name: CISA Known Exploited Vulnerabilities (KEV) Catalog
+  url: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+  description: Public catalogue of vulnerabilities observed to be actively exploited.
+  is_core: true
+  tags: [vulnerability, exploitation, public-reference]
+
+- id: REF-VULN-004
+  group_key: vulnerability_refs
+  group_label: Vulnerability, Exposure, and Threat Reference Systems
+  sort_order: 40
+  name: MITRE ATT&CK
+  url: https://attack.mitre.org/
+  description: Adversary behaviour knowledge base for tactics, techniques, and procedures (TTPs).
+  is_core: true
+  tags: [threat, ttp, taxonomy, public-reference]
+
+- id: REF-VULN-005
+  group_key: vulnerability_refs
+  group_label: Vulnerability, Exposure, and Threat Reference Systems
+  sort_order: 50
+  name: MITRE D3FEND
+  url: https://d3fend.mitre.org/
+  description: Knowledge base of defensive techniques mapped to adversary behaviours.
+  is_core: false
+  tags: [defence, techniques, taxonomy, public-reference]
+
+- id: REF-VULN-006
+  group_key: vulnerability_refs
+  group_label: Vulnerability, Exposure, and Threat Reference Systems
+  sort_order: 60
+  name: CERT/CC Vulnerability Notes Database
+  url: https://www.kb.cert.org/vuls/
+  description: Coordinated vulnerability disclosure notes and supporting references.
+  is_core: false
+  tags: [vulnerability, advisories, disclosure, public-reference]
+
+- id: REF-VULN-007
+  group_key: vulnerability_refs
+  group_label: Vulnerability, Exposure, and Threat Reference Systems
+  sort_order: 70
+  name: BugTraq (historical archive)
+  url: https://seclists.org/bugtraq/
+  description: Historical vulnerability disclosure archive and reference index.
+  is_core: false
+  tags: [vulnerability, disclosure, archive, public-reference]

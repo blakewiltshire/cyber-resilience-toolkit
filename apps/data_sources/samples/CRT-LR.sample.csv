@@ -1,0 +1,11 @@
+lr_id,obligation_name,obligation_description,mapped_control_ids,severity,evidence_required,source_reference_examples,notes
+LR-GOV-001,Governance of Security & Resilience,Maintain governance arrangements for oversight of cyber  technology  and operational resilience risks.,CRT-C-0037,High,"Governance charters, board minutes",DORA Art.17; MAS TRM Ch.3; PRA SS1/21,
+LR-GOV-002,Roles & Responsibilities Definition,Define and maintain clear roles responsibilities and accountability for security and resilience activities.,CRT-C-0037;CRT-C-0040,Medium,"RACI matrices, role documents",ISO27001 A.5; NIST CSF GV,
+LR-RISK-002,Risk Assessment Process,Maintain a structured process for assessing security and resilience risks.,CRT-C-0038;CRT-C-0048,Medium,Risk assessments,ISO27001 A.8; FFIEC CAT,
+LR-TEST-002,Scenario-Based Testing,Perform scenario exercises covering severe but plausible disruptions.,CRT-C-0048;CRT-C-0050,High,Scenario logs,PRA SS2/21; DORA TLPT Guidelines,
+LR-INC-002,Timely Regulatory Notification,Notify relevant authorities of significant incidents within required timeframes.,CRT-C-0042,High,Incident notifications,GDPR 33; SEC 4-day rule; MAS TRM 5,
+LR-BCP-001,Business Continuity Planning,Maintain continuity arrangements to support core services during disruptions.,CRT-C-0018;CRT-C-0060;CRT-C-0062,High,BCP plans,DORA Art.32; MAS TRM 13,
+LR-ID-001,Privileged Access Oversight,Maintain oversight and monitoring of privileged access usage.,CRT-C-0010;CRT-C-0059,High,"Access logs, review notes",PCI DSS 7-8; MAS TRM 9,
+LR-ASSET-001,Asset Inventory Obligations,Maintain an inventory of technology assets supporting key services.,CRT-C-0057,Medium,Asset registers,CAIQ; FFIEC; ISO27001 A.8,
+LR-DATA-001,Data Protection Measures,Ensure appropriate measures exist for protecting sensitive or critical data.,CRT-C-0002;CRT-C-0003;CRT-C-0005,High,Technical control evidence,GDPR Art.32; ISO27001 A.10,
+LR-PRIV-008,Security of Personal Data Processing,Apply appropriate technical and organisational measures to preserve confidentiality integrity and availability of personal data.,CRT-C-0002;CRT-C-0003;CRT-C-0005;CRT-C-0010;CRT-C-0011;CRT-C-0039,High,"Security measures, risk assessments",GDPR Art.32; ISO27701; HIPAA,

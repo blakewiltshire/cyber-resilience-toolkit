@@ -1,0 +1,11 @@
+﻿group_id,group_domain,description
+CRT-G-01,Data Security and Privacy,"Safeguards information assets across storage, processing, and transmission environments. Focus areas: classification, encryption, retention, and confidentiality."
+CRT-G-02,Access and Identity,"Manages authentication, authorisation, and trust boundaries across systems, users, and devices. Includes IAM, MFA, and privilege control."
+CRT-G-03,Infrastructure and Connectivity,"Addresses resilience of networks, infrastructure, and connectivity layers — including segmentation, hardening, and telemetry assurance."
+CRT-G-04,Application and Integration,"Focuses on software development, integration security, dependency management, and lifecycle assurance across APIs and applications."
+CRT-G-05,Third-Party and Vendor,"Covers supplier oversight, contractual assurance, dependency mapping, and transitive risk evaluation."
+CRT-G-06,Behavioural and Human,"Examines insider threats, culture, awareness, and human-centred risk mechanisms influencing system exposure."
+CRT-G-07,Regulatory and Framework Alignment,"Ensures conformance with frameworks (ISO 27001, NIST CSF, DORA), audit readiness, and governance accountability."
+CRT-G-08,Emerging Technologies and Systemic Risks,"Controls for AI, IoT, blockchain, and systemic-risk resilience."
+CRT-G-09,"Crisis, Monitoring, and Response","Controls supporting detection, coordination, and incident recovery."
+CRT-G-10,Physical and Environmental Security,"Controls governing facility access, environmental protection, and redundancy."

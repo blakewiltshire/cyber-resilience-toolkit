@@ -1,0 +1,257 @@
+{
+  "version": "1.0",
+  "description": "Default output templates shipped with the Cyber Resilience Toolkit. Templates define structure only (headings and ordering).",
+  "templates": [
+    {
+      "template_id": "TPL-GOV-POLICY-V1",
+      "category": "governance",
+      "label": "Policy document",
+      "sections": [
+        "Purpose",
+        "Scope",
+        "Definitions",
+        "Governance and Accountability",
+        "Policy Statements",
+        "Exceptions",
+        "Evidence and Records",
+        "Review and Maintenance"
+      ]
+    },
+    {
+      "template_id": "TPL-GOV-STANDARD-V1",
+      "category": "governance",
+      "label": "Standard",
+      "sections": [
+        "Purpose",
+        "Scope",
+        "Control Statements",
+        "Evidence and Verification",
+        "Exceptions",
+        "Review and Maintenance"
+      ]
+    },
+    {
+      "template_id": "TPL-GOV-RISK-BRIEF-V1",
+      "category": "governance",
+      "label": "Risk management brief / register snapshot",
+      "sections": [
+        "Context",
+        "Scope",
+        "Risk Register Snapshot",
+        "Dependencies and Assumptions",
+        "Observations",
+        "Unknowns",
+        "Appendix"
+      ]
+    },
+    {
+      "template_id": "TPL-GOV-TP-QUESTIONNAIRE-V1",
+      "category": "governance",
+      "label": "Third-party questionnaire",
+      "sections": [
+        "Supplier Context",
+        "Data Handling",
+        "Identity and Access",
+        "Control Environment",
+        "Monitoring and Telemetry",
+        "Incident and Continuity",
+        "Evidence Requests"
+      ]
+    },
+    {
+      "template_id": "TPL-GOV-AUDIT-CHECKLIST-V1",
+      "category": "governance",
+      "label": "Audit checklist",
+      "sections": [
+        "Scope",
+        "Checklist Items",
+        "Evidence Reviewed",
+        "Findings",
+        "Follow-up Actions"
+      ]
+    },
+    {
+      "template_id": "TPL-GOV-AWARENESS-V1",
+      "category": "governance",
+      "label": "Awareness script / training outline",
+      "sections": [
+        "Audience",
+        "Objectives",
+        "Key Topics",
+        "Illustrative Scenarios",
+        "Knowledge Checks",
+        "References"
+      ]
+    },
+    {
+      "template_id": "TPL-GOV-EXCEPTION-REGISTER-V1",
+      "category": "governance",
+      "label": "Exception register",
+      "sections": [
+        "Exception Identifier",
+        "Description",
+        "Scope",
+        "Owner",
+        "Justification",
+        "Compensating Measures",
+        "Expiry and Review",
+        "Evidence"
+      ]
+    },
+    {
+      "template_id": "TPL-GOV-CONTROL-NARRATIVE-V1",
+      "category": "governance",
+      "label": "Continuous control narrative",
+      "sections": [
+        "Control Scope",
+        "Operational Intent",
+        "Signals and Telemetry",
+        "Evidence Sources",
+        "Review Cadence",
+        "Known Gaps"
+      ]
+    },
+    {
+      "template_id": "TPL-GOV-VENDOR-SUMMARY-V1",
+      "category": "governance",
+      "label": "Vendor risk summary",
+      "sections": [
+        "Vendor Overview",
+        "Dependency Context",
+        "Data Exposure",
+        "Control Mapping Snapshot",
+        "Evidence Received",
+        "Open Questions"
+      ]
+    },
+    {
+      "template_id": "TPL-ARCH-SEC-VIEW-V1",
+      "category": "architecture",
+      "label": "Security architecture view",
+      "sections": [
+        "Context",
+        "Architectural Components",
+        "Trust Boundaries and Zones",
+        "Key Flows",
+        "Control Overlay",
+        "Assumptions"
+      ]
+    },
+    {
+      "template_id": "TPL-ARCH-COVERAGE-V1",
+      "category": "architecture",
+      "label": "Control coverage summary",
+      "sections": [
+        "Scope",
+        "Controls in Scope",
+        "Coverage Summary",
+        "Mapped Obligations",
+        "Observations",
+        "Unknowns"
+      ]
+    },
+    {
+      "template_id": "TPL-ARCH-ZONING-V1",
+      "category": "architecture",
+      "label": "Zoning / trust-boundary view",
+      "sections": [
+        "Zones",
+        "Entry and Exit Points",
+        "Identities",
+        "Data Flows",
+        "Controls per Boundary",
+        "Notes"
+      ]
+    },
+    {
+      "template_id": "TPL-ARCH-DATAFLOW-V1",
+      "category": "architecture",
+      "label": "Data-flow / service-chain summary",
+      "sections": [
+        "Flow Stages",
+        "Systems and Services",
+        "Data Classes",
+        "Vendors",
+        "Trust Boundaries",
+        "Control Touchpoints"
+      ]
+    },
+    {
+      "template_id": "TPL-METRICS-RESILIENCE-V1",
+      "category": "metrics",
+      "label": "Resilience metrics brief",
+      "sections": [
+        "Audience",
+        "Metric Definitions",
+        "Current Snapshot",
+        "Trend Indicators",
+        "Limitations and Notes"
+      ]
+    },
+    {
+      "template_id": "TPL-METRICS-DOMAIN-V1",
+      "category": "metrics",
+      "label": "Domain-specific metrics summary",
+      "sections": [
+        "Domain Scope",
+        "Metric Set",
+        "Collection Sources",
+        "Snapshot Summary",
+        "Notes"
+      ]
+    },
+    {
+      "template_id": "TPL-METRICS-GAP-V1",
+      "category": "metrics",
+      "label": "Coverage / gap overview",
+      "sections": [
+        "Scope",
+        "Coverage Summary",
+        "Unmapped Areas",
+        "Evidence Gaps",
+        "Assumptions"
+      ]
+    },
+    {
+      "template_id": "TPL-SIM-IR-PLAYBOOK-V1",
+      "category": "simulation",
+      "label": "Incident response playbook",
+      "sections": [
+        "Purpose",
+        "Scope",
+        "Roles and Responsibilities",
+        "Detection Signals",
+        "Containment Options",
+        "Communications Checklist",
+        "Evidence Capture",
+        "Post-Incident Review"
+      ]
+    },
+    {
+      "template_id": "TPL-SIM-SCENARIO-V1",
+      "category": "simulation",
+      "label": "Scenario analysis summary",
+      "sections": [
+        "Scenario Definition",
+        "Assumptions",
+        "Affected Entities",
+        "Control Posture Snapshot",
+        "Potential Impacts",
+        "Open Questions"
+      ]
+    },
+    {
+      "template_id": "TPL-SIM-WHATIF-V1",
+      "category": "simulation",
+      "label": "What-if structural simulation brief",
+      "sections": [
+        "Change or Hypothesis",
+        "Scope",
+        "Entities Affected",
+        "Expected Structural Shifts",
+        "Dependencies",
+        "Unknowns"
+      ]
+    }
+  ]
+}

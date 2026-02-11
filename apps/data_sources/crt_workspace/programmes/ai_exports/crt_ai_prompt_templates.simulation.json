@@ -1,0 +1,14 @@
+{
+  "version": "0.1",
+  "updated_at": "2025-12-24T00:00:00Z",
+  "templates": [
+    {
+      "template_id": "CRT-SIMULATION-DEFAULT-DELTA-V1",
+      "label": "Simulation (default delta)",
+      "description": "Small additive delta for scenario analysis and structural simulation outputs.",
+      "applies_to": ["scenario analysis summary", "simulation", "what if"],
+      "system_append": "",
+      "user_append": "Focus on structural pathways, dependencies, and uncertainty. Describe plausible sequences only where supported by the bundle (entities, mappings, and lens findings). Do not provide response steps, playbooks, runbooks, or recommended actions. If the bundle lacks required scenario inputs (actors, triggers, systems, constraints), state what is missing and avoid inventing detail."
+    }
+  ]
+}

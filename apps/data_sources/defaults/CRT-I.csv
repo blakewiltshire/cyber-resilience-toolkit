@@ -1,0 +1,26 @@
+﻿identity_id,name,type,zone,trust_anchor,policy_anchor,privilege_level,associated_assets,notes,source_ref,mapped_control_ids
+I-0001,Primary Identity Provider (IdP),service,critical,yes,MFA,high,auth-systems,Central authentication and SSO authority,baseline,CRT-C-0007; CRT-C-0008; CRT-C-0009; CRT-C-0011; CRT-C-0013
+I-0002,PAM Vault,service,critical,yes,hardware-token,high,privileged-accounts,Manages secrets and high-privilege credentials,baseline,CRT-C-0010; CRT-C-0012; CRT-C-0049
+I-0003,Certificate Authority (Root CA),service,critical,yes,hardware-token,high,pkis,Root of trust for certificates,baseline,CRT-C-0045; CRT-C-0012
+I-0004,Finance Team User,user,sensitive,no,MFA,medium,erp,Standard business identity,baseline,CRT-C-0007; CRT-C-0008; CRT-C-0011
+I-0005,DevOps Engineer,user,critical,no,hardened-MFA,high,ci-cd,High-privileged engineering user,baseline,CRT-C-0007; CRT-C-0008; CRT-C-0010; CRT-C-0011; CRT-C-0012
+I-0006,IT Administrator,user,critical,no,pam-control,high,all-systems,Broad admin rights,baseline,CRT-C-0010; CRT-C-0008; CRT-C-0007; CRT-C-0011; CRT-C-0049
+I-0007,Customer Support Staff,user,operational,no,MFA,low,crm, interacts with customer systems,baseline,CRT-C-0007; CRT-C-0008; CRT-C-0011
+I-0008,Machine Identity - WebApp Backend,machine,operational,no,token,medium,prod-app,Service-to-service calls,baseline,CRT-C-0012; CRT-C-0011; CRT-C-0019
+I-0009,Machine Identity - Payment Processor,machine,critical,no,token,high,payment-api,Handles sensitive transactions,baseline,CRT-C-0012; CRT-C-0011; CRT-C-0019
+I-0010,API Gateway Service Account,service,sensitive,no,key-based,medium,api-layer,Gateway for external/internal APIs,baseline,CRT-C-0012; CRT-C-0011; CRT-C-0019; CRT-C-0008
+I-0011,Backup System Service Account,service,critical,no,key-based,high,backup-store,Manages backup operations,baseline,CRT-C-0012; CRT-C-0011; CRT-C-0062
+I-0012,Monitoring Agent,machine,operational,no,key-based,low,monitoring,Telemetry agent on hosts,baseline,CRT-C-0012; CRT-C-0011; CRT-C-0049
+I-0013,CI/CD Pipeline Account,service,operational,no,token,medium,ci-cd,Build/deploy automation,baseline,CRT-C-0012; CRT-C-0011; CRT-C-0020
+I-0014,HR System User,user,sensitive,no,MFA,medium,hr-db,Access to sensitive HR data,baseline,CRT-C-0007; CRT-C-0008; CRT-C-0011; CRT-C-0039
+I-0015,Guest/WiFi User,user,external,no,password,low,none,External limited user,baseline,CRT-C-0015; CRT-C-0012
+I-0016,Third-Party Support User,user,external,no,pam-control,medium,prod-support,Vendor support access,baseline,CRT-C-0028; CRT-C-0022; CRT-C-0026; CRT-C-0010
+I-0017,Database Admin,user,critical,no,pam-control,high,database,High-privilege DB admin,baseline,CRT-C-0010; CRT-C-0008; CRT-C-0007; CRT-C-0011; CRT-C-0049
+I-0018,Cloud Management Identity (Root),service,critical,yes,hsm-token,high,cloud-tenancy,Cloud root account,baseline,CRT-C-0010; CRT-C-0045; CRT-C-0012; CRT-C-0011; CRT-C-0049
+I-0019,Analytics Engine Service,machine,operational,no,key-based,medium,analytics,Processes business analytics jobs,baseline,CRT-C-0012; CRT-C-0011; CRT-C-0020
+I-0020,Email Security Gateway Service,service,sensitive,no,token,medium,email-gateway,Processes inbound/outbound email,baseline,CRT-C-0012; CRT-C-0011; CRT-C-0023; CRT-C-0049
+I-0021,Load Balancer Service,machine,operational,no,key-based,low,net-edge,Traffic distribution,baseline,CRT-C-0012; CRT-C-0011; CRT-C-0019
+I-0022,IoT Device Identity,machine,external,no,certificate,low,iot-zone,Limited Trust IoT,baseline,CRT-C-0043; CRT-C-0012
+I-0023,Robotic Process Automation Bot,service,operational,no,key-based,medium,rpa,Performs automated tasks,baseline,CRT-C-0012; CRT-C-0011; CRT-C-0008
+I-0024,Privileged Break-Glass Account,user,critical,yes,pam-control,high,all-systems,Emergency access only,baseline,CRT-C-0010; CRT-C-0007; CRT-C-0012; CRT-C-0049
+I-0025,Audit/Compliance Service Account,service,sensitive,no,key-based,medium,auditing,Retrieves logs and evidence,baseline,CRT-C-0012; CRT-C-0011; CRT-C-0049

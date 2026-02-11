@@ -1,0 +1,110 @@
+[
+  {
+    "policy_id": "POL-DS-01",
+    "policy_name": "Data Security & Privacy Policy",
+    "description": "Governance for data protection, privacy, and data lifecycle security.",
+    "mapped_control_ids": "CRT-C-0001;CRT-C-0002;CRT-C-0003;CRT-C-0004;CRT-C-0005;CRT-C-0006;CRT-C-0039",
+    "mapped_standard_ids": "STD-0027;STD-0028;STD-0029;STD-0030;STD-0031;STD-0035;STD-0036;STD-0037;STD-0038;STD-0057",
+    "status": "Active",
+    "policy_sections": "Information Classification & Handling; Data Protection - At Rest; Data Protection - In Transit; Data Loss Prevention; Data Integrity & Change Control"
+  },
+  {
+    "policy_id": "POL-IAM-01",
+    "policy_name": "Identity & Access Management Policy",
+    "description": "Governance for identity lifecycle, access control, and authentication.",
+    "mapped_control_ids": "CRT-C-0007;CRT-C-0008;CRT-C-0009;CRT-C-0010;CRT-C-0011;CRT-C-0012;CRT-C-0045",
+    "mapped_standard_ids": "STD-0011;STD-0012;STD-0013;STD-0014;STD-0015;STD-0016;STD-0034;STD-0039;STD-0040;STD-0057",
+    "status": "Active",
+    "policy_sections": "Access Control; Privileged Access; Authentication & MFA; Identity Lifecycle Management; Session Management"
+  },
+  {
+    "policy_id": "POL-AM-01",
+    "policy_name": "Asset & Technology Management Policy",
+    "description": "Governance for asset management and secure technology operations.",
+    "mapped_control_ids": "CRT-C-0013;CRT-C-0014;CRT-C-0015;CRT-C-0016;CRT-C-0017;CRT-C-0018;CRT-C-0019;CRT-C-0043;CRT-C-0056;CRT-C-0057;CRT-C-0065",
+    "mapped_standard_ids": "STD-0025;STD-0026;STD-0027;STD-0056",
+    "status": "Active",
+    "policy_sections": "Asset Inventory; Configuration Management; Technology Hardening; Secure Disposal; Shadow IT Management"
+  },
+  {
+    "policy_id": "POL-LM-01",
+    "policy_name": "Logging, Monitoring & Detection Policy",
+    "description": "Governance for monitoring, detection, and alerting.",
+    "mapped_control_ids": "CRT-C-0049;CRT-C-0017;CRT-C-0051;CRT-C-0052;CRT-C-0032;CRT-C-0034;CRT-C-0036;CRT-C-0065",
+    "mapped_standard_ids": "STD-0017;STD-0018;STD-0019;STD-0020",
+    "status": "Active",
+    "policy_sections": "Security Monitoring; Log Management; SIEM/SOC Operations; Alerting & Detection"
+  },
+  {
+    "policy_id": "POL-NET-01",
+    "policy_name": "Network & Infrastructure Security Policy",
+    "description": "Governance for network and infrastructure protection.",
+    "mapped_control_ids": "CRT-C-0013;CRT-C-0014;CRT-C-0015;CRT-C-0016;CRT-C-0017;CRT-C-0018;CRT-C-0047;CRT-C-0065",
+    "mapped_standard_ids": "STD-0032;STD-0033;STD-0021",
+    "status": "Active",
+    "policy_sections": "Network Segmentation; Boundary Protection; Firewall & IPS Management; Cloud Security Baselines"
+  },
+  {
+    "policy_id": "POL-SD-01",
+    "policy_name": "Secure Software Development Policy",
+    "description": "Governance for secure coding and SDLC-related controls.",
+    "mapped_control_ids": "CRT-C-0019;CRT-C-0020;CRT-C-0021;CRT-C-0022;CRT-C-0023;CRT-C-0024",
+    "mapped_standard_ids": "STD-0021;STD-0022;STD-0023;STD-0024;STD-0045;STD-0046;STD-0047;STD-0048;STD-0055",
+    "status": "Active",
+    "policy_sections": "SDLC Governance; Code Security; Dependency & Library Management; Build Pipeline Security; DevSecOps Integration"
+  },
+  {
+    "policy_id": "POL-TP-01",
+    "policy_name": "Third-Party & Supply Chain Security Policy",
+    "description": "Governance for vendor and supply chain security obligations.",
+    "mapped_control_ids": "CRT-C-0022;CRT-C-0025;CRT-C-0026;CRT-C-0027;CRT-C-0028;CRT-C-0029;CRT-C-0030;CRT-C-0041",
+    "mapped_standard_ids": "STD-0041;STD-0042;STD-0043;STD-0044",
+    "status": "Active",
+    "policy_sections": "Vendor Security Requirements; SaaS Risk Management; Critical Supplier Oversight; Contractual Controls"
+  },
+  {
+    "policy_id": "POL-IR-01",
+    "policy_name": "Incident Response Policy",
+    "description": "Governance for incident reporting, analysis, and coordinated response.",
+    "mapped_control_ids": "CRT-C-0049;CRT-C-0050;CRT-C-0051;CRT-C-0052;CRT-C-0053;CRT-C-0054;CRT-C-0061;CRT-C-0042",
+    "mapped_standard_ids": "STD-0010;STD-0020",
+    "status": "Active",
+    "policy_sections": "Incident Classification; Reporting Requirements; Triage & Investigation; Forensics Support; Communications & Escalation"
+  },
+  {
+    "policy_id": "POL-BC-01",
+    "policy_name": "Business Continuity & Disaster Recovery Policy",
+    "description": "Governance for continuity, resilience, and disaster recovery.",
+    "mapped_control_ids": "CRT-C-0018;CRT-C-0060;CRT-C-0061;CRT-C-0062",
+    "mapped_standard_ids": "STD-0049;STD-0050;STD-0051;STD-0056",
+    "status": "Active",
+    "policy_sections": "Backup Strategy; Recovery Objectives; Disaster Recovery Procedures; Service Continuity Controls"
+  },
+  {
+    "policy_id": "POL-GOV-01",
+    "policy_name": "Security Governance & Risk Management Policy",
+    "description": "Governance for risk oversight, accountability, and assurance.",
+    "mapped_control_ids": "CRT-C-0037;CRT-C-0038;CRT-C-0040;CRT-C-0041;CRT-C-0042;CRT-C-0043;CRT-C-0044;CRT-C-0046;CRT-C-0048;CRT-C-0063;CRT-C-0064",
+    "mapped_standard_ids": "STD-0001;STD-0002;STD-0003;STD-0004;STD-0005;STD-0006;STD-0007;STD-0008;STD-0009;STD-0010;STD-0054",
+    "status": "Active",
+    "policy_sections": "Governance Principles; Roles & Responsibilities; Oversight Mechanisms; Security Risk Assessment; Control Assurance & Reviews"
+  },
+  {
+    "policy_id": "POL-PHY-01",
+    "policy_name": "Physical Security Policy",
+    "description": "Governance for physical access and environmental protection.",
+    "mapped_control_ids": "CRT-C-0055;CRT-C-0056;CRT-C-0057;CRT-C-0058;CRT-C-0059;CRT-C-0060",
+    "mapped_standard_ids": "STD-0034;STD-0032;STD-0057",
+    "status": "Active",
+    "policy_sections": "Facility Access Control; Physical Asset Protection; Environmental Security; Visitor Management"
+  },
+  {
+    "policy_id": "POL-AT-01",
+    "policy_name": "Awareness & Training Policy",
+    "description": "Governance for cybersecurity awareness and training.",
+    "mapped_control_ids": "CRT-C-0031;CRT-C-0033;CRT-C-0035",
+    "mapped_standard_ids": "STD-0052;STD-0053;STD-0054",
+    "status": "Active",
+    "policy_sections": "Cybersecurity Training; Role-Based Education; Phishing Simulation Programs; Security Culture Initiatives"
+  }
+]

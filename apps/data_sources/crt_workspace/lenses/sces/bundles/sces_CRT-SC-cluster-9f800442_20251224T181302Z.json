@@ -1,0 +1,153 @@
+{
+  "bundle_type": "supply_chain",
+  "entities": {
+    "assets": [],
+    "controls": [],
+    "data_domains": [],
+    "failures": [],
+    "identities": [],
+    "telemetry": [],
+    "vendors": [
+      {
+        "catalogue": "CRT-SC",
+        "contract_tier": "enhanced",
+        "criticality": "high",
+        "data_access_level": "full",
+        "dependency_type": "direct",
+        "example_vendors": "AWS; Azure; DigitalOcean",
+        "id": "SC-0001",
+        "mapped_controls": [
+          "CRT-C-0018",
+          "CRT-C-0065",
+          "CRT-C-0049",
+          "CRT-C-0040",
+          "CRT-C-0026",
+          "CRT-C-0030"
+        ],
+        "notes": "Primary cloud platform",
+        "raw": {
+          "contract_tier": "enhanced",
+          "criticality": "high",
+          "data_access_level": "full",
+          "dependency_type": "direct",
+          "example_vendors": "AWS; Azure; DigitalOcean",
+          "failure_modes": "outage;identity-failure",
+          "linked_control_summary": "CRT-C-0018 — Infrastructure Resilience Planning; CRT-C-0026 — Contractual Security Clauses; CRT-C-0030 — Termination and Exit Controls; CRT-C-0040 — Compliance Monitoring and Reporting; CRT-C-0049 — Security Monitoring and Anomaly Detection; CRT-C-0065 — Technical Baseline Governance",
+          "mapped_control_count": 6,
+          "mapped_control_ids": "CRT-C-0018; CRT-C-0065; CRT-C-0049; CRT-C-0040; CRT-C-0026; CRT-C-0030",
+          "notes": "Primary cloud platform",
+          "service_type": "IaaS",
+          "source_ref": "baseline",
+          "vendor_archetype": "Cloud Infrastructure Provider (IaaS)",
+          "vendor_id": "SC-0001"
+        },
+        "service_type": "IaaS",
+        "source_ref": "baseline",
+        "vendor_archetype": "Cloud Infrastructure Provider (IaaS)"
+      },
+      {
+        "catalogue": "CRT-SC",
+        "contract_tier": "standard",
+        "criticality": "medium",
+        "data_access_level": "limited",
+        "dependency_type": "direct",
+        "example_vendors": "Google Workspace; Office 365",
+        "id": "SC-0003",
+        "mapped_controls": [
+          "CRT-C-0007",
+          "CRT-C-0012",
+          "CRT-C-0009",
+          "CRT-C-0026",
+          "CRT-C-0022",
+          "CRT-C-0039"
+        ],
+        "notes": "Business productivity suite",
+        "raw": {
+          "contract_tier": "standard",
+          "criticality": "medium",
+          "data_access_level": "limited",
+          "dependency_type": "direct",
+          "example_vendors": "Google Workspace; Office 365",
+          "failure_modes": "auth-failure",
+          "linked_control_summary": "CRT-C-0007 — Multi-Factor Authentication (MFA); CRT-C-0009 — Federation and External User Management; CRT-C-0012 — Password Hygiene and Credential Hardening; CRT-C-0022 — Third-Party Integration Risk Assessment; CRT-C-0026 — Contractual Security Clauses; CRT-C-0039 — Data Protection and Privacy Governance",
+          "mapped_control_count": 6,
+          "mapped_control_ids": "CRT-C-0007; CRT-C-0012; CRT-C-0009; CRT-C-0026; CRT-C-0022; CRT-C-0039",
+          "notes": "Business productivity suite",
+          "service_type": "SaaS",
+          "source_ref": "baseline",
+          "vendor_archetype": "Cloud Productivity & Collaboration Suite",
+          "vendor_id": "SC-0003"
+        },
+        "service_type": "SaaS",
+        "source_ref": "baseline",
+        "vendor_archetype": "Cloud Productivity & Collaboration Suite"
+      },
+      {
+        "catalogue": "CRT-SC",
+        "contract_tier": "regulated",
+        "criticality": "high",
+        "data_access_level": "limited",
+        "dependency_type": "direct",
+        "example_vendors": "PCI Payment Vendor MSP; Stripe",
+        "id": "SC-0006",
+        "mapped_controls": [
+          "CRT-C-0039",
+          "CRT-C-0026",
+          "CRT-C-0025",
+          "CRT-C-0042",
+          "CRT-C-0041"
+        ],
+        "notes": "Payment processor",
+        "raw": {
+          "contract_tier": "regulated",
+          "criticality": "high",
+          "data_access_level": "limited",
+          "dependency_type": "direct",
+          "example_vendors": "PCI Payment Vendor MSP; Stripe",
+          "failure_modes": "api-failure; payment-failure",
+          "linked_control_summary": "CRT-C-0025 — Third-Party Risk Assessment Framework; CRT-C-0026 — Contractual Security Clauses; CRT-C-0039 — Data Protection and Privacy Governance; CRT-C-0041 — Vendor Risk and Compliance Assurance; CRT-C-0042 — Incident Reporting and Breach Notification",
+          "mapped_control_count": 5,
+          "mapped_control_ids": "CRT-C-0039; CRT-C-0026; CRT-C-0025; CRT-C-0042; CRT-C-0041",
+          "notes": "Payment processor",
+          "service_type": "SaaS",
+          "source_ref": "baseline",
+          "vendor_archetype": "Payment Processor / PSP",
+          "vendor_id": "SC-0006"
+        },
+        "service_type": "SaaS",
+        "source_ref": "baseline",
+        "vendor_archetype": "Payment Processor / PSP"
+      }
+    ]
+  },
+  "guardrails": {
+    "no_advice": true,
+    "no_assurance": true,
+    "no_configuration": true
+  },
+  "lens_meta": {
+    "built_at_utc": "2025-12-24T18:13:02+00:00",
+    "persisted_to_disk": true,
+    "shelf_path_hint": "lenses/sces/bundles/sces_CRT-SC-cluster-9f800442_20251224T181302Z.json",
+    "source": "module"
+  },
+  "module": "🛰 Supply-Chain Exposure Scanner",
+  "primary_entity": {
+    "id": "CRT-SC-cluster-9f800442",
+    "type": "supply_chain_cluster"
+  },
+  "relationships": [],
+  "structural_findings": {
+    "compensations": [],
+    "coverage": {
+      "distinct_contract_tiers_in_scope": 3,
+      "distinct_criticalities_in_scope": 2,
+      "distinct_dependency_types_in_scope": 1,
+      "distinct_service_types_in_scope": 2,
+      "entries_with_mapped_controls_in_scope": 3,
+      "total_entries_in_scope": 3
+    },
+    "dependency_paths": [],
+    "gaps": []
+  }
+}

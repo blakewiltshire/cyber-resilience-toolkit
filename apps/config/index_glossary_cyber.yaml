@@ -1,0 +1,241 @@
+Acceleration Vector:
+  chapters:
+  - Chapter 6 — Acceleration Vectors & Strategic Asymmetries
+  definition:  A structural driver (compute, latency, abstraction, tooling) that compresses decision cycles and increases operational tempo.
+Accelerated Adversarial Operations:
+  chapters:
+  - Chapter 6 — Rise of Autonomous Threats & Defences
+  definition: Attacks amplified by automation, leveraging speed, scale, and unpredictability to overwhelm manual defence cycles.
+Adaptive Continuity:
+  chapters:
+  - Chapter 2 — Core Principles of Cybersecurity
+  definition: The capacity to anticipate, absorb, and respond to disruption without systemic failure.
+Adaptive Memory:
+  chapters:
+  - Chapter 5 — Platform Architecture for AI-Augmented Resilience
+  definition: Retention of validated interpretations and decisions as organisational context, enabling continuity without automation of judgement.
+Adaptive Readiness:
+  chapters:
+  - Chapter 5 — Incident Readiness and Adaptive Containment
+  definition: The capacity to re-align response posture dynamically under uncertainty and partial information.
+Alignment Risk:
+  chapters:
+  - Chapter 6 — Rise of Autonomous Threats & Defences
+  definition: Divergence between autonomous system outcomes and organisational intent, constraints, or governance expectations.
+Anomaly Framing:
+  chapters:
+  - Chapter 4 — Adaptive Monitoring & AI-Augmented Detection
+  definition: Treating deviation as a structural signal indicating early disruption geometry.
+Architectural Continuity:
+  chapters:
+  - Chapter 4 — Layered Defence
+  definition: Embedding control logic directly into operational workflows rather than separating protection from process.
+Architectural Sovereignty:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: The ability to maintain control over data, logic, and infrastructure across jurisdictions without isolation.
+Attack Surface:
+  chapters:
+  - Chapter 1 — The Rise of the Information Age
+  definition: The cumulative set of pathways through which systems or data may be accessed, manipulated, or disrupted.
+Autonomous Agents:
+  chapters:
+  - Chapter 6 — Rise of Autonomous Threats & Defences
+  definition: Self-directed systems that execute and adapt actions based on environmental input and embedded decision logic.
+Autonomy Preservation:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: Designing systems that retain meaningful human or institutional control under distributed automation.
+Behavioural Mimicry:
+  chapters:
+  - Chapter 6 — Rise of Autonomous Threats & Defences
+  definition: Adaptive imitation of legitimate patterns to evade detection and exploit contextual trust.
+Commons-Aligned Control Models:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: Structural governance extended into shared infrastructures where collective continuity is essential.
+Commons Resilience Architecture:
+  chapters:
+  - Chapter 6 — Future of the Commons
+  definition: Mechanisms embedding integrity, continuity, and traceable accountability into open digital ecosystems.
+Connectivity:
+  chapters:
+  - Chapter 1 — The Rise of the Information Age
+  definition: Seamless transfer of information across individuals, systems, and jurisdictions.
+Consensus Fragility:
+  chapters:
+  - Chapter 6 — Open Systems & Decentralised Trust
+  definition: Vulnerability of distributed validation to manipulation, latency, or coordinated failure.
+Containment Architecture:
+  chapters:
+  - Chapter 4 — Embedded Recovery & Systemic Containment
+  definition: Recovery designed as a pre-engineered capability rather than emergency improvisation.
+Continuity by Design:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: Engineering continuity as a condition embedded in system behaviour, not post-incident recovery.
+Continuity Threshold:
+  chapters:
+  - Chapter 5 — Scenario Analysis and Structural Stress Testing
+  definition: The point where controlled degradation becomes loss of coherence.
+Control Absolutism (Limitations):
+  chapters:
+  - Chapter 2 — Core Principles of Cybersecurity
+  definition: Recognition that perfect defence is unattainable; resilience depends on adaptability and recovery logic.
+Control Assertion:
+  chapters:
+  - Chapter 6 — Data Sovereignty in a Post-Perimeter World
+  definition: Ability to enforce governance across systems not under direct ownership.
+Control Loop Displacement:
+  chapters:
+  - Chapter 6 — Rise of Autonomous Threats & Defences
+  definition: Loss of human oversight caused by automation tempo and delegated execution.
+Critical Exposure Points:
+  chapters:
+  - Chapter 2 — Strategic Risk Architecture & Operational Control
+  - Chapter 3 — Strategic Risk Architecture
+  definition: Foundations of Control Design
+Datafication:
+  chapters:
+  - Chapter 1 — The Rise of the Information Age
+  definition: Conversion of actions, preferences, and relationships into structured digital information.
+Data Integrity and Trust:
+  chapters:
+  - Chapter 2 — Core Principles of Cybersecurity
+  definition: Stability of information flows preserving confidence in system operation and governance.
+Data Sovereignty:
+  chapters:
+  - Chapter 1 — Data, Power & the New Strategic Landscape
+  - Chapter 6 — Data Sovereignty in a Post-Perimeter World
+  definition: Governance, jurisdiction, and authority over data use, flow, and inference.
+Decision Surface:
+  chapters:
+  - Chapter 5 — Incident Readiness and Adaptive Containment
+  definition: Boundary where information becomes action, requiring authority and accountability.
+Detection Velocity:
+  chapters:
+  - Chapter 5 — Incident Readiness and Adaptive Containment
+  definition: Time between signal emergence and human-recognised significance.
+Distributed Risk:
+  chapters:
+  - Chapter 1 — Structural Shifts in Risk Exposure
+  definition: Exposure embedded across interconnected nodes rather than isolated systems.
+Distributed Trust Anchors:
+  chapters:
+  - Chapter 6 — Open Systems & Decentralised Trust
+  definition: Validators and attestors confirming legitimacy in decentralised systems.
+Embedded Decision Architecture:
+  chapters:
+  - Chapter 6 — Rise of Autonomous Threats & Defences
+  definition: Structural scaffolding through which autonomous systems interpret and act on stimuli.
+Explainable Architecture:
+  chapters:
+  - Chapter 5 — Platform Architecture for AI-Augmented Resilience
+  definition: Architectural property where AI contributions remain interpretable by humans.
+Exposure Mapping:
+  chapters:
+  - Chapter 1 — Mapping Exposure in a Connected World
+  definition: Identifying points where data flow or aggregation introduces systemic risk.
+Exponentiality:
+  chapters:
+  - Chapter 1 — The Rise of the Information Age
+  definition: Compounding acceleration of technological change and cascading systemic effects.
+Failure Propagation:
+  chapters:
+  - Chapter 5 — Scenario Analysis and Structural Stress Testing
+  definition: How disruption spreads, amplifies, or is contained across dependencies.
+Federated Identity Models:
+  chapters:
+  - Chapter 4 — Identity & Trust as Anchors of Resilience
+  definition: Cross-organisational identity fabrics introducing shared trust and dependency risk.
+Governability Under Speed:
+  chapters:
+  - Chapter 6 — Acceleration Vectors & Strategic Asymmetries
+  definition: Preserving interpretability, override, and constraint below human tempo.
+Governance by Design:
+  chapters:
+  - Chapter 5 — Platform Architecture for AI-Augmented Resilience
+  definition: Embedding oversight, reversibility, and constraint into system architecture.
+Governance-Embedded Systems:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: Architectures integrating oversight and proportional override into operations.
+Identity as the New Perimeter:
+  chapters:
+  - Chapter 2 — From Perimeters to Ecosystems
+  definition: Identity verification as the primary anchor for trust and access.
+Information Centralisation:
+  chapters:
+  - Chapter 1 — Data, Power & the New Strategic Landscape
+  definition: Concentration of data control creating efficiency and dependency simultaneously.
+Judgement Separation:
+  chapters:
+  - Chapter 5 — Risk Mapping and Structural Prioritisation
+  definition: Clear boundary between articulated reasoning and accountable decision-making.
+Layered Accountability:
+  chapters:
+  - Chapter 5 — Platform Architecture for AI-Augmented Resilience
+  definition: Separation of signal, reasoning, and governance layers to preserve authority visibility.
+Layered Control Architecture:
+  chapters:
+  - Chapter 2 — Strategic Risk Architecture & Operational Control
+  - Chapter 3 — Strategic Risk Architecture
+  definition: Defence logic embedded across prevention, detection, response, and recovery layers
+Metric Triangulation:
+  chapters:
+  - Chapter 5 — Structural Metrics and Balanced Perspectives
+  definition: Correlating multiple artefacts or lenses to validate interpretive confidence.
+Operational Agility:
+  chapters:
+  - Chapter 2 — Strategic Risk Architecture & Operational Control
+  - Chapter 3 — Strategic Risk Architecture
+  definition: Ability of control frameworks to evolve without introducing fragility.
+Propagation Velocity:
+  chapters:
+  - Chapter 6 — Acceleration Vectors & Strategic Asymmetries
+  definition: Speed at which disruption spreads across dependencies and trust boundaries.
+Proportional Intelligence Deployment:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: Using AI as a bounded utility aligned to decision criticality and risk.
+Resilience by Design:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: Designing systems where resilience is a primary architectural outcome.
+Residual Visibility:
+  chapters:
+  - Chapter 5 — Risk Mapping and Structural Prioritisation
+  definition: Making explicit what remains unmanaged or conditionally managed.
+Risk Alignment:
+  chapters:
+  - Chapter 2 — Core Principles of Cybersecurity
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: Structural fit between exposure, appetite, and resource allocation.
+Scenario-Integrated Playbooks:
+  chapters:
+  - Chapter 4 — Embedded Recovery & Systemic Containment
+  definition: Response frameworks embedded within architecture rather than checklists.
+Structural Resilience:
+  chapters:
+  - Chapter 2 — Core Principles of Cybersecurity
+  definition: Security, recovery, and continuity engineered directly into design.
+Structural Traceability:
+  chapters:
+  - Chapter 5 — Risk Mapping and Structural Prioritisation
+  definition: Ability to follow how a concept is interpreted from intent through constraint.
+Tempo Gap:
+  chapters:
+  - Chapter 6 — Acceleration Vectors & Strategic Asymmetries
+  definition: Structural mismatch between rapid experimentation and slower validated integration.
+Trust Boundary Extension:
+  chapters:
+  - Chapter 6 — Data Sovereignty in a Post-Perimeter World
+  definition: Structured expansion of control into federated environments.
+Visibility-Resilience Link:
+  chapters:
+  - Chapter 1 — Mapping Exposure in a Connected World
+  definition: Relationship between exposure awareness and adaptive security capacity.
+Zero-Trust Foundations:
+  chapters:
+  - Chapter 4 — Identity & Trust as Anchors of Resilience
+  definition: Continuous verification of identity, intent, and system integrity without implicit trust.

@@ -1,0 +1,2 @@
+﻿vendor_id,service_type,dependency_type,criticality,region,contract_tier,data_access_level,failure_modes,vendor_archetype,example_vendors,notes,source_ref,mapped_control_ids
+SC-1000,SaaS,direct,medium,US,standard,limited,code-exposure,Code Hosting & Repository Platform,GitHub,Source control,baseline,CRT-C-0022; CRT-C-0026; CRT-C-0039; CRT-C-0049; CRT-C-0065

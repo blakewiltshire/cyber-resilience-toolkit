@@ -1,0 +1,2 @@
+﻿telemetry_id,source_name,channel,signal_class,retention_days,parsing_status,linked_zones,enrichment_ready,notes,source_ref,mapped_control_ids
+T-1000,Host Syslogs,logs,endpoint,30,partial,corp,no,Illustrative example.,baseline,CRT-C-0049;CRT-C-0065

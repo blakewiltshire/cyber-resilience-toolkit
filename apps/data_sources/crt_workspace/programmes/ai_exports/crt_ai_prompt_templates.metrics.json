@@ -1,0 +1,14 @@
+{
+  "version": "0.1",
+  "updated_at": "2025-12-24T00:00:00Z",
+  "templates": [
+    {
+      "template_id": "CRT-METRICS-DEFAULT-DELTA-V1",
+      "label": "Metrics (default delta)",
+      "description": "Small additive delta for resilience metrics and coverage outputs.",
+      "applies_to": ["resilience metrics brief", "metrics", "coverage"],
+      "system_append": "",
+      "user_append": "Focus on what the metrics represent structurally: grouping, scope, data boundaries, and interpretation constraints. Describe coverage and gaps only where they are explicitly evidenced by the bundle. Do not set targets, thresholds, KPIs, maturity ratings, or performance judgements. If measurement inputs, definitions, or denominators are unclear, state the ambiguity explicitly."
+    }
+  ]
+}

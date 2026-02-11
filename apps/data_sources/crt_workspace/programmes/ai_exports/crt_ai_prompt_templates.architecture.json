@@ -1,0 +1,14 @@
+{
+  "version": "0.1",
+  "updated_at": "2025-12-24T00:00:00Z",
+  "templates": [
+    {
+      "template_id": "CRT-ARCH-DEFAULT-DELTA-V1",
+      "label": "Architecture (default delta)",
+      "description": "Small additive delta for structural architecture outputs.",
+      "applies_to": ["security architecture view", "architecture"],
+      "system_append": "",
+      "user_append": "Focus on structural description only: components, boundaries, trust zones, interfaces, dependencies, and observed relationships. Use the provided bundle as the sole source of truth. Do not recommend designs, configurations, tooling choices, or implementation steps. If a relationship, boundary, or dependency is not explicit in the bundle, state it as unknown rather than inferring."
+    }
+  ]
+}

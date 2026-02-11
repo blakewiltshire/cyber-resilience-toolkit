@@ -1,0 +1,16 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Streamlit cache (if created locally)
+.streamlit/secrets.toml

@@ -1,0 +1,57 @@
+{
+  "catalogue": "CRT-G",
+  "generated_at": "2025-12-24T02:12:22+00:00",
+  "source_csv": "apps/data_sources/crt_catalogues/CRT-G.csv",
+  "records": [
+    {
+      "﻿group_id": "CRT-G-01",
+      "group_domain": "Data Security and Privacy",
+      "description": "Safeguards information assets across storage, processing, and transmission environments. Focus areas: classification, encryption, retention, and confidentiality."
+    },
+    {
+      "﻿group_id": "CRT-G-02",
+      "group_domain": "Access and Identity",
+      "description": "Manages authentication, authorisation, and trust boundaries across systems, users, and devices. Includes IAM, MFA, and privilege control."
+    },
+    {
+      "﻿group_id": "CRT-G-03",
+      "group_domain": "Infrastructure and Connectivity",
+      "description": "Addresses resilience of networks, infrastructure, and connectivity layers — including segmentation, hardening, and telemetry assurance."
+    },
+    {
+      "﻿group_id": "CRT-G-04",
+      "group_domain": "Application and Integration",
+      "description": "Focuses on software development, integration security, dependency management, and lifecycle assurance across APIs and applications."
+    },
+    {
+      "﻿group_id": "CRT-G-05",
+      "group_domain": "Third-Party and Vendor",
+      "description": "Covers supplier oversight, contractual assurance, dependency mapping, and transitive risk evaluation."
+    },
+    {
+      "﻿group_id": "CRT-G-06",
+      "group_domain": "Behavioural and Human",
+      "description": "Examines insider threats, culture, awareness, and human-centred risk mechanisms influencing system exposure."
+    },
+    {
+      "﻿group_id": "CRT-G-07",
+      "group_domain": "Regulatory and Framework Alignment",
+      "description": "Ensures conformance with frameworks (ISO 27001, NIST CSF, DORA), audit readiness, and governance accountability."
+    },
+    {
+      "﻿group_id": "CRT-G-08",
+      "group_domain": "Emerging Technologies and Systemic Risks",
+      "description": "Controls for AI, IoT, blockchain, and systemic-risk resilience."
+    },
+    {
+      "﻿group_id": "CRT-G-09",
+      "group_domain": "Crisis, Monitoring, and Response",
+      "description": "Controls supporting detection, coordination, and incident recovery."
+    },
+    {
+      "﻿group_id": "CRT-G-10",
+      "group_domain": "Physical and Environmental Security",
+      "description": "Controls governing facility access, environmental protection, and redundancy."
+    }
+  ]
+}

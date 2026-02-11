@@ -1,0 +1,457 @@
+{
+  "catalogue": "CRT-LR",
+  "generated_at": "2025-12-25T17:35:23+00:00",
+  "source_csv": "apps/data_sources/crt_catalogues/CRT-LR.csv",
+  "records": [
+    {
+      "lr_id": "LR-GOV-001",
+      "obligation_name": "Governance of Security & Resilience",
+      "obligation_description": "Maintain governance arrangements for oversight of cyber, technology, and operational resilience risks.",
+      "mapped_control_ids": "CRT-C-0037",
+      "severity": "High",
+      "evidence_required": "Governance charters, board minutes",
+      "jurisdiction": "EU;Singapore;UK",
+      "source_reference_examples": "DORA Art.17; MAS TRM Ch.3; PRA SS1/21"
+    },
+    {
+      "lr_id": "LR-GOV-002",
+      "obligation_name": "Roles & Responsibilities Definition",
+      "obligation_description": "Define and maintain clear roles, responsibilities, and accountability for security and resilience activities.",
+      "mapped_control_ids": "CRT-C-0037;CRT-C-0040",
+      "severity": "Medium",
+      "evidence_required": "RACI matrices, role documents",
+      "jurisdiction": "Global",
+      "source_reference_examples": "ISO27001 A.5; NIST CSF GV"
+    },
+    {
+      "lr_id": "LR-GOV-003",
+      "obligation_name": "Board-Level Reporting",
+      "obligation_description": "Provide senior leadership with regular security, risk, and resilience reporting.",
+      "mapped_control_ids": "CRT-C-0040",
+      "severity": "Medium",
+      "evidence_required": "Reports, dashboards",
+      "jurisdiction": "US;UK",
+      "source_reference_examples": "SEC 229.106; PRA SS1/21"
+    },
+    {
+      "lr_id": "LR-RISK-001",
+      "obligation_name": "Technology & Cyber Risk Identification",
+      "obligation_description": "Identify risks affecting systems, data, and critical services on a continuing basis.",
+      "mapped_control_ids": "CRT-C-0038",
+      "severity": "High",
+      "evidence_required": "Risk registers",
+      "jurisdiction": "EU",
+      "source_reference_examples": "NIS Art.16; DORA Art.18"
+    },
+    {
+      "lr_id": "LR-RISK-002",
+      "obligation_name": "Risk Assessment Process",
+      "obligation_description": "Maintain a structured process for assessing security and resilience risks.",
+      "mapped_control_ids": "CRT-C-0038;CRT-C-0048",
+      "severity": "Medium",
+      "evidence_required": "Risk assessments",
+      "jurisdiction": "Global;US",
+      "source_reference_examples": "ISO27001 A.8; FFIEC CAT"
+    },
+    {
+      "lr_id": "LR-RISK-003",
+      "obligation_name": "Dependency & Supply-Chain Risk Mapping",
+      "obligation_description": "Identify key internal and external dependencies supporting critical services.",
+      "mapped_control_ids": "CRT-C-0018;CRT-C-0022;CRT-C-0025;CRT-C-0048",
+      "severity": "Medium",
+      "evidence_required": "Dependency maps",
+      "jurisdiction": "UK;EU",
+      "source_reference_examples": "PRA SS1/SS2; DORA Art.28"
+    },
+    {
+      "lr_id": "LR-TEST-001",
+      "obligation_name": "Regular Controls Testing",
+      "obligation_description": "Perform regular testing to validate effectiveness of security and resilience controls.",
+      "mapped_control_ids": "CRT-C-0048",
+      "severity": "High",
+      "evidence_required": "Test schedules, results",
+      "jurisdiction": "Singapore;EU",
+      "source_reference_examples": "MAS TRM 8; DORA Art.23"
+    },
+    {
+      "lr_id": "LR-TEST-002",
+      "obligation_name": "Scenario-Based Testing",
+      "obligation_description": "Perform scenario exercises covering severe but plausible disruptions.",
+      "mapped_control_ids": "CRT-C-0048;CRT-C-0050",
+      "severity": "High",
+      "evidence_required": "Scenario logs",
+      "jurisdiction": "UK;EU",
+      "source_reference_examples": "PRA SS2/21; DORA TLPT Guidelines"
+    },
+    {
+      "lr_id": "LR-TEST-003",
+      "obligation_name": "Independent Assessment",
+      "obligation_description": "Conduct independent reviews or audits of the security and resilience environment.",
+      "mapped_control_ids": "CRT-C-0040",
+      "severity": "Medium",
+      "evidence_required": "Audit reports",
+      "jurisdiction": "EU;US",
+      "source_reference_examples": "NIS Art.18; FFIEC Examination"
+    },
+    {
+      "lr_id": "LR-INC-001",
+      "obligation_name": "Incident Classification Criteria",
+      "obligation_description": "Define criteria to classify incidents based on impact and severity.",
+      "mapped_control_ids": "CRT-C-0050;CRT-C-0042",
+      "severity": "High",
+      "evidence_required": "Classification scheme",
+      "jurisdiction": "EU;US",
+      "source_reference_examples": "DORA Art.20; NIST IR"
+    },
+    {
+      "lr_id": "LR-INC-002",
+      "obligation_name": "Timely Regulatory Notification",
+      "obligation_description": "Notify relevant authorities of significant incidents within required timeframes.",
+      "mapped_control_ids": "CRT-C-0042",
+      "severity": "High",
+      "evidence_required": "Incident notifications",
+      "jurisdiction": "EU;US;Singapore",
+      "source_reference_examples": "GDPR 33; SEC 4-day rule; MAS TRM 5"
+    },
+    {
+      "lr_id": "LR-INC-003",
+      "obligation_name": "Incident Impact Reporting",
+      "obligation_description": "Provide reports including impact, remediation, and lessons learned for significant incidents.",
+      "mapped_control_ids": "CRT-C-0053",
+      "severity": "Medium",
+      "evidence_required": "Post-incident reports",
+      "jurisdiction": "EU;US",
+      "source_reference_examples": "DORA Art.21; FFIEC IR"
+    },
+    {
+      "lr_id": "LR-INC-004",
+      "obligation_name": "Internal Escalation & Communication",
+      "obligation_description": "Maintain internal escalation and communication procedures for cyber and operational incidents.",
+      "mapped_control_ids": "CRT-C-0050;CRT-C-0054",
+      "severity": "Medium",
+      "evidence_required": "Escalation records",
+      "jurisdiction": "UK;EU;Global",
+      "source_reference_examples": "PRA; DORA; ISO27035"
+    },
+    {
+      "lr_id": "LR-BCP-001",
+      "obligation_name": "Business Continuity Planning",
+      "obligation_description": "Maintain continuity arrangements to support core services during disruptions.",
+      "mapped_control_ids": "CRT-C-0018;CRT-C-0060;CRT-C-0062",
+      "severity": "High",
+      "evidence_required": "BCP plans",
+      "jurisdiction": "EU;Singapore",
+      "source_reference_examples": "DORA Art.32; MAS TRM 13"
+    },
+    {
+      "lr_id": "LR-BCP-002",
+      "obligation_name": "Disaster Recovery Capabilities",
+      "obligation_description": "Ensure disaster recovery capabilities for critical systems are maintained and periodically validated.",
+      "mapped_control_ids": "CRT-C-0060;CRT-C-0062",
+      "severity": "High",
+      "evidence_required": "DR test evidence",
+      "jurisdiction": "Global;EU",
+      "source_reference_examples": "ISO27001 A.17; DORA Art.32"
+    },
+    {
+      "lr_id": "LR-BCP-003",
+      "obligation_name": "Impact Tolerance Definition",
+      "obligation_description": "Define acceptable levels of disruption for key services and ensure supporting controls align.",
+      "mapped_control_ids": "CRT-C-0038;CRT-C-0048",
+      "severity": "High",
+      "evidence_required": "Impact tolerance documents",
+      "jurisdiction": "UK",
+      "source_reference_examples": "PRA SS2/21"
+    },
+    {
+      "lr_id": "LR-BCP-004",
+      "obligation_name": "Crisis Communication",
+      "obligation_description": "Maintain reliable mechanisms for communication during operational disruptions.",
+      "mapped_control_ids": "CRT-C-0054;CRT-C-0061",
+      "severity": "Medium",
+      "evidence_required": "Crisis communication plans",
+      "jurisdiction": "EU",
+      "source_reference_examples": "DORA; NIS"
+    },
+    {
+      "lr_id": "LR-ID-001",
+      "obligation_name": "Privileged Access Oversight",
+      "obligation_description": "Maintain oversight and monitoring of privileged access usage.",
+      "mapped_control_ids": "CRT-C-0010;CRT-C-0059",
+      "severity": "High",
+      "evidence_required": "Access logs, review notes",
+      "jurisdiction": "Global;Singapore",
+      "source_reference_examples": "PCI DSS 7-8; MAS TRM 9"
+    },
+    {
+      "lr_id": "LR-ID-002",
+      "obligation_name": "User Access Governance",
+      "obligation_description": "Review and validate user access rights regularly for appropriateness.",
+      "mapped_control_ids": "CRT-C-0011;CRT-C-0008",
+      "severity": "Medium",
+      "evidence_required": "Access review logs",
+      "jurisdiction": "Global;US",
+      "source_reference_examples": "ISO27001 A.5; FFIEC"
+    },
+    {
+      "lr_id": "LR-ASSET-001",
+      "obligation_name": "Asset Inventory Obligations",
+      "obligation_description": "Maintain an inventory of technology assets supporting key services.",
+      "mapped_control_ids": "CRT-C-0057",
+      "severity": "Medium",
+      "evidence_required": "Asset registers",
+      "jurisdiction": "Global;US",
+      "source_reference_examples": "CAIQ; FFIEC; ISO27001 A.8"
+    },
+    {
+      "lr_id": "LR-DATA-001",
+      "obligation_name": "Data Protection Measures",
+      "obligation_description": "Ensure appropriate measures exist for protecting sensitive or critical data.",
+      "mapped_control_ids": "CRT-C-0002;CRT-C-0003;CRT-C-0005",
+      "severity": "High",
+      "evidence_required": "Technical control evidence",
+      "jurisdiction": "EU;Global",
+      "source_reference_examples": "GDPR Art.32; ISO27001 A.10"
+    },
+    {
+      "lr_id": "LR-DATA-002",
+      "obligation_name": "Data Classification & Handling",
+      "obligation_description": "Maintain classification and handling rules for sensitive information.",
+      "mapped_control_ids": "CRT-C-0001;CRT-C-0039;CRT-C-0006",
+      "severity": "Medium",
+      "evidence_required": "Policies, procedures",
+      "jurisdiction": "Global;Singapore",
+      "source_reference_examples": "ISO27001 A.5; MAS TRM 10"
+    },
+    {
+      "lr_id": "LR-DATA-003",
+      "obligation_name": "Breach Notification Obligations",
+      "obligation_description": "Notify affected parties of data breaches when required by risk or regulation.",
+      "mapped_control_ids": "CRT-C-0042;CRT-C-0054",
+      "severity": "Medium",
+      "evidence_required": "Notification logs",
+      "jurisdiction": "EU;Global",
+      "source_reference_examples": "GDPR 34; NIS; industry norms"
+    },
+    {
+      "lr_id": "LR-DATA-004",
+      "obligation_name": "Data Retention & Destruction Governance",
+      "obligation_description": "Maintain and enforce retention and destruction requirements for data.",
+      "mapped_control_ids": "CRT-C-0006",
+      "severity": "Medium",
+      "evidence_required": "Retention logs",
+      "jurisdiction": "Global",
+      "source_reference_examples": "ISO27001 A.8"
+    },
+    {
+      "lr_id": "LR-TPR-001",
+      "obligation_name": "Supplier Risk Oversight",
+      "obligation_description": "Evaluate supplier security posture as part of onboarding and ongoing review.",
+      "mapped_control_ids": "CRT-C-0025;CRT-C-0027",
+      "severity": "Medium",
+      "evidence_required": "Vendor assessments",
+      "jurisdiction": "Global;US;Singapore",
+      "source_reference_examples": "CAIQ; FFIEC; MAS"
+    },
+    {
+      "lr_id": "LR-TPR-002",
+      "obligation_name": "Contractual Security Obligations",
+      "obligation_description": "Ensure contracts include security, resilience, and reporting requirements.",
+      "mapped_control_ids": "CRT-C-0026;CRT-C-0041",
+      "severity": "Medium",
+      "evidence_required": "Contracts, SLAs",
+      "jurisdiction": "EU",
+      "source_reference_examples": "DORA; NIS2"
+    },
+    {
+      "lr_id": "LR-TPR-003",
+      "obligation_name": "Concentration Risk Monitoring",
+      "obligation_description": "Identify and manage concentration risks in the supply chain.",
+      "mapped_control_ids": "CRT-C-0025;CRT-C-0027;CRT-C-0048",
+      "severity": "Medium",
+      "evidence_required": "Risk assessments",
+      "jurisdiction": "EU;UK;Singapore",
+      "source_reference_examples": "DORA; PRA; MAS"
+    },
+    {
+      "lr_id": "LR-MON-001",
+      "obligation_name": "Security Logging & Monitoring",
+      "obligation_description": "Maintain monitoring and logging across systems supporting critical services.",
+      "mapped_control_ids": "CRT-C-0049;CRT-C-0017;CRT-C-0059",
+      "severity": "Medium",
+      "evidence_required": "Log retention",
+      "jurisdiction": "EU;US;Global",
+      "source_reference_examples": "NIS; FFIEC; ISO27001 A.12"
+    },
+    {
+      "lr_id": "LR-MON-002",
+      "obligation_name": "Anomaly Detection",
+      "obligation_description": "Detect anomalous or suspicious activity across key systems.",
+      "mapped_control_ids": "CRT-C-0049;CRT-C-0017;CRT-C-0034",
+      "severity": "High",
+      "evidence_required": "Alert evidence",
+      "jurisdiction": "US;Global",
+      "source_reference_examples": "NIST IR; ISO27001"
+    },
+    {
+      "lr_id": "LR-MON-003",
+      "obligation_name": "Retention of Monitoring Records",
+      "obligation_description": "Retain monitoring and logging evidence for required durations.",
+      "mapped_control_ids": "CRT-C-0059;CRT-C-0040;CRT-C-0006",
+      "severity": "Medium",
+      "evidence_required": "Retention logs",
+      "jurisdiction": "Global;EU",
+      "source_reference_examples": "PCI; NIS; DORA"
+    },
+    {
+      "lr_id": "LR-REP-001",
+      "obligation_name": "Operational Resilience Documentation",
+      "obligation_description": "Maintain documentation demonstrating the organisation's resilience posture.",
+      "mapped_control_ids": "CRT-C-0037;CRT-C-0040;CRT-C-0018",
+      "severity": "Medium",
+      "evidence_required": "Documentation sets",
+      "jurisdiction": "UK;EU;Singapore",
+      "source_reference_examples": "PRA; DORA; MAS"
+    },
+    {
+      "lr_id": "LR-REP-002",
+      "obligation_name": "Regulatory Assurance Evidence",
+      "obligation_description": "Provide evidence of controls, risk assessments, testing, and governance when requested.",
+      "mapped_control_ids": "CRT-C-0040;CRT-C-0037;CRT-C-0038",
+      "severity": "Medium",
+      "evidence_required": "Assurance packs",
+      "jurisdiction": "US;UK",
+      "source_reference_examples": "FFIEC; SEC; PRA"
+    },
+    {
+      "lr_id": "LR-REP-003",
+      "obligation_name": "Annual Attestation Requirements",
+      "obligation_description": "Provide annual attestation on the adequacy of security and resilience practices.",
+      "mapped_control_ids": "CRT-C-0037;CRT-C-0040;CRT-C-0038",
+      "severity": "Medium",
+      "evidence_required": "Attestation",
+      "jurisdiction": "Global",
+      "source_reference_examples": "Industry practice"
+    },
+    {
+      "lr_id": "LR-HUM-001",
+      "obligation_name": "Security Awareness Expectations",
+      "obligation_description": "Ensure personnel receive periodic security awareness training.",
+      "mapped_control_ids": "CRT-C-0031;CRT-C-0035",
+      "severity": "Medium",
+      "evidence_required": "Training records",
+      "jurisdiction": "Global",
+      "source_reference_examples": "ISO27001 A.6; PCI DSS 12"
+    },
+    {
+      "lr_id": "LR-HUM-002",
+      "obligation_name": "Role-Based Training Obligations",
+      "obligation_description": "Provide training relevant to privileged or specialist roles.",
+      "mapped_control_ids": "CRT-C-0031;CRT-C-0035",
+      "severity": "Low",
+      "evidence_required": "Training records",
+      "jurisdiction": "Global",
+      "source_reference_examples": "ISO27001 A.6"
+    },
+    {
+      "lr_id": "LR-HUM-003",
+      "obligation_name": "Behavioural Monitoring Expectations",
+      "obligation_description": "Maintain mechanisms for identifying abnormal user behaviour or insider risks.",
+      "mapped_control_ids": "CRT-C-0032;CRT-C-0034;CRT-C-0036",
+      "severity": "Medium",
+      "evidence_required": "Monitoring records",
+      "jurisdiction": "Global",
+      "source_reference_examples": "Industry norms"
+    },
+    {
+      "lr_id": "LR-PRIV-001",
+      "obligation_name": "Transparency of Processing",
+      "obligation_description": "Provide individuals with clear, accessible information about what personal data is collected, why it is collected, how it is used, and who it is shared with.",
+      "mapped_control_ids": "CRT-C-0039",
+      "severity": "Medium",
+      "evidence_required": "Privacy notices, records of processing",
+      "jurisdiction": "EU;UK;US",
+      "source_reference_examples": "GDPR Art.12–14; UK DPA; CCPA"
+    },
+    {
+      "lr_id": "LR-PRIV-002",
+      "obligation_name": "Purpose Limitation",
+      "obligation_description": "Ensure personal data is collected and used only for explicit, legitimate purposes and is not reused for incompatible purposes.",
+      "mapped_control_ids": "CRT-C-0039",
+      "severity": "High",
+      "evidence_required": "Records of processing, policy statements",
+      "jurisdiction": "EU;Brazil;Singapore",
+      "source_reference_examples": "GDPR Art.5(1)(b); LGPD; PDPA"
+    },
+    {
+      "lr_id": "LR-PRIV-003",
+      "obligation_name": "Data Minimisation",
+      "obligation_description": "Limit the collection and processing of personal data to what is necessary for the stated purposes.",
+      "mapped_control_ids": "CRT-C-0039",
+      "severity": "High",
+      "evidence_required": "Data collection standards, application forms",
+      "jurisdiction": "EU;US",
+      "source_reference_examples": "GDPR Art.5(1)(c); HIPAA minimum necessary"
+    },
+    {
+      "lr_id": "LR-PRIV-004",
+      "obligation_name": "Retention Limitation for Personal Data",
+      "obligation_description": "Define and apply retention periods so personal data is not kept longer than necessary for business or legal purposes.",
+      "mapped_control_ids": "CRT-C-0006;CRT-C-0039",
+      "severity": "High",
+      "evidence_required": "Retention schedules, deletion logs",
+      "jurisdiction": "EU;UK;Global",
+      "source_reference_examples": "GDPR Art.5(1)(e); UK DPA; global practice"
+    },
+    {
+      "lr_id": "LR-PRIV-005",
+      "obligation_name": "Data Accuracy for Personal Information",
+      "obligation_description": "Take reasonable steps to keep personal data accurate and up to date, including mechanisms for correction.",
+      "mapped_control_ids": "CRT-C-0039",
+      "severity": "Medium",
+      "evidence_required": "Correction logs, data quality checks",
+      "jurisdiction": "EU;Global",
+      "source_reference_examples": "GDPR Art.5(1)(d); global practice"
+    },
+    {
+      "lr_id": "LR-PRIV-006",
+      "obligation_name": "Rights of Individuals over Personal Data",
+      "obligation_description": "Provide mechanisms for individuals to exercise applicable rights over their personal data (e.g., access, correction, deletion, objection).",
+      "mapped_control_ids": "CRT-C-0039",
+      "severity": "Medium",
+      "evidence_required": "Request handling procedures, logs",
+      "jurisdiction": "EU;US;Brazil",
+      "source_reference_examples": "GDPR Art.15–22; CCPA; LGPD"
+    },
+    {
+      "lr_id": "LR-PRIV-007",
+      "obligation_name": "Third-Party Personal Data Processing Requirements",
+      "obligation_description": "Ensure third parties processing personal data provide adequate contractual, technical, and organisational safeguards.",
+      "mapped_control_ids": "CRT-C-0026;CRT-C-0039",
+      "severity": "High",
+      "evidence_required": "Data processing agreements, due diligence records",
+      "jurisdiction": "EU;Global",
+      "source_reference_examples": "GDPR Art.28; SCCs; DPAs"
+    },
+    {
+      "lr_id": "LR-PRIV-008",
+      "obligation_name": "Security of Personal Data Processing",
+      "obligation_description": "Apply appropriate technical and organisational measures to preserve confidentiality, integrity, and availability of personal data.",
+      "mapped_control_ids": "CRT-C-0002;CRT-C-0003;CRT-C-0005;CRT-C-0010;CRT-C-0011;CRT-C-0039",
+      "severity": "High",
+      "evidence_required": "Security measures, risk assessments",
+      "jurisdiction": "EU;US;Global",
+      "source_reference_examples": "GDPR Art.32; ISO27701; HIPAA"
+    },
+    {
+      "lr_id": "LR-PRIV-009",
+      "obligation_name": "Internal Personal Data Breach Handling",
+      "obligation_description": "Maintain processes to detect, assess, internally report, and document personal-data breaches.",
+      "mapped_control_ids": "CRT-C-0049;CRT-C-0050;CRT-C-0042;CRT-C-0039",
+      "severity": "High",
+      "evidence_required": "Incident logs, breach registers",
+      "jurisdiction": "EU;Global",
+      "source_reference_examples": "GDPR Art.33 (internal duty); global practice"
+    }
+  ]
+}

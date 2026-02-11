@@ -1,0 +1,477 @@
+Acceleration Vector:
+  chapters:
+  - Chapter 6 — Acceleration Vectors & Strategic Asymmetries
+  definition: A structural driver (compute, latency, abstraction, tooling) that compresses decision cycles and increases operational tempo.
+AI-Assisted Reflection:
+  chapters:
+  - Chapter 5 — Scenario Analysis and Stress Testing for Digital Assets
+  definition: Allows adaptive scenario generation and outcome clustering using the 🧠 AI Observation
+    Console.
+AI-Readiness:
+  chapters:
+  - Chapter 5 — Risk Mapping and Prioritisation Frameworks
+  definition: The framework is designed for algorithmic augmentation, allowing machine reflection
+    or scenario modelling.
+Accelerated Adversarial Operations:
+  chapters:
+  - Chapter 6 — Rise of Autonomous Threats & Defences
+  definition: Attacks amplified by automation, leveraging velocity and unpredictability to overwhelm
+    manual defence cycles.
+Adaptive Continuity:
+  chapters:
+  - Chapter 2 — Core Principles of Cybersecurity
+  definition: The capacity to anticipate, absorb, and respond to disruption without systemic failure.
+Adaptive Feedback Memory:
+  chapters:
+  - Chapter 5 — Augmented Playbooks — Human + AI Strategic Decision Loops
+  definition: Incident data and analyst commentary feed back into CRT Bundles for future pattern
+    weighting.
+Adaptive Memory:
+  chapters:
+  - Chapter 5 — Platform Architecture for AI-Augmented Resilience
+  definition: System knowledge is cumulative; validated actions refine future reasoning.
+Adaptive Readiness:
+  chapters:
+  - Chapter 5 — Incident Response and Adaptive Readiness in the Age of AI
+  definition: The capacity to re-align procedures dynamically under incomplete information.
+Architectural Control Lattice:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: Controls are organised as an interlocking lattice, rather than isolated policies
+    or point solutions.
+Architectural Sovereignty:
+  chapters:
+  - Chapter 4 — Control, Continuity and Jurisdiction in Distributed Data Systems
+  definition: The ability to design and maintain architectures that preserve continuity and control
+    under external pressures.
+Attack Surface:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The full set of pathways through which digital systems and data can be probed, exploited
+    or disrupted.
+Augmented Decision Support:
+  chapters:
+  - Chapter 5 — Decision-Support Systems for Cyber Resilience
+  definition: A structured environment where human reasoning is complemented, not replaced, by AI
+    and automation.
+Augmented Resilience Playbooks:
+  chapters:
+  - Chapter 5 — Augmented Playbooks — Human + AI Strategic Decision Loops
+  definition: Response playbooks that are continuously updated through simulation, observation, and
+    structured learning loops.
+Autonomous Co-Pilots:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: AI-enabled agents that participate in operations with bounded, supervised autonomy.
+Baseline Signal Geometry:
+  chapters:
+  - Chapter 4 — Adaptive Monitoring & AI-Augmented Detection
+  definition: The structural pattern of ‘normal’ system behaviour used to assess deviations under
+    stress.
+Bounded Autonomy:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: Autonomy that operates within clearly defined constraints, escalation paths, and human
+    oversight.
+Boundary of Defensibility:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: The point beyond which it becomes structurally difficult to defend systems with available
+    resources and design choices.
+Capability Resilience:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The ability of critical capabilities to continue functioning under adverse conditions.
+Centralised Risk Concentration:
+  chapters:
+  - Chapter 4 — Open Systems & Decentralised Trust
+  definition: Large amounts of risk accumulating in a small number of infrastructures, vendors or
+    service providers.
+Cognitive Load:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: The amount of mental effort required to interpret signals and make decisions under
+    pressure.
+Collective Intelligence:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: The combined capacity of humans, AI, and systems to interpret signals and coordinate
+    action.
+Control Contours:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: The boundaries within which a control is effective, given context, assumptions, and
+    operating conditions.
+Control Debt:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: The accumulating gap between intended control design and actual implementation over
+    time.
+Control Inheritance:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: The way control responsibilities and effects propagate across suppliers, platforms,
+    and internal teams.
+Control Overlap:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: Multiple controls attempting to address the same risk, sometimes creating redundancy
+    and complexity.
+Control Velocity:
+  chapters:
+  - Chapter 2 — Core Principles of Cybersecurity
+  definition: The speed at which controls can adapt to changes in threat, technology, or organisational
+    context.
+Coordinated Response Geometry:
+  chapters:
+  - Chapter 5 — Incident Response and Adaptive Readiness in the Age of AI
+  definition: The structural pattern of communication and action pathways during incident response.
+CRT Bundles:
+  chapters:
+  - Chapter 5 — Platform Architecture for AI-Augmented Resilience
+  definition: Curated sets of data, scenarios, and decisions that can be reused for future analysis
+    and training.
+CRT Control Catalogue:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: The structured set of controls that support the CRT, organised by function and dependency.
+CRT Data Packs:
+  chapters:
+  - Chapter 5 — Scenario Analysis and Stress Testing for Digital Assets
+  definition: Structured collections of indicators, mappings, and scenarios used to drive CRT analysis.
+CRT Operating Envelope:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The range of conditions under which CRT tools and frameworks are designed to operate
+    effectively.
+Cyber-Adapted Governance:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: Governance structures that explicitly integrate cyber risk into decision-making and
+    oversight.
+Cyber-Operational Convergence:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The blending of cyber considerations into core operational and strategic decisions.
+Data Gravity:
+  chapters:
+  - Chapter 4 — Control, Continuity and Jurisdiction in Distributed Data Systems
+  definition: The tendency for services and dependencies to cluster around large concentrations of
+    data.
+Data Lineage:
+  chapters:
+  - Chapter 4 — Data Sovereignty in a Post-Perimeter World
+  definition: The traceable history of where data came from, how it has been transformed, and where
+    it is used.
+Data Sovereignty:
+  chapters:
+  - Chapter 4 — Data Sovereignty in a Post-Perimeter World
+  definition: The question of which entities have legitimate authority and control over data in distributed
+    environments.
+Decision Fatigue:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: The reduction in decision quality when individuals or teams are required to make many
+    high-stakes decisions in rapid succession.
+Decision Horizon:
+  chapters:
+  - Chapter 5 — Decision-Support Systems for Cyber Resilience
+  definition: The time window within which a decision must be made before options narrow or degrade.
+Decision Load:
+  chapters:
+  - Chapter 5 — Decision-Support Systems for Cyber Resilience
+  definition: The number and complexity of decisions that need to be made within a given time frame.
+Decision-Support Framework:
+  chapters:
+  - Chapter 5 — Decision-Support Systems for Cyber Resilience
+  definition: A structured environment for organising data, models, and perspectives that support
+    reasoning about resilience.
+Decisive Continuity:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: The capacity to preserve critical functions and control, even when conditions are volatile
+    and incomplete.
+Digital Anchors:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: Structural elements in digital ecosystems that many other services depend on.
+Digital Boundary Conditions:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The constraints and assumptions that shape how digital systems behave and interact.
+Digital Fragility:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The susceptibility of digital environments to cascading failures and disruption.
+Digital Gravity Wells:
+  chapters:
+  - Chapter 4 — Control, Continuity and Jurisdiction in Distributed Data Systems
+  definition: Concentrated digital infrastructures that draw in more services, dependencies, and
+    data over time.
+Digital Interdependence:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The mutual reliance of systems, organisations, and infrastructures across the digital
+    economy.
+Distributed Accountability:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: Responsibility for outcomes being spread across multiple teams, organisations, or
+    jurisdictions.
+Distributed Continuity:
+  chapters:
+  - Chapter 4 — Control, Continuity and Jurisdiction in Distributed Data Systems
+  definition: The ability to maintain continuity across distributed systems and jurisdictions.
+Distributed Trust:
+  chapters:
+  - Chapter 4 — Open Systems & Decentralised Trust
+  definition: Trust that is derived from structures, processes, and verification mechanisms rather
+    than single authorities.
+Dynamic Control Perimeter:
+  chapters:
+  - Chapter 4 — Data Sovereignty in a Post-Perimeter World
+  definition: A perimeter that adjusts its boundaries based on context, risk, and operational needs.
+Economic Exposure:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The potential financial and systemic impact of disruptions in digital systems.
+Emergent Behaviour:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: System behaviours that arise from interactions among components, not from any single
+    cause.
+Feedback Geometry:
+  chapters:
+  - Chapter 2 — Foundations of Cybersecurity in a Connected World
+  definition: The structural paths through which information about performance, incidents, and risk
+    circulates.
+Feedback Loops:
+  chapters:
+  - Chapter 2 — Foundations of Cybersecurity in a Connected World
+  definition: Repeated cycles of action, observation, and adjustment that shape system behaviour
+    over time.
+Fragmented Governance:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: Governance responsibilities split across multiple entities without clear coordination.
+Functional Continuity:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The continued delivery of critical services even when underlying components are degraded.
+Governance Embedded Systems:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: Systems where governance expectations, constraints, and feedback are built directly
+    into workflows and tooling.
+Governance Feedback Loops:
+  chapters:
+  - Chapter 2 — Foundations of Cybersecurity in a Connected World
+  definition: Structured cycles where operational experience informs governance decisions and controls.
+Information Exhaust:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: Data produced as a by-product of digital activity that can be repurposed for analysis
+    and monitoring.
+Information Saturation:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: The point at which the volume of information exceeds the capacity to interpret it
+    effectively.
+Information Visibility:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The extent to which relevant signals about system state and behaviour are observable.
+Jurisdictional Fragmentation:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: Misalignment in rules, oversight, and enforcement across different jurisdictions.
+Key Control Families:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: Groups of related controls that address similar structural functions in the environment.
+Latency Windows:
+  chapters:
+  - Chapter 4 — Adaptive Monitoring & AI-Augmented Detection
+  definition: The time gap between an event occurring and the system being able to detect, interpret,
+    and act on it.
+Machine-Scaled Surveillance:
+  chapters:
+  - Chapter 4 — Adaptive Monitoring & AI-Augmented Detection
+  definition: Monitoring capabilities that operate at machine scale, beyond manual human observation.
+Modular Control Architecture:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: Control design that separates functions into modules with clear interfaces and responsibilities.
+Multi-Vector Exposure:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: Exposure that arises from multiple simultaneous attack paths or system weaknesses.
+Operational Anchors:
+  chapters:
+  - Chapter 1 — Foundations of Cybersecurity in a Connected World
+  definition: Critical operational processes or systems that other functions rely on.
+Operational Geometry:
+  chapters:
+  - Chapter 1 — Foundations of Cybersecurity in a Connected World
+  definition: The structural pattern of operational workflows, dependencies, and interactions.
+Overfitted Controls:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: Controls tuned too tightly to specific past incidents or scenarios, reducing their
+    effectiveness against new threats.
+Perception Lag:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: The delay between a change in the environment and its recognition by decision-makers.
+Platform Dependency:
+  chapters:
+  - Chapter 4 — Control, Continuity and Jurisdiction in Distributed Data Systems
+  definition: Reliance on specific platforms or providers for critical digital capabilities.
+Predictive Fragility:
+  chapters:
+  - Chapter 5 — Scenario Analysis and Stress Testing for Digital Assets
+  definition: Risk that arises when models and scenarios are over-trusted relative to their limitations.
+Privilege Gravity:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: The tendency for access rights and authority to accumulate around certain roles or
+    systems.
+Resilience by Design:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: Designing systems, processes, and controls so that resilience is a primary outcome,
+    not a secondary add-on.
+Resilience Metrics Dashboard:
+  chapters:
+  - Chapter 5 — Decision-Support Systems for Cyber Resilience
+  definition: An aggregated view of indicators such as MTTD, MTTR, and dependency hotspots used
+    to reason about resilience.
+Resilience Operating Envelope:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The range of conditions under which the organisation can operate without unacceptable
+    degradation.
+Risk Alignment:
+  chapters:
+  - Chapter 6 — Strategic Imperatives for the Next Information Age
+  definition: The structural fit between risk appetite, actual exposure, and resource allocation.
+Risk Cartography:
+  chapters:
+  - Chapter 5 — Risk Mapping and Prioritisation Frameworks
+  definition: The mapping of risks, dependencies, and impacts across systems and processes.
+Risk Compression:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: The effect of complex risk being summarised into overly simple indicators or narratives.
+Risk Expansion:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: The increasing range of potential adverse outcomes as systems and dependencies grow
+    more complex.
+Scenario Granularity:
+  chapters:
+  - Chapter 5 — Scenario Analysis and Stress Testing for Digital Assets
+  definition: The level of detail at which scenarios are constructed and analysed.
+Scenario Saturation:
+  chapters:
+  - Chapter 5 — Scenario Analysis and Stress Testing for Digital Assets
+  definition: The point at which additional scenarios add little new insight relative to their complexity.
+Signal Amplification:
+  chapters:
+  - Chapter 4 — Adaptive Monitoring & AI-Augmented Detection
+  definition: The process of enhancing relevant signals so they stand out from background noise.
+Signal Horizon:
+  chapters:
+  - Chapter 4 — Adaptive Monitoring & AI-Augmented Detection
+  definition: The furthest point in time or space from which meaningful signals can be observed
+    and interpreted.
+Signal Saturation:
+  chapters:
+  - Chapter 4 — Adaptive Monitoring & AI-Augmented Detection
+  definition: The point at which the volume or intensity of signals overwhelms interpretive capacity.
+Signal Topology:
+  chapters:
+  - Chapter 4 — Adaptive Monitoring & AI-Augmented Detection
+  definition: The structural pattern of how signals flow across systems and components.
+Sovereign Control:
+  chapters:
+  - Chapter 4 — Data Sovereignty in a Post-Perimeter World
+  definition: The practical ability to direct and recover digital operations across jurisdictions
+    and infrastructures.
+Structural Exposure:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: Exposure that arises from the way systems are connected and organised, not from individual
+    components.
+Structural Fragility:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: Weaknesses in system structure that can lead to large-scale failure under stress.
+Structural Learning:
+  chapters:
+  - Chapter 5 — Augmented Playbooks — Human + AI Strategic Decision Loops
+  definition: Learning that updates how systems are structured and operated, not just how incidents
+    are handled.
+Structural Memory:
+  chapters:
+  - Chapter 5 — Platform Architecture for AI-Augmented Resilience
+  definition: The retention of patterns, decisions, and outcomes in a way that shapes future operation.
+Structural Observability:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The degree to which the internal state of systems can be inferred from their outputs.
+Supply-Chain Exposure:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: Exposure that arises from reliance on external suppliers and service providers.
+System Anchors:
+  chapters:
+  - Chapter 1 — Foundations of Cybersecurity in a Connected World
+  definition: Core systems or services that other functions depend on for operation.
+Systemic Accountability:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: Accountability that recognises the shared contribution of multiple actors to outcomes.
+Systemic Governance:
+  chapters:
+  - Chapter 3 — Governance, Regulation & Adaptive Accountability
+  definition: Governance that accounts for interconnected systems, not just individual units.
+Systemic Resilience:
+  chapters:
+  - Chapter 1 — Foundations of Cybersecurity in a Connected World
+  definition: The capacity of the overall system to absorb, adapt to, and recover from disruption.
+Telemetry and Signal Console:
+  chapters:
+  - Chapter 5 — Decision-Support Systems for Cyber Resilience
+  definition: A CRT module that aggregates signals and supports higher-level pattern analysis.
+Threat Amplification:
+  chapters:
+  - Chapter 6 — Rise of Autonomous Threats & Defences
+  definition: The magnification of threat impact through automation, scale, or interconnectedness.
+Threat Geometry:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: The structural pattern of potential attack paths and impact zones.
+Threat Surface:
+  chapters:
+  - Chapter 2 — Perspectives on Vulnerability, Exposure & Defence
+  definition: The specific points where threats can interact with systems and data.
+Triangular Navigation Program:
+  chapters:
+  - Chapter 5 — Decision-Support Systems for Cyber Resilience
+  definition: The integrated framework connecting practical insight, AI perspectives, and decision-support
+    tools.
+Unbounded Automation:
+  chapters:
+  - Chapter 6 — Rise of Autonomous Threats & Defences
+  definition: Automation that operates without clear constraints, oversight, or escalation paths.
+Visibility Debt:
+  chapters:
+  - Chapter 1 — The Information Age: Opportunities, Exposure & Strategic Shifts
+  definition: The accumulated gap between what is observable and what needs to be observed to manage
+    risk.
+Zero-Trust Architecture:
+  chapters:
+  - Chapter 4 — Strategic Control Architectures
+  definition: An approach that assumes no implicit trust and continuously verifies identities, devices,
+    and requests.

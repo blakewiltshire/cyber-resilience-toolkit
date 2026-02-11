@@ -1,0 +1,118 @@
+{
+  "bundle_type": "identity",
+  "entities": {
+    "assets": [],
+    "controls": [],
+    "data_domains": [],
+    "failures": [],
+    "identities": [
+      {
+        "catalogue": "CRT-I",
+        "id": "I-0001",
+        "identity_type": "service",
+        "privilege_level": "high",
+        "raw": {
+          "associated_assets": "auth-systems",
+          "identity_id": "I-0001",
+          "is_privileged_flag": true,
+          "is_trust_anchor_flag": true,
+          "linked_control_summary": "CRT-C-0007 — Multi-Factor Authentication (MFA); CRT-C-0008 — Fine-Grained Authorisation; CRT-C-0009 — Federation and External User Management; CRT-C-0011 — Identity Lifecycle Management; CRT-C-0013 — Secure Remote Access (VPN / ZTNA)",
+          "mapped_control_count": 5,
+          "mapped_control_ids": "CRT-C-0007; CRT-C-0008; CRT-C-0009; CRT-C-0011; CRT-C-0013",
+          "name": "Primary Identity Provider (IdP)",
+          "notes": "Central authentication and SSO authority",
+          "policy_anchor": "MFA",
+          "privilege_level": "high",
+          "source_ref": "baseline",
+          "trust_anchor": "yes",
+          "type": "service",
+          "zone": "critical"
+        },
+        "trust_anchor": "yes",
+        "zone": "critical"
+      },
+      {
+        "catalogue": "CRT-I",
+        "id": "I-0003",
+        "identity_type": "service",
+        "privilege_level": "high",
+        "raw": {
+          "associated_assets": "pkis",
+          "identity_id": "I-0003",
+          "is_privileged_flag": true,
+          "is_trust_anchor_flag": true,
+          "linked_control_summary": "CRT-C-0012 — Password Hygiene and Credential Hardening; CRT-C-0045 — Federated Identity Security Frameworks",
+          "mapped_control_count": 2,
+          "mapped_control_ids": "CRT-C-0045; CRT-C-0012",
+          "name": "Certificate Authority (Root CA)",
+          "notes": "Root of trust for certificates",
+          "policy_anchor": "hardware-token",
+          "privilege_level": "high",
+          "source_ref": "baseline",
+          "trust_anchor": "yes",
+          "type": "service",
+          "zone": "critical"
+        },
+        "trust_anchor": "yes",
+        "zone": "critical"
+      },
+      {
+        "catalogue": "CRT-I",
+        "id": "I-0002",
+        "identity_type": "service",
+        "privilege_level": "high",
+        "raw": {
+          "associated_assets": "privileged-accounts",
+          "identity_id": "I-0002",
+          "is_privileged_flag": true,
+          "is_trust_anchor_flag": true,
+          "linked_control_summary": "CRT-C-0010 — Privileged Access Management (PAM); CRT-C-0012 — Password Hygiene and Credential Hardening; CRT-C-0049 — Security Monitoring and Anomaly Detection",
+          "mapped_control_count": 3,
+          "mapped_control_ids": "CRT-C-0010; CRT-C-0012; CRT-C-0049",
+          "name": "PAM Vault",
+          "notes": "Manages secrets and high-privilege credentials",
+          "policy_anchor": "hardware-token",
+          "privilege_level": "high",
+          "source_ref": "baseline",
+          "trust_anchor": "yes",
+          "type": "service",
+          "zone": "critical"
+        },
+        "trust_anchor": "yes",
+        "zone": "critical"
+      }
+    ],
+    "telemetry": [],
+    "vendors": []
+  },
+  "guardrails": {
+    "no_advice": true,
+    "no_assurance": true,
+    "no_configuration": true
+  },
+  "lens_meta": {
+    "built_at_utc": "2025-12-24T18:12:43+00:00",
+    "persisted_to_disk": true,
+    "shelf_path_hint": "lenses/ial/bundles/ial_CRT-I-cluster-80e86b7b_20251224T181243Z.json",
+    "source": "module"
+  },
+  "module": "🔐 Identity & Access Lens",
+  "primary_entity": {
+    "id": "CRT-I-cluster-80e86b7b",
+    "type": "identity_cluster"
+  },
+  "relationships": [],
+  "structural_findings": {
+    "compensations": [],
+    "coverage": {
+      "distinct_types_in_scope": 1,
+      "distinct_zones_in_scope": 1,
+      "identities_with_mapped_controls_in_scope": 3,
+      "privileged_identities_in_scope": 3,
+      "total_identities_in_scope": 3,
+      "trust_anchors_in_scope": 3
+    },
+    "gaps": [],
+    "identity_paths": []
+  }
+}

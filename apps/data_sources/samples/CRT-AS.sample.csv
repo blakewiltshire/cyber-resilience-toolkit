@@ -1,0 +1,2 @@
+﻿asset_id,asset_name,asset_type,environment,exposure_type,vendor,trust_boundary,entry_points,logical_data_classes,description,notes,mapped_data_class_ids,mapped_control_ids
+AS-1000,Market Data Feed Handler,Integration Service,Prod,Remote,MarketDataVendor,External Integration Boundary,TCP Feed; Proprietary API,Market Data; ETL Staging,Processes licensed market data feeds for analytics/trading.,,CRT-D-0025;CRT-D-0026,CRT-C-0003;CRT-C-0005;CRT-C-0017;CRT-C-0049;CRT-C-0022

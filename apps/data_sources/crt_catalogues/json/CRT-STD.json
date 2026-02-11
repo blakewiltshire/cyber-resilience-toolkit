@@ -1,0 +1,577 @@
+{
+  "catalogue": "CRT-STD",
+  "generated_at": "2025-12-24T19:25:45+00:00",
+  "source_csv": "apps/data_sources/crt_catalogues/CRT-STD.csv",
+  "records": [
+    {
+      "standard_id": "STD-0001",
+      "standard_name": "Governance Alignment Standard",
+      "standard_statement": "This standard defines mandatory requirements for governance alignment.",
+      "description": "This standard establishes minimum expectations and organisational requirements for governance alignment, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0037;CRT-C-0038;CRT-C-0040;CRT-C-0048",
+      "mapped_policy_ids": "POL-GOV-01",
+      "status": "Active",
+      "standard_sections": "Governance Objectives; Structure, Roles, and Responsibilities; Oversight, Review, and Reporting"
+    },
+    {
+      "standard_id": "STD-0002",
+      "standard_name": "Roles & Responsibilities Standard",
+      "standard_statement": "This standard defines mandatory requirements for roles & responsibilities.",
+      "description": "This standard establishes minimum expectations and organisational requirements for roles & responsibilities, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0037;CRT-C-0040",
+      "mapped_policy_ids": "POL-GOV-01",
+      "status": "Active",
+      "standard_sections": "Governance Objectives; Structure, Roles, and Responsibilities; Oversight, Review, and Reporting"
+    },
+    {
+      "standard_id": "STD-0003",
+      "standard_name": "Cyber Risk Management Standard",
+      "standard_statement": "This standard defines mandatory requirements for cyber risk management.",
+      "description": "This standard establishes minimum expectations and organisational requirements for cyber risk management, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0038;CRT-C-0048",
+      "mapped_policy_ids": "POL-GOV-01",
+      "status": "Active",
+      "standard_sections": "Governance Objectives; Structure, Roles, and Responsibilities; Oversight, Review, and Reporting"
+    },
+    {
+      "standard_id": "STD-0004",
+      "standard_name": "Governance Review Standard",
+      "standard_statement": "This standard defines mandatory requirements for governance review.",
+      "description": "This standard establishes minimum expectations and organisational requirements for governance review, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0037;CRT-C-0040",
+      "mapped_policy_ids": "POL-GOV-01",
+      "status": "Active",
+      "standard_sections": "Governance Objectives; Structure, Roles, and Responsibilities; Oversight, Review, and Reporting"
+    },
+    {
+      "standard_id": "STD-0005",
+      "standard_name": "Compliance Alignment Standard",
+      "standard_statement": "This standard defines mandatory requirements for compliance alignment.",
+      "description": "This standard establishes minimum expectations and organisational requirements for compliance alignment, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0040;CRT-C-0041;CRT-C-0042",
+      "mapped_policy_ids": "POL-GOV-01",
+      "status": "Active",
+      "standard_sections": "Governance Objectives; Structure, Roles, and Responsibilities; Oversight, Review, and Reporting"
+    },
+    {
+      "standard_id": "STD-0006",
+      "standard_name": "Policy Lifecycle Standard",
+      "standard_statement": "This standard defines mandatory requirements for policy lifecycle.",
+      "description": "This standard establishes minimum expectations and organisational requirements for policy lifecycle, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0037",
+      "mapped_policy_ids": "POL-GOV-01",
+      "status": "Active",
+      "standard_sections": "Governance Objectives; Structure, Roles, and Responsibilities; Oversight, Review, and Reporting"
+    },
+    {
+      "standard_id": "STD-0007",
+      "standard_name": "Cybersecurity Strategy Standard",
+      "standard_statement": "This standard defines mandatory requirements for cybersecurity strategy.",
+      "description": "This standard establishes minimum expectations and organisational requirements for cybersecurity strategy, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0038;CRT-C-0048",
+      "mapped_policy_ids": "POL-GOV-01",
+      "status": "Active",
+      "standard_sections": "Governance Objectives; Structure, Roles, and Responsibilities; Oversight, Review, and Reporting"
+    },
+    {
+      "standard_id": "STD-0008",
+      "standard_name": "Risk Appetite Alignment Standard",
+      "standard_statement": "This standard defines mandatory requirements for risk appetite alignment.",
+      "description": "This standard establishes minimum expectations and organisational requirements for risk appetite alignment, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0038;CRT-C-0048",
+      "mapped_policy_ids": "POL-GOV-01",
+      "status": "Active",
+      "standard_sections": "Governance Objectives; Structure, Roles, and Responsibilities; Oversight, Review, and Reporting"
+    },
+    {
+      "standard_id": "STD-0009",
+      "standard_name": "Control Effectiveness Assessment Standard",
+      "standard_statement": "This standard defines mandatory requirements for control effectiveness assessment.",
+      "description": "This standard establishes minimum expectations and organisational requirements for control effectiveness assessment, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0040;CRT-C-0048",
+      "mapped_policy_ids": "POL-GOV-01",
+      "status": "Active",
+      "standard_sections": "Governance Objectives; Structure, Roles, and Responsibilities; Oversight, Review, and Reporting"
+    },
+    {
+      "standard_id": "STD-0010",
+      "standard_name": "Exception Management Standard",
+      "standard_statement": "This standard defines mandatory requirements for exception management.",
+      "description": "This standard establishes minimum expectations and organisational requirements for exception management, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0040;CRT-C-0042;CRT-C-0050",
+      "mapped_policy_ids": "POL-GOV-01;POL-IR-01",
+      "status": "Active",
+      "standard_sections": "Governance Objectives; Structure, Roles, and Responsibilities; Oversight, Review, and Reporting"
+    },
+    {
+      "standard_id": "STD-0011",
+      "standard_name": "Access Control Standard",
+      "standard_statement": "This standard defines mandatory requirements for access control.",
+      "description": "This standard establishes minimum expectations and organisational requirements for access control, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0007;CRT-C-0008;CRT-C-0009;CRT-C-0010;CRT-C-0011",
+      "mapped_policy_ids": "POL-IAM-01",
+      "status": "Active",
+      "standard_sections": "Identity and Access Objectives; Access Design and Provisioning; Enforcement and Monitoring; Review and Recertification"
+    },
+    {
+      "standard_id": "STD-0012",
+      "standard_name": "Authentication Standard",
+      "standard_statement": "This standard defines mandatory requirements for authentication.",
+      "description": "This standard establishes minimum expectations and organisational requirements for authentication, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0007;CRT-C-0009;CRT-C-0011;CRT-C-0012",
+      "mapped_policy_ids": "POL-IAM-01",
+      "status": "Active",
+      "standard_sections": "Identity and Access Objectives; Access Design and Provisioning; Enforcement and Monitoring; Review and Recertification"
+    },
+    {
+      "standard_id": "STD-0013",
+      "standard_name": "Multi-Factor Authentication Standard",
+      "standard_statement": "This standard defines mandatory requirements for multi-factor authentication.",
+      "description": "This standard establishes minimum expectations and organisational requirements for multi-factor authentication, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0007",
+      "mapped_policy_ids": "POL-IAM-01",
+      "status": "Active",
+      "standard_sections": "Identity and Access Objectives; Access Design and Provisioning; Enforcement and Monitoring; Review and Recertification"
+    },
+    {
+      "standard_id": "STD-0014",
+      "standard_name": "Least Privilege Standard",
+      "standard_statement": "This standard defines mandatory requirements for least privilege.",
+      "description": "This standard establishes minimum expectations and organisational requirements for least privilege, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0008;CRT-C-0010;CRT-C-0011",
+      "mapped_policy_ids": "POL-IAM-01",
+      "status": "Active",
+      "standard_sections": "Identity and Access Objectives; Access Design and Provisioning; Enforcement and Monitoring; Review and Recertification"
+    },
+    {
+      "standard_id": "STD-0015",
+      "standard_name": "Segregation of Duties Standard",
+      "standard_statement": "This standard defines mandatory requirements for segregation of duties.",
+      "description": "This standard establishes minimum expectations and organisational requirements for segregation of duties, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0008;CRT-C-0010;CRT-C-0011",
+      "mapped_policy_ids": "POL-IAM-01",
+      "status": "Active",
+      "standard_sections": "Identity and Access Objectives; Access Design and Provisioning; Enforcement and Monitoring; Review and Recertification"
+    },
+    {
+      "standard_id": "STD-0016",
+      "standard_name": "Joiner-Mover-Leaver (JML) Standard",
+      "standard_statement": "This standard defines mandatory requirements for joiner-mover-leaver (jml).",
+      "description": "This standard establishes minimum expectations and organisational requirements for joiner-mover-leaver (jml), supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0008;CRT-C-0010;CRT-C-0011",
+      "mapped_policy_ids": "POL-IAM-01",
+      "status": "Active",
+      "standard_sections": "Identity and Access Objectives; Access Design and Provisioning; Enforcement and Monitoring; Review and Recertification"
+    },
+    {
+      "standard_id": "STD-0017",
+      "standard_name": "System Logging Standard",
+      "standard_statement": "This standard defines mandatory requirements for system logging.",
+      "description": "This standard establishes minimum expectations and organisational requirements for system logging, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0049",
+      "mapped_policy_ids": "POL-LM-01",
+      "status": "Active",
+      "standard_sections": "Logging and Monitoring Objectives; Log and Event Coverage; Retention, Analysis, and Escalation"
+    },
+    {
+      "standard_id": "STD-0018",
+      "standard_name": "Log Retention Standard",
+      "standard_statement": "This standard defines mandatory requirements for log retention.",
+      "description": "This standard establishes minimum expectations and organisational requirements for log retention, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0049",
+      "mapped_policy_ids": "POL-LM-01",
+      "status": "Active",
+      "standard_sections": "Logging and Monitoring Objectives; Log and Event Coverage; Retention, Analysis, and Escalation"
+    },
+    {
+      "standard_id": "STD-0019",
+      "standard_name": "Security Monitoring Standard",
+      "standard_statement": "This standard defines mandatory requirements for security monitoring.",
+      "description": "This standard establishes minimum expectations and organisational requirements for security monitoring, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0049",
+      "mapped_policy_ids": "POL-LM-01",
+      "status": "Active",
+      "standard_sections": "Logging and Monitoring Objectives; Log and Event Coverage; Retention, Analysis, and Escalation"
+    },
+    {
+      "standard_id": "STD-0020",
+      "standard_name": "Alert Triage & Escalation Standard",
+      "standard_statement": "This standard defines mandatory requirements for alert triage & escalation.",
+      "description": "This standard establishes minimum expectations and organisational requirements for alert triage & escalation, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0049;CRT-C-0050",
+      "mapped_policy_ids": "POL-LM-01;POL-IR-01",
+      "status": "Active",
+      "standard_sections": "Logging and Monitoring Objectives; Log and Event Coverage; Retention, Analysis, and Escalation"
+    },
+    {
+      "standard_id": "STD-0021",
+      "standard_name": "Vulnerability Management Standard",
+      "standard_statement": "This standard defines mandatory requirements for vulnerability management.",
+      "description": "This standard establishes minimum expectations and organisational requirements for vulnerability management, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0051",
+      "mapped_policy_ids": "POL-NET-01;POL-SD-01",
+      "status": "Active",
+      "standard_sections": "Vulnerability Management Objectives; Discovery and Assessment; Remediation and Patch Coordination; Monitoring and Continuous Improvement"
+    },
+    {
+      "standard_id": "STD-0022",
+      "standard_name": "Patch Management Standard",
+      "standard_statement": "This standard defines mandatory requirements for patch management.",
+      "description": "This standard establishes minimum expectations and organisational requirements for patch management, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0051",
+      "mapped_policy_ids": "POL-SD-01",
+      "status": "Active",
+      "standard_sections": "Vulnerability Management Objectives; Discovery and Assessment; Remediation and Patch Coordination; Monitoring and Continuous Improvement"
+    },
+    {
+      "standard_id": "STD-0023",
+      "standard_name": "Configuration Management Standard",
+      "standard_statement": "This standard defines mandatory requirements for configuration management.",
+      "description": "This standard establishes minimum expectations and organisational requirements for configuration management, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0014;CRT-C-0016;CRT-C-0017;CRT-C-0056;CRT-C-0057;CRT-C-0065",
+      "mapped_policy_ids": "POL-SD-01",
+      "status": "Active",
+      "standard_sections": "Configuration Management Objectives; Baseline Definition and Hardening; Change Control and Exceptions; Monitoring and Assurance"
+    },
+    {
+      "standard_id": "STD-0024",
+      "standard_name": "Secure Build Standard",
+      "standard_statement": "This standard defines mandatory requirements for secure build.",
+      "description": "This standard establishes minimum expectations and organisational requirements for secure build, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0020;CRT-C-0024",
+      "mapped_policy_ids": "POL-SD-01",
+      "status": "Active",
+      "standard_sections": "Secure Development Objectives; Design and Coding Requirements; Build, Integration, and Deployment Controls; Testing, Review, and Release Management"
+    },
+    {
+      "standard_id": "STD-0025",
+      "standard_name": "Asset Inventory Standard",
+      "standard_statement": "This standard defines mandatory requirements for asset inventory.",
+      "description": "This standard establishes minimum expectations and organisational requirements for asset inventory, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0057",
+      "mapped_policy_ids": "POL-AM-01",
+      "status": "Active",
+      "standard_sections": "Asset Management Objectives; Inventory and Classification; Lifecycle Management"
+    },
+    {
+      "standard_id": "STD-0026",
+      "standard_name": "Asset Classification Standard",
+      "standard_statement": "This standard defines mandatory requirements for asset classification.",
+      "description": "This standard establishes minimum expectations and organisational requirements for asset classification, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0001",
+      "mapped_policy_ids": "POL-AM-01",
+      "status": "Active",
+      "standard_sections": "Asset Management Objectives; Inventory and Classification; Lifecycle Management"
+    },
+    {
+      "standard_id": "STD-0027",
+      "standard_name": "Data Classification Standard",
+      "standard_statement": "This standard defines mandatory requirements for data classification.",
+      "description": "This standard establishes minimum expectations and organisational requirements for data classification, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0001",
+      "mapped_policy_ids": "POL-AM-01;POL-DS-01",
+      "status": "Active",
+      "standard_sections": "Data Protection Objectives; Classification and Handling; Protection Mechanisms; Retention, Disposal, and Privacy Considerations"
+    },
+    {
+      "standard_id": "STD-0028",
+      "standard_name": "Data Handling Standard",
+      "standard_statement": "This standard defines mandatory requirements for data handling.",
+      "description": "This standard establishes minimum expectations and organisational requirements for data handling, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0006",
+      "mapped_policy_ids": "POL-DS-01",
+      "status": "Active",
+      "standard_sections": "Data Protection Objectives; Classification and Handling; Protection Mechanisms; Retention, Disposal, and Privacy Considerations"
+    },
+    {
+      "standard_id": "STD-0029",
+      "standard_name": "Data Retention & Disposal Standard",
+      "standard_statement": "This standard defines mandatory requirements for data retention & disposal.",
+      "description": "This standard establishes minimum expectations and organisational requirements for data retention & disposal, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0006",
+      "mapped_policy_ids": "POL-DS-01",
+      "status": "Active",
+      "standard_sections": "Data Protection Objectives; Classification and Handling; Protection Mechanisms; Retention, Disposal, and Privacy Considerations"
+    },
+    {
+      "standard_id": "STD-0030",
+      "standard_name": "Encryption Standard",
+      "standard_statement": "This standard defines mandatory requirements for encryption.",
+      "description": "This standard establishes minimum expectations and organisational requirements for encryption, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0002;CRT-C-0003",
+      "mapped_policy_ids": "POL-DS-01",
+      "status": "Active",
+      "standard_sections": "Data Protection Objectives; Classification and Handling; Protection Mechanisms; Retention, Disposal, and Privacy Considerations"
+    },
+    {
+      "standard_id": "STD-0031",
+      "standard_name": "Key Management Standard",
+      "standard_statement": "This standard defines mandatory requirements for key management.",
+      "description": "This standard establishes minimum expectations and organisational requirements for key management, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0002;CRT-C-0003",
+      "mapped_policy_ids": "POL-DS-01",
+      "status": "Active",
+      "standard_sections": "Data Protection Objectives; Classification and Handling; Protection Mechanisms; Retention, Disposal, and Privacy Considerations"
+    },
+    {
+      "standard_id": "STD-0032",
+      "standard_name": "Network Segmentation Standard",
+      "standard_statement": "This standard defines mandatory requirements for network segmentation.",
+      "description": "This standard establishes minimum expectations and organisational requirements for network segmentation, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0014",
+      "mapped_policy_ids": "POL-NET-01",
+      "status": "Active",
+      "standard_sections": "Network and Infrastructure Objectives; Architecture and Segmentation; Perimeter and Traffic Protection; Remote and Wireless Access"
+    },
+    {
+      "standard_id": "STD-0033",
+      "standard_name": "Boundary Protection Standard",
+      "standard_statement": "This standard defines mandatory requirements for boundary protection.",
+      "description": "This standard establishes minimum expectations and organisational requirements for boundary protection, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0016;CRT-C-0017",
+      "mapped_policy_ids": "POL-NET-01",
+      "status": "Active",
+      "standard_sections": "Network and Infrastructure Objectives; Architecture and Segmentation; Perimeter and Traffic Protection; Remote and Wireless Access"
+    },
+    {
+      "standard_id": "STD-0034",
+      "standard_name": "Remote Access Standard",
+      "standard_statement": "This standard defines mandatory requirements for remote access.",
+      "description": "This standard establishes minimum expectations and organisational requirements for remote access, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0013",
+      "mapped_policy_ids": "POL-IAM-01",
+      "status": "Active",
+      "standard_sections": "Network and Infrastructure Objectives; Architecture and Segmentation; Perimeter and Traffic Protection; Remote and Wireless Access"
+    },
+    {
+      "standard_id": "STD-0035",
+      "standard_name": "Wireless Security Standard",
+      "standard_statement": "This standard defines mandatory requirements for wireless security.",
+      "description": "This standard establishes minimum expectations and organisational requirements for wireless security, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0015",
+      "mapped_policy_ids": "POL-DS-01",
+      "status": "Active",
+      "standard_sections": "Network and Infrastructure Objectives; Architecture and Segmentation; Perimeter and Traffic Protection; Remote and Wireless Access"
+    },
+    {
+      "standard_id": "STD-0036",
+      "standard_name": "Email & Messaging Security Standard",
+      "standard_statement": "This standard defines mandatory requirements for email & messaging security.",
+      "description": "This standard establishes minimum expectations and organisational requirements for email & messaging security, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0003;CRT-C-0004;CRT-C-0031;CRT-C-0049",
+      "mapped_policy_ids": "POL-DS-01",
+      "status": "Active",
+      "standard_sections": "Network and Infrastructure Objectives; Architecture and Segmentation; Perimeter and Traffic Protection; Remote and Wireless Access"
+    },
+    {
+      "standard_id": "STD-0037",
+      "standard_name": "Endpoint Protection Standard",
+      "standard_statement": "This standard defines mandatory requirements for endpoint protection.",
+      "description": "This standard establishes minimum expectations and organisational requirements for endpoint protection, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0004;CRT-C-0013;CRT-C-0015;CRT-C-0016;CRT-C-0017;CRT-C-0056;CRT-C-0057",
+      "mapped_policy_ids": "POL-DS-01",
+      "status": "Active",
+      "standard_sections": "Network and Infrastructure Objectives; Architecture and Segmentation; Perimeter and Traffic Protection; Remote and Wireless Access"
+    },
+    {
+      "standard_id": "STD-0038",
+      "standard_name": "Malware Defense Standard",
+      "standard_statement": "This standard defines mandatory requirements for malware defense.",
+      "description": "This standard establishes minimum expectations and organisational requirements for malware defense, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0017;CRT-C-0049;CRT-C-0051;CRT-C-0052",
+      "mapped_policy_ids": "POL-DS-01",
+      "status": "Active",
+      "standard_sections": "Network and Infrastructure Objectives; Architecture and Segmentation; Perimeter and Traffic Protection; Remote and Wireless Access"
+    },
+    {
+      "standard_id": "STD-0039",
+      "standard_name": "Secure Admin Access Standard",
+      "standard_statement": "This standard defines mandatory requirements for secure admin access.",
+      "description": "This standard establishes minimum expectations and organisational requirements for secure admin access, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0010",
+      "mapped_policy_ids": "POL-IAM-01",
+      "status": "Active",
+      "standard_sections": "Identity and Access Objectives; Access Design and Provisioning; Enforcement and Monitoring; Review and Recertification"
+    },
+    {
+      "standard_id": "STD-0040",
+      "standard_name": "Privileged Access Standard",
+      "standard_statement": "This standard defines mandatory requirements for privileged access.",
+      "description": "This standard establishes minimum expectations and organisational requirements for privileged access, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0010",
+      "mapped_policy_ids": "POL-IAM-01",
+      "status": "Active",
+      "standard_sections": "Identity and Access Objectives; Access Design and Provisioning; Enforcement and Monitoring; Review and Recertification"
+    },
+    {
+      "standard_id": "STD-0041",
+      "standard_name": "Third-Party Risk Standard",
+      "standard_statement": "This standard defines mandatory requirements for third-party risk.",
+      "description": "This standard establishes minimum expectations and organisational requirements for third-party risk, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0025;CRT-C-0026;CRT-C-0027;CRT-C-0028;CRT-C-0029;CRT-C-0030",
+      "mapped_policy_ids": "POL-TP-01",
+      "status": "Active",
+      "standard_sections": "Third-Party and Supply Chain Objectives; Onboarding and Due Diligence; Contractual and Control Requirements; Ongoing Monitoring and Review"
+    },
+    {
+      "standard_id": "STD-0042",
+      "standard_name": "Vendor Security Assessment Standard",
+      "standard_statement": "This standard defines mandatory requirements for vendor security assessment.",
+      "description": "This standard establishes minimum expectations and organisational requirements for vendor security assessment, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0025",
+      "mapped_policy_ids": "POL-TP-01",
+      "status": "Active",
+      "standard_sections": "Third-Party and Supply Chain Objectives; Onboarding and Due Diligence; Contractual and Control Requirements; Ongoing Monitoring and Review"
+    },
+    {
+      "standard_id": "STD-0043",
+      "standard_name": "Contractual Security Requirements Standard",
+      "standard_statement": "This standard defines mandatory requirements for contractual security requirements.",
+      "description": "This standard establishes minimum expectations and organisational requirements for contractual security requirements, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0026",
+      "mapped_policy_ids": "POL-TP-01",
+      "status": "Active",
+      "standard_sections": "Third-Party and Supply Chain Objectives; Onboarding and Due Diligence; Contractual and Control Requirements; Ongoing Monitoring and Review"
+    },
+    {
+      "standard_id": "STD-0044",
+      "standard_name": "Third-Party Performance Monitoring Standard",
+      "standard_statement": "This standard defines mandatory requirements for third-party performance monitoring.",
+      "description": "This standard establishes minimum expectations and organisational requirements for third-party performance monitoring, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0027",
+      "mapped_policy_ids": "POL-TP-01",
+      "status": "Active",
+      "standard_sections": "Third-Party and Supply Chain Objectives; Onboarding and Due Diligence; Contractual and Control Requirements; Ongoing Monitoring and Review"
+    },
+    {
+      "standard_id": "STD-0045",
+      "standard_name": "Secure Development Standard",
+      "standard_statement": "This standard defines mandatory requirements for secure development.",
+      "description": "This standard establishes minimum expectations and organisational requirements for secure development, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0019;CRT-C-0020;CRT-C-0021;CRT-C-0023;CRT-C-0024",
+      "mapped_policy_ids": "POL-SD-01",
+      "status": "Active",
+      "standard_sections": "Secure Development Objectives; Design and Coding Requirements; Build, Integration, and Deployment Controls; Testing, Review, and Release Management"
+    },
+    {
+      "standard_id": "STD-0046",
+      "standard_name": "Code Handling Standard",
+      "standard_statement": "This standard defines mandatory requirements for code handling.",
+      "description": "This standard establishes minimum expectations and organisational requirements for code handling, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0019;CRT-C-0020;CRT-C-0023;CRT-C-0024",
+      "mapped_policy_ids": "POL-SD-01",
+      "status": "Active",
+      "standard_sections": "Secure Development Objectives; Design and Coding Requirements; Build, Integration, and Deployment Controls; Testing, Review, and Release Management"
+    },
+    {
+      "standard_id": "STD-0047",
+      "standard_name": "Pre-Release Review Standard",
+      "standard_statement": "This standard defines mandatory requirements for pre-release review.",
+      "description": "This standard establishes minimum expectations and organisational requirements for pre-release review, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0019;CRT-C-0020;CRT-C-0023;CRT-C-0024",
+      "mapped_policy_ids": "POL-SD-01",
+      "status": "Active",
+      "standard_sections": "Secure Development Objectives; Design and Coding Requirements; Build, Integration, and Deployment Controls; Testing, Review, and Release Management"
+    },
+    {
+      "standard_id": "STD-0048",
+      "standard_name": "Third-Party Component Standard",
+      "standard_statement": "This standard defines mandatory requirements for third-party component.",
+      "description": "This standard establishes minimum expectations and organisational requirements for third-party component, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0019;CRT-C-0020;CRT-C-0022",
+      "mapped_policy_ids": "POL-SD-01",
+      "status": "Active",
+      "standard_sections": "Secure Development Objectives; Design and Coding Requirements; Build, Integration, and Deployment Controls; Testing, Review, and Release Management"
+    },
+    {
+      "standard_id": "STD-0049",
+      "standard_name": "Business Continuity Planning Standard",
+      "standard_statement": "This standard defines mandatory requirements for business continuity planning.",
+      "description": "This standard establishes minimum expectations and organisational requirements for business continuity planning, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0018;CRT-C-0060;CRT-C-0062",
+      "mapped_policy_ids": "POL-BC-01",
+      "status": "Active",
+      "standard_sections": "Resilience and Continuity Objectives; Planning and Design; Backup, Recovery, and Continuity Testing"
+    },
+    {
+      "standard_id": "STD-0050",
+      "standard_name": "Backup and Recovery Standard",
+      "standard_statement": "This standard defines mandatory requirements for backup and recovery.",
+      "description": "This standard establishes minimum expectations and organisational requirements for backup and recovery, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0062",
+      "mapped_policy_ids": "POL-BC-01",
+      "status": "Active",
+      "standard_sections": "Resilience and Continuity Objectives; Planning and Design; Backup, Recovery, and Continuity Testing"
+    },
+    {
+      "standard_id": "STD-0051",
+      "standard_name": "Continuity Testing Standard",
+      "standard_statement": "This standard defines mandatory requirements for continuity testing.",
+      "description": "This standard establishes minimum expectations and organisational requirements for continuity testing, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0062",
+      "mapped_policy_ids": "POL-BC-01",
+      "status": "Active",
+      "standard_sections": "Resilience and Continuity Objectives; Planning and Design; Backup, Recovery, and Continuity Testing"
+    },
+    {
+      "standard_id": "STD-0052",
+      "standard_name": "Security Awareness Standard",
+      "standard_statement": "This standard defines mandatory requirements for security awareness.",
+      "description": "This standard establishes minimum expectations and organisational requirements for security awareness, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0031",
+      "mapped_policy_ids": "POL-AT-01",
+      "status": "Active",
+      "standard_sections": "Awareness and Training Objectives; Programme Design and Delivery; Measurement and Improvement"
+    },
+    {
+      "standard_id": "STD-0053",
+      "standard_name": "Role-Based Training Standard",
+      "standard_statement": "This standard defines mandatory requirements for role-based training.",
+      "description": "This standard establishes minimum expectations and organisational requirements for role-based training, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0031;CRT-C-0033",
+      "mapped_policy_ids": "POL-AT-01",
+      "status": "Active",
+      "standard_sections": "Awareness and Training Objectives; Programme Design and Delivery; Measurement and Improvement"
+    },
+    {
+      "standard_id": "STD-0054",
+      "standard_name": "Acceptable Use Standard",
+      "standard_statement": "This standard defines mandatory requirements for acceptable use.",
+      "description": "This standard establishes minimum expectations and organisational requirements for acceptable use, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0035",
+      "mapped_policy_ids": "POL-AT-01;POL-GOV-01",
+      "status": "Active",
+      "standard_sections": "Awareness and Training Objectives; Programme Design and Delivery; Measurement and Improvement"
+    },
+    {
+      "standard_id": "STD-0055",
+      "standard_name": "Secure Configuration Expectation Standard",
+      "standard_statement": "This standard defines mandatory requirements for secure configuration expectation.",
+      "description": "This standard establishes minimum expectations and organisational requirements for secure configuration expectation, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0014;CRT-C-0015;CRT-C-0016;CRT-C-0017;CRT-C-0056;CRT-C-0057;CRT-C-0065",
+      "mapped_policy_ids": "POL-SD-01",
+      "status": "Active",
+      "standard_sections": "Configuration Management Objectives; Baseline Definition and Hardening; Change Control and Exceptions; Monitoring and Assurance"
+    },
+    {
+      "standard_id": "STD-0056",
+      "standard_name": "Environment Separation Standard",
+      "standard_statement": "This standard defines mandatory requirements for environment separation.",
+      "description": "This standard establishes minimum expectations and organisational requirements for environment separation, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0014",
+      "mapped_policy_ids": "POL-AM-01;POL-BC-01",
+      "status": "Active",
+      "standard_sections": "Secure Development Objectives; Design and Coding Requirements; Build, Integration, and Deployment Controls; Testing, Review, and Release Management"
+    },
+    {
+      "standard_id": "STD-0057",
+      "standard_name": "Administrative Workstation Expectation Standard",
+      "standard_statement": "This standard defines mandatory requirements for administrative workstation expectation.",
+      "description": "This standard establishes minimum expectations and organisational requirements for administrative workstation expectation, supporting the parent policy and mapped user controls.",
+      "mapped_control_ids": "CRT-C-0013;CRT-C-0014;CRT-C-0015;CRT-C-0016;CRT-C-0017;CRT-C-0065",
+      "mapped_policy_ids": "POL-AM-01;POL-BC-01",
+      "status": "Active",
+      "standard_sections": "Configuration Management Objectives; Baseline Definition and Hardening; Change Control and Exceptions; Monitoring and Assurance"
+    }
+  ]
+}

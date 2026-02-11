@@ -1,0 +1,2 @@
+﻿data_id,data_name,definition,data_tier,classification_level,data_category,environment,description,examples,propagation_rules,confidentiality_impact,integrity_impact,availability_impact,notes,mapped_control_ids
+D-1000,Encryption Keys,Cryptographic materials used for signing or encryption,Restricted,Restricted,Encryption Keys,HSM,Cryptographic materials used for signing or encryption,"HSM keys, signing certs",HSM _ Service _ Enclave,high,high,medium,,CRT-C-0002; CRT-C-0003; CRT-C-0065; CRT-C-0049; CRT-C-0005

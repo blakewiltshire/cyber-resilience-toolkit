@@ -1,0 +1,26 @@
+﻿vendor_id,service_type,dependency_type,criticality,region,contract_tier,data_access_level,failure_modes,vendor_archetype,example_vendors,notes,source_ref,mapped_control_ids
+SC-0001,IaaS,direct,high,global,enhanced,full,outage;identity-failure,Cloud Infrastructure Provider (IaaS),AWS; Azure; DigitalOcean,Primary cloud platform,baseline,CRT-C-0018; CRT-C-0065; CRT-C-0049; CRT-C-0040; CRT-C-0026; CRT-C-0030
+SC-0002,IaaS,direct,high,global,enhanced,full,outage,Cloud Infrastructure Provider (IaaS),AWS; Azure; DigitalOcean,Alternative cloud tenancy,baseline,CRT-C-0018; CRT-C-0065; CRT-C-0049; CRT-C-0040; CRT-C-0026
+SC-0003,SaaS,direct,medium,global,standard,limited,auth-failure,Cloud Productivity & Collaboration Suite,Google Workspace; Office 365,Business productivity suite,baseline,CRT-C-0007; CRT-C-0012; CRT-C-0009; CRT-C-0026; CRT-C-0022; CRT-C-0039
+SC-0004,SaaS,direct,medium,global,standard,limited,auth-failure,Cloud Productivity & Collaboration Suite,Google Workspace; Office 365,Email & collaboration,baseline,CRT-C-0007; CRT-C-0012; CRT-C-0009; CRT-C-0026; CRT-C-0039; CRT-C-0031
+SC-0005,SaaS,direct,medium,US,standard,full,data-leak,CRM & Customer Engagement Platform,Salesforce,CRM and customer data,baseline,CRT-C-0039; CRT-C-0026; CRT-C-0022; CRT-C-0027; CRT-C-0025
+SC-0006,SaaS,direct,high,US,regulated,limited,api-failure; payment-failure,Payment Processor / PSP,PCI Payment Vendor MSP; Stripe,Payment processor,baseline,CRT-C-0039; CRT-C-0026; CRT-C-0025; CRT-C-0042; CRT-C-0041
+SC-0007,SaaS,direct,high,global,enhanced,full,identity-outage,Identity & Access Platform (IDaaS),Okta,Identity provider alternative,baseline,CRT-C-0009; CRT-C-0007; CRT-C-0012; CRT-C-0011; CRT-C-0049; CRT-C-0065
+SC-0008,SaaS,indirect,low,US,standard,none,outage; email-failure,Email Delivery Service,SendGrid,Transactional email,baseline,CRT-C-0026; CRT-C-0025; CRT-C-0027; CRT-C-0040
+SC-0009,SaaS,direct,medium,US,standard,limited,code-exposure,Code Hosting & Repository Platform,GitHub,Source control,baseline,CRT-C-0022; CRT-C-0026; CRT-C-0039; CRT-C-0049; CRT-C-0065
+SC-0010,SaaS,indirect,medium,global,enhanced,limited,ddos-bypass; waf-failure,Edge Security & CDN Provider,Akamai; Cloudflare,WAF & CDN,baseline,CRT-C-0023; CRT-C-0016; CRT-C-0049; CRT-C-0027; CRT-C-0026
+SC-0011,IaaS,direct,medium,EU,standard,full,outage,Cloud Infrastructure Provider (IaaS),AWS; Azure; DigitalOcean,Secondary infrastructure,baseline,CRT-C-0018; CRT-C-0065; CRT-C-0049; CRT-C-0040; CRT-C-0026
+SC-0012,SaaS,indirect,low,global,standard,none,outage,Work Management / Issue Tracking,Jira,Project management,baseline,CRT-C-0026; CRT-C-0027; CRT-C-0022; CRT-C-0039
+SC-0013,SaaS,indirect,low,global,standard,limited,outage,Team Collaboration & Messaging,Slack,Collaboration tool,baseline,CRT-C-0007; CRT-C-0012; CRT-C-0026; CRT-C-0027; CRT-C-0039
+SC-0014,SaaS,direct,high,global,enhanced,full,telemetry-loss,Observability & Telemetry Platform,Datadog; New Relic,Monitoring and observability,baseline,CRT-C-0049; CRT-C-0026; CRT-C-0027; CRT-C-0040
+SC-0015,SaaS,direct,high,global,enhanced,limited,telemetry-loss,Observability & Telemetry Platform,Datadog; New Relic,APM service,baseline,CRT-C-0049; CRT-C-0026; CRT-C-0027
+SC-0016,SaaS,direct,high,global,enhanced,full,indexing-failure,Security Analytics & SIEM Platform,Splunk,SIEM ingestion,baseline,CRT-C-0049; CRT-C-0052; CRT-C-0026; CRT-C-0027; CRT-C-0040
+SC-0017,SaaS,direct,medium,US,standard,limited,outage,IT Service Management Platform,ServiceNow,Incident & workflow,baseline,CRT-C-0026; CRT-C-0022; CRT-C-0027; CRT-C-0039
+SC-0018,SaaS,indirect,medium,US,standard,none,api-failure,Communications Platform (CPaaS),Twilio,Messaging/OTP provider,baseline,CRT-C-0026; CRT-C-0025; CRT-C-0027; CRT-C-0039
+SC-0019,SaaS,indirect,medium,global,enhanced,limited,ddos-bypass,Edge Security & CDN Provider,Akamai; Cloudflare,Edge delivery network,baseline,CRT-C-0023; CRT-C-0016; CRT-C-0049; CRT-C-0027; CRT-C-0026
+SC-0020,MSP,transitive,high,UK,regulated,full,data-exposure,Payment Processor / PSP,PCI Payment Vendor MSP; Stripe,Handles regulated payment flows,baseline,CRT-C-0039; CRT-C-0026; CRT-C-0025; CRT-C-0041; CRT-C-0042
+SC-0021,IaaS,direct,high,EU,standard,full,facility-failure,Regional Data Centre Provider,Regional Data Centre,Secondary hosting,baseline,CRT-C-0055; CRT-C-0058; CRT-C-0060; CRT-C-0018; CRT-C-0026
+SC-0022,Consultancy,indirect,low,UK,standard,none,,Penetration Testing Provider,Penetration Testing Provider,Security testing,baseline,CRT-C-0026; CRT-C-0025; CRT-C-0027
+SC-0023,SaaS,indirect,high,EU,enhanced,limited,backup-failure,Backup-as-a-Service Provider,Backup-as-a-Service,Resilience function,baseline,CRT-C-0062; CRT-C-0060; CRT-C-0026; CRT-C-0027
+SC-0024,SaaS,indirect,medium,EU,standard,limited,filtering-failure,Email Security & Filtering Gateway,Email Filtering Gateway,Email security gateway,baseline,CRT-C-0023; CRT-C-0026; CRT-C-0027; CRT-C-0049
+SC-0025,SaaS,transitive,medium,EU,standard,limited,data-leak,External Analytics & Insights Provider,External Analytics Vendor,Analytics processing,baseline,CRT-C-0039; CRT-C-0026; CRT-C-0025; CRT-C-0027

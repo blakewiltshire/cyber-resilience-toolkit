@@ -1,0 +1,895 @@
+{
+  "bundle_type": "governance",
+  "module": "ProgrammesAndOutputs",
+  "primary_entity": {
+    "type": "artefact",
+    "id": "STD-0001"
+  },
+  "entities": {
+    "assets": [],
+    "identities": [],
+    "data_domains": [],
+    "vendors": [],
+    "controls": [],
+    "failures": [],
+    "telemetry": []
+  },
+  "relationships": [],
+  "structural_findings": {
+    "gaps": [],
+    "compensations": [],
+    "coverage": {},
+    "propagation_paths": []
+  },
+  "guardrails": {
+    "no_advice": true,
+    "no_configuration": true,
+    "no_assurance": true,
+    "structural_only": true
+  },
+  "programme_mode": "🧭 Governance",
+  "task_type": "Standard",
+  "artefact_anchor": {
+    "anchor_id": "STD-0001",
+    "anchor_name": "STD-0001 — Governance Alignment Standard"
+  },
+  "org_profile": {
+    "profile_name": "Blake Wiltshire Test 2",
+    "profile_purpose": "Default Programme",
+    "organisation_name": "Blake Media",
+    "org_name": "Blake Media",
+    "industry": "Other / Mixed",
+    "environment": "Mixed / Other",
+    "jurisdictions": [
+      "UK"
+    ],
+    "org_size": "Start-up / Small",
+    "notes": ""
+  },
+  "org_governance_scope": {
+    "frameworks_in_scope": [
+      "REQ-NIST-80053-R5"
+    ],
+    "frameworks_mode": "framework_only",
+    "obligations_ids_in_scope": [
+      "LR-ASSET-001",
+      "LR-BCP-002",
+      "LR-BCP-003",
+      "LR-DATA-001",
+      "LR-DATA-002",
+      "LR-DATA-003",
+      "LR-DATA-004",
+      "LR-GOV-001",
+      "LR-GOV-002",
+      "LR-GOV-003",
+      "LR-HUM-001",
+      "LR-HUM-002",
+      "LR-HUM-003",
+      "LR-ID-001",
+      "LR-ID-002",
+      "LR-INC-004",
+      "LR-MON-001",
+      "LR-MON-002",
+      "LR-MON-003",
+      "LR-PRIV-001",
+      "LR-PRIV-004",
+      "LR-PRIV-005",
+      "LR-PRIV-007",
+      "LR-PRIV-008",
+      "LR-PRIV-009",
+      "LR-REP-001",
+      "LR-REP-002",
+      "LR-REP-003",
+      "LR-RISK-002",
+      "LR-RISK-003",
+      "LR-TEST-002",
+      "LR-TPR-001",
+      "LR-TPR-003"
+    ]
+  },
+  "structural_lenses": {
+    "🧩 Attack Surface Mapper · attack_surface · Asset: Asset (Web Application · Prod) · 2025-12-24 18:12Z": {
+      "bundle_type": "attack_surface",
+      "module": "🧩 Attack Surface Mapper",
+      "primary_entity": {
+        "type": "asset_cluster",
+        "id": "CRT-AS-cluster-f83571a8"
+      },
+      "entities": {
+        "assets": [
+          {
+            "catalogue": "CRT-AS",
+            "id": "AS-001",
+            "raw": {
+              "asset_id": "AS-001",
+              "asset_name": "Public Marketing Website",
+              "asset_type": "Web Application",
+              "environment": "Prod",
+              "exposure_type": "Remote",
+              "vendor": "External",
+              "trust_boundary": "Internet Boundary",
+              "entry_points": "HTTPS; CDN Edge",
+              "logical_data_classes": "Public; WebAnalytics",
+              "description": "Public-facing site with analytics and tracking integrations.",
+              "notes": NaN,
+              "mapped_data_class_ids": "CRT-D-0001;CRT-D-0002;CRT-D-0043",
+              "mapped_control_ids": "CRT-C-0003;CRT-C-0005;CRT-C-0023;CRT-C-0017;CRT-C-0014;CRT-C-0016",
+              "Unnamed: 13": NaN,
+              "mapped_control_count": 6,
+              "mapped_data_class_count": 3,
+              "has_entry_points": true,
+              "linked_control_summary": "CRT-C-0003 — Data Encryption (In Transit); CRT-C-0005 — Data Integrity Monitoring; CRT-C-0014 — Network Segmentation; CRT-C-0016 — Public Network Access Hardening; CRT-C-0017 — Secure DNS and Network Traffic Monitoring; CRT-C-0023 — Web Application Firewalls (WAF)",
+              "linked_data_class_summary": "CRT-D-0001 — Product Information; CRT-D-0002 — Marketing Content; CRT-D-0043 — Media Content"
+            },
+            "name": "Public Marketing Website",
+            "asset_type": "Web Application",
+            "environment": "Prod",
+            "trust_boundary": "Internet Boundary",
+            "vendor": "External"
+          },
+          {
+            "catalogue": "CRT-AS",
+            "id": "AS-003",
+            "raw": {
+              "asset_id": "AS-003",
+              "asset_name": "Corporate VPN Gateway",
+              "asset_type": "Access Gateway",
+              "environment": "Prod",
+              "exposure_type": "Remote",
+              "vendor": "Internal",
+              "trust_boundary": "Network Perimeter",
+              "entry_points": "IPSec; TLS VPN",
+              "logical_data_classes": "Authentication Secrets; Access Logs",
+              "description": "Primary remote access pathway for staff and contractors.",
+              "notes": NaN,
+              "mapped_data_class_ids": "CRT-D-0013;CRT-D-0008",
+              "mapped_control_ids": "CRT-C-0003;CRT-C-0012;CRT-C-0013;CRT-C-0017;CRT-C-0014;CRT-C-0010",
+              "Unnamed: 13": NaN,
+              "mapped_control_count": 6,
+              "mapped_data_class_count": 2,
+              "has_entry_points": true,
+              "linked_control_summary": "CRT-C-0003 — Data Encryption (In Transit); CRT-C-0010 — Privileged Access Management (PAM); CRT-C-0012 — Password Hygiene and Credential Hardening; CRT-C-0013 — Secure Remote Access (VPN / ZTNA); CRT-C-0014 — Network Segmentation; CRT-C-0017 — Secure DNS and Network Traffic Monitoring",
+              "linked_data_class_summary": "CRT-D-0008 — Access Logs; CRT-D-0013 — Authentication Secrets"
+            },
+            "name": "Corporate VPN Gateway",
+            "asset_type": "Access Gateway",
+            "environment": "Prod",
+            "trust_boundary": "Network Perimeter",
+            "vendor": "Internal"
+          },
+          {
+            "catalogue": "CRT-AS",
+            "id": "AS-005",
+            "raw": {
+              "asset_id": "AS-005",
+              "asset_name": "SSO Identity Provider (IdP)",
+              "asset_type": "Identity Service",
+              "environment": "Prod",
+              "exposure_type": "Hybrid",
+              "vendor": "IdentityVendor",
+              "trust_boundary": "Auth Boundary",
+              "entry_points": "SAML; OIDC; SCIM",
+              "logical_data_classes": "Authentication Data; Session Tokens",
+              "description": "Federated identity platform for internal/SaaS authentication.",
+              "notes": NaN,
+              "mapped_data_class_ids": "CRT-D-0013;CRT-D-0036;CRT-D-0017",
+              "mapped_control_ids": "CRT-C-0003;CRT-C-0015;CRT-C-0007;CRT-C-0012;CRT-C-0009;CRT-C-0017;CRT-C-0021",
+              "Unnamed: 13": NaN,
+              "mapped_control_count": 7,
+              "mapped_data_class_count": 3,
+              "has_entry_points": true,
+              "linked_control_summary": "CRT-C-0003 — Data Encryption (In Transit); CRT-C-0007 — Multi-Factor Authentication (MFA); CRT-C-0009 — Federation and External User Management; CRT-C-0012 — Password Hygiene and Credential Hardening; CRT-C-0015 — Secure Wi-Fi Management; CRT-C-0017 — Secure DNS and Network Traffic Monitoring; CRT-C-0021 — Application Layer Access Control",
+              "linked_data_class_summary": "CRT-D-0013 — Authentication Secrets; CRT-D-0017 — Customer Authentication Data; CRT-D-0036 — Session Tokens"
+            },
+            "name": "SSO Identity Provider (IdP)",
+            "asset_type": "Identity Service",
+            "environment": "Prod",
+            "trust_boundary": "Auth Boundary",
+            "vendor": "IdentityVendor"
+          }
+        ],
+        "identities": [],
+        "data_domains": [],
+        "vendors": [],
+        "controls": [],
+        "failures": [],
+        "telemetry": []
+      },
+      "relationships": [
+        {
+          "type": "asset_to_data_class",
+          "from_asset": "AS-001",
+          "to_data_class": "CRT-D-0001"
+        },
+        {
+          "type": "asset_to_data_class",
+          "from_asset": "AS-001",
+          "to_data_class": "CRT-D-0002"
+        },
+        {
+          "type": "asset_to_data_class",
+          "from_asset": "AS-001",
+          "to_data_class": "CRT-D-0043"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-001",
+          "to_control": "CRT-C-0003"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-001",
+          "to_control": "CRT-C-0005"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-001",
+          "to_control": "CRT-C-0023"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-001",
+          "to_control": "CRT-C-0017"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-001",
+          "to_control": "CRT-C-0014"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-001",
+          "to_control": "CRT-C-0016"
+        },
+        {
+          "type": "asset_to_data_class",
+          "from_asset": "AS-003",
+          "to_data_class": "CRT-D-0013"
+        },
+        {
+          "type": "asset_to_data_class",
+          "from_asset": "AS-003",
+          "to_data_class": "CRT-D-0008"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-003",
+          "to_control": "CRT-C-0003"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-003",
+          "to_control": "CRT-C-0012"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-003",
+          "to_control": "CRT-C-0013"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-003",
+          "to_control": "CRT-C-0017"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-003",
+          "to_control": "CRT-C-0014"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-003",
+          "to_control": "CRT-C-0010"
+        },
+        {
+          "type": "asset_to_data_class",
+          "from_asset": "AS-005",
+          "to_data_class": "CRT-D-0013"
+        },
+        {
+          "type": "asset_to_data_class",
+          "from_asset": "AS-005",
+          "to_data_class": "CRT-D-0036"
+        },
+        {
+          "type": "asset_to_data_class",
+          "from_asset": "AS-005",
+          "to_data_class": "CRT-D-0017"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-005",
+          "to_control": "CRT-C-0003"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-005",
+          "to_control": "CRT-C-0015"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-005",
+          "to_control": "CRT-C-0007"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-005",
+          "to_control": "CRT-C-0012"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-005",
+          "to_control": "CRT-C-0009"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-005",
+          "to_control": "CRT-C-0017"
+        },
+        {
+          "type": "asset_to_control",
+          "from_asset": "AS-005",
+          "to_control": "CRT-C-0021"
+        }
+      ],
+      "structural_findings": {
+        "gaps": [],
+        "compensations": [],
+        "coverage": {
+          "total_assets_in_scope": 3,
+          "distinct_asset_types_in_scope": 3,
+          "distinct_environments_in_scope": 1,
+          "distinct_boundaries_in_scope": 3,
+          "assets_with_mapped_data_in_scope": 3,
+          "assets_with_mapped_controls_in_scope": 3
+        },
+        "exposure_paths": []
+      },
+      "guardrails": {
+        "no_advice": true,
+        "no_configuration": true,
+        "no_assurance": true
+      },
+      "lens_meta": {
+        "built_at_utc": "2025-12-24T18:12:18+00:00",
+        "source": "module",
+        "persisted_to_disk": true,
+        "shelf_path_hint": "lenses/asm/bundles/asm_CRT-AS-cluster-f83571a8_20251224T181218Z.json"
+      }
+    },
+    "🧮 Data Classification Registry · data · Data: Data domain (Public Web) · 2025-12-24 18:12Z": {
+      "bundle_type": "data",
+      "module": "🧮 Data Classification Registry",
+      "primary_entity": {
+        "type": "data_cluster",
+        "id": "CRT-D-cluster-643e4aa4"
+      },
+      "entities": {
+        "assets": [],
+        "identities": [],
+        "data_domains": [
+          {
+            "catalogue": "CRT-D",
+            "id": "CRT-D-0001",
+            "raw": {
+              "data_id": "CRT-D-0001",
+              "data_name": "Product Information",
+              "definition": "General product or service descriptions intended for external access",
+              "data_tier": "Public",
+              "classification_level": "Public",
+              "data_category": "Product Information",
+              "environment": "Public Web",
+              "description": "General product or service descriptions intended for external access",
+              "examples": "Product pages, documentation excerpts",
+              "propagation_rules": "Public _ CDN _ Web _ Analytics",
+              "confidentiality_impact": "low",
+              "integrity_impact": "low",
+              "availability_impact": "low",
+              "notes": NaN,
+              "mapped_control_ids": "CRT-C-0003; CRT-C-0016",
+              "mapped_control_count": 2,
+              "has_propagation_rules": true,
+              "linked_control_summary": "CRT-C-0003 — Data Encryption (In Transit); CRT-C-0016 — Public Network Access Hardening"
+            },
+            "tier": "Public",
+            "category": "Product Information",
+            "environment": "Public Web"
+          },
+          {
+            "catalogue": "CRT-D",
+            "id": "CRT-D-0003",
+            "raw": {
+              "data_id": "CRT-D-0003",
+              "data_name": "Operational Logs",
+              "definition": "Machine-generated logs used for troubleshooting and performance visibility",
+              "data_tier": "Internal",
+              "classification_level": "Internal",
+              "data_category": "Operational Logs",
+              "environment": "Prod / Internal",
+              "description": "Machine-generated logs used for troubleshooting and performance visibility",
+              "examples": "API logs, job execution logs",
+              "propagation_rules": "Service _ Log Agent _ SIEM",
+              "confidentiality_impact": "medium",
+              "integrity_impact": "medium",
+              "availability_impact": "medium",
+              "notes": NaN,
+              "mapped_control_ids": "CRT-C-0049; CRT-C-0005; CRT-C-0065; CRT-C-0006",
+              "mapped_control_count": 4,
+              "has_propagation_rules": true,
+              "linked_control_summary": "CRT-C-0005 — Data Integrity Monitoring; CRT-C-0006 — Data Retention and Destruction Policies; CRT-C-0049 — Security Monitoring and Anomaly Detection; CRT-C-0065 — Technical Baseline Governance"
+            },
+            "tier": "Internal",
+            "category": "Operational Logs",
+            "environment": "Prod / Internal"
+          },
+          {
+            "catalogue": "CRT-D",
+            "id": "CRT-D-0005",
+            "raw": {
+              "data_id": "CRT-D-0005",
+              "data_name": "Workflow Metadata",
+              "definition": "Describes process flow but does not contain sensitive data",
+              "data_tier": "Internal",
+              "classification_level": "Internal",
+              "data_category": "Workflow Metadata",
+              "environment": "Internal Apps",
+              "description": "Describes process flow but does not contain sensitive data",
+              "examples": "Ticket status, workflow IDs",
+              "propagation_rules": "App _ Database _ Reporting",
+              "confidentiality_impact": "medium",
+              "integrity_impact": "medium",
+              "availability_impact": "medium",
+              "notes": NaN,
+              "mapped_control_ids": "CRT-C-0008; CRT-C-0065; CRT-C-0049; CRT-C-0006",
+              "mapped_control_count": 4,
+              "has_propagation_rules": true,
+              "linked_control_summary": "CRT-C-0006 — Data Retention and Destruction Policies; CRT-C-0008 — Fine-Grained Authorisation; CRT-C-0049 — Security Monitoring and Anomaly Detection; CRT-C-0065 — Technical Baseline Governance"
+            },
+            "tier": "Internal",
+            "category": "Workflow Metadata",
+            "environment": "Internal Apps"
+          }
+        ],
+        "vendors": [],
+        "controls": [],
+        "failures": [],
+        "telemetry": []
+      },
+      "relationships": [],
+      "structural_findings": {
+        "gaps": [],
+        "compensations": [],
+        "coverage": {
+          "total_classes_in_scope": 3,
+          "distinct_tiers_in_scope": 2,
+          "distinct_categories_in_scope": 3,
+          "distinct_environments_in_scope": 3,
+          "classes_with_mapped_controls_in_scope": 3,
+          "classes_with_propagation_rules_in_scope": 3
+        },
+        "propagation_paths": []
+      },
+      "guardrails": {
+        "no_advice": true,
+        "no_configuration": true,
+        "no_assurance": true
+      },
+      "lens_meta": {
+        "lens_family": "dcr",
+        "lens_label": "🧮 DCR — Data Scope (data_cluster: CRT-D-cluster-643e4aa4)",
+        "built_at_utc": "2025-12-24T18:12:01+00:00Z",
+        "source_module": "🧮 Data Classification Registry",
+        "persisted_to_disk": true,
+        "shelf_path_hint": "lenses/dcr/bundles/dcr_CRT-D-cluster-643e4aa4_20251224T181201Z.json",
+        "source": "disk"
+      }
+    },
+    "🔐 Identity & Access Lens · identity · Identity: Identity (service · critical · high) · 2025-12-24 18:12Z": {
+      "bundle_type": "identity",
+      "entities": {
+        "assets": [],
+        "controls": [],
+        "data_domains": [],
+        "failures": [],
+        "identities": [
+          {
+            "catalogue": "CRT-I",
+            "id": "I-0001",
+            "identity_type": "service",
+            "privilege_level": "high",
+            "raw": {
+              "associated_assets": "auth-systems",
+              "identity_id": "I-0001",
+              "is_privileged_flag": true,
+              "is_trust_anchor_flag": true,
+              "linked_control_summary": "CRT-C-0007 — Multi-Factor Authentication (MFA); CRT-C-0008 — Fine-Grained Authorisation; CRT-C-0009 — Federation and External User Management; CRT-C-0011 — Identity Lifecycle Management; CRT-C-0013 — Secure Remote Access (VPN / ZTNA)",
+              "mapped_control_count": 5,
+              "mapped_control_ids": "CRT-C-0007; CRT-C-0008; CRT-C-0009; CRT-C-0011; CRT-C-0013",
+              "name": "Primary Identity Provider (IdP)",
+              "notes": "Central authentication and SSO authority",
+              "policy_anchor": "MFA",
+              "privilege_level": "high",
+              "source_ref": "baseline",
+              "trust_anchor": "yes",
+              "type": "service",
+              "zone": "critical"
+            },
+            "trust_anchor": "yes",
+            "zone": "critical"
+          },
+          {
+            "catalogue": "CRT-I",
+            "id": "I-0003",
+            "identity_type": "service",
+            "privilege_level": "high",
+            "raw": {
+              "associated_assets": "pkis",
+              "identity_id": "I-0003",
+              "is_privileged_flag": true,
+              "is_trust_anchor_flag": true,
+              "linked_control_summary": "CRT-C-0012 — Password Hygiene and Credential Hardening; CRT-C-0045 — Federated Identity Security Frameworks",
+              "mapped_control_count": 2,
+              "mapped_control_ids": "CRT-C-0045; CRT-C-0012",
+              "name": "Certificate Authority (Root CA)",
+              "notes": "Root of trust for certificates",
+              "policy_anchor": "hardware-token",
+              "privilege_level": "high",
+              "source_ref": "baseline",
+              "trust_anchor": "yes",
+              "type": "service",
+              "zone": "critical"
+            },
+            "trust_anchor": "yes",
+            "zone": "critical"
+          },
+          {
+            "catalogue": "CRT-I",
+            "id": "I-0002",
+            "identity_type": "service",
+            "privilege_level": "high",
+            "raw": {
+              "associated_assets": "privileged-accounts",
+              "identity_id": "I-0002",
+              "is_privileged_flag": true,
+              "is_trust_anchor_flag": true,
+              "linked_control_summary": "CRT-C-0010 — Privileged Access Management (PAM); CRT-C-0012 — Password Hygiene and Credential Hardening; CRT-C-0049 — Security Monitoring and Anomaly Detection",
+              "mapped_control_count": 3,
+              "mapped_control_ids": "CRT-C-0010; CRT-C-0012; CRT-C-0049",
+              "name": "PAM Vault",
+              "notes": "Manages secrets and high-privilege credentials",
+              "policy_anchor": "hardware-token",
+              "privilege_level": "high",
+              "source_ref": "baseline",
+              "trust_anchor": "yes",
+              "type": "service",
+              "zone": "critical"
+            },
+            "trust_anchor": "yes",
+            "zone": "critical"
+          }
+        ],
+        "telemetry": [],
+        "vendors": []
+      },
+      "guardrails": {
+        "no_advice": true,
+        "no_assurance": true,
+        "no_configuration": true
+      },
+      "lens_meta": {
+        "built_at_utc": "2025-12-24T18:12:43+00:00",
+        "persisted_to_disk": true,
+        "shelf_path_hint": "lenses/ial/bundles/ial_CRT-I-cluster-80e86b7b_20251224T181243Z.json",
+        "source": "module"
+      },
+      "module": "🔐 Identity & Access Lens",
+      "primary_entity": {
+        "id": "CRT-I-cluster-80e86b7b",
+        "type": "identity_cluster"
+      },
+      "relationships": [],
+      "structural_findings": {
+        "compensations": [],
+        "coverage": {
+          "distinct_types_in_scope": 1,
+          "distinct_zones_in_scope": 1,
+          "identities_with_mapped_controls_in_scope": 3,
+          "privileged_identities_in_scope": 3,
+          "total_identities_in_scope": 3,
+          "trust_anchors_in_scope": 3
+        },
+        "gaps": [],
+        "identity_paths": []
+      }
+    },
+    "🛰 Supply-Chain Exposure Scanner · supply_chain · Vendor: Cloud Infrastructure Provider (IaaS) (direct · high · enhanced) · 2025-12-24 18:13Z": {
+      "bundle_type": "supply_chain",
+      "entities": {
+        "assets": [],
+        "controls": [],
+        "data_domains": [],
+        "failures": [],
+        "identities": [],
+        "telemetry": [],
+        "vendors": [
+          {
+            "catalogue": "CRT-SC",
+            "contract_tier": "enhanced",
+            "criticality": "high",
+            "data_access_level": "full",
+            "dependency_type": "direct",
+            "example_vendors": "AWS; Azure; DigitalOcean",
+            "id": "SC-0001",
+            "mapped_controls": [
+              "CRT-C-0018",
+              "CRT-C-0065",
+              "CRT-C-0049",
+              "CRT-C-0040",
+              "CRT-C-0026",
+              "CRT-C-0030"
+            ],
+            "notes": "Primary cloud platform",
+            "raw": {
+              "contract_tier": "enhanced",
+              "criticality": "high",
+              "data_access_level": "full",
+              "dependency_type": "direct",
+              "example_vendors": "AWS; Azure; DigitalOcean",
+              "failure_modes": "outage;identity-failure",
+              "linked_control_summary": "CRT-C-0018 — Infrastructure Resilience Planning; CRT-C-0026 — Contractual Security Clauses; CRT-C-0030 — Termination and Exit Controls; CRT-C-0040 — Compliance Monitoring and Reporting; CRT-C-0049 — Security Monitoring and Anomaly Detection; CRT-C-0065 — Technical Baseline Governance",
+              "mapped_control_count": 6,
+              "mapped_control_ids": "CRT-C-0018; CRT-C-0065; CRT-C-0049; CRT-C-0040; CRT-C-0026; CRT-C-0030",
+              "notes": "Primary cloud platform",
+              "service_type": "IaaS",
+              "source_ref": "baseline",
+              "vendor_archetype": "Cloud Infrastructure Provider (IaaS)",
+              "vendor_id": "SC-0001"
+            },
+            "service_type": "IaaS",
+            "source_ref": "baseline",
+            "vendor_archetype": "Cloud Infrastructure Provider (IaaS)"
+          },
+          {
+            "catalogue": "CRT-SC",
+            "contract_tier": "standard",
+            "criticality": "medium",
+            "data_access_level": "limited",
+            "dependency_type": "direct",
+            "example_vendors": "Google Workspace; Office 365",
+            "id": "SC-0003",
+            "mapped_controls": [
+              "CRT-C-0007",
+              "CRT-C-0012",
+              "CRT-C-0009",
+              "CRT-C-0026",
+              "CRT-C-0022",
+              "CRT-C-0039"
+            ],
+            "notes": "Business productivity suite",
+            "raw": {
+              "contract_tier": "standard",
+              "criticality": "medium",
+              "data_access_level": "limited",
+              "dependency_type": "direct",
+              "example_vendors": "Google Workspace; Office 365",
+              "failure_modes": "auth-failure",
+              "linked_control_summary": "CRT-C-0007 — Multi-Factor Authentication (MFA); CRT-C-0009 — Federation and External User Management; CRT-C-0012 — Password Hygiene and Credential Hardening; CRT-C-0022 — Third-Party Integration Risk Assessment; CRT-C-0026 — Contractual Security Clauses; CRT-C-0039 — Data Protection and Privacy Governance",
+              "mapped_control_count": 6,
+              "mapped_control_ids": "CRT-C-0007; CRT-C-0012; CRT-C-0009; CRT-C-0026; CRT-C-0022; CRT-C-0039",
+              "notes": "Business productivity suite",
+              "service_type": "SaaS",
+              "source_ref": "baseline",
+              "vendor_archetype": "Cloud Productivity & Collaboration Suite",
+              "vendor_id": "SC-0003"
+            },
+            "service_type": "SaaS",
+            "source_ref": "baseline",
+            "vendor_archetype": "Cloud Productivity & Collaboration Suite"
+          },
+          {
+            "catalogue": "CRT-SC",
+            "contract_tier": "regulated",
+            "criticality": "high",
+            "data_access_level": "limited",
+            "dependency_type": "direct",
+            "example_vendors": "PCI Payment Vendor MSP; Stripe",
+            "id": "SC-0006",
+            "mapped_controls": [
+              "CRT-C-0039",
+              "CRT-C-0026",
+              "CRT-C-0025",
+              "CRT-C-0042",
+              "CRT-C-0041"
+            ],
+            "notes": "Payment processor",
+            "raw": {
+              "contract_tier": "regulated",
+              "criticality": "high",
+              "data_access_level": "limited",
+              "dependency_type": "direct",
+              "example_vendors": "PCI Payment Vendor MSP; Stripe",
+              "failure_modes": "api-failure; payment-failure",
+              "linked_control_summary": "CRT-C-0025 — Third-Party Risk Assessment Framework; CRT-C-0026 — Contractual Security Clauses; CRT-C-0039 — Data Protection and Privacy Governance; CRT-C-0041 — Vendor Risk and Compliance Assurance; CRT-C-0042 — Incident Reporting and Breach Notification",
+              "mapped_control_count": 5,
+              "mapped_control_ids": "CRT-C-0039; CRT-C-0026; CRT-C-0025; CRT-C-0042; CRT-C-0041",
+              "notes": "Payment processor",
+              "service_type": "SaaS",
+              "source_ref": "baseline",
+              "vendor_archetype": "Payment Processor / PSP",
+              "vendor_id": "SC-0006"
+            },
+            "service_type": "SaaS",
+            "source_ref": "baseline",
+            "vendor_archetype": "Payment Processor / PSP"
+          }
+        ]
+      },
+      "guardrails": {
+        "no_advice": true,
+        "no_assurance": true,
+        "no_configuration": true
+      },
+      "lens_meta": {
+        "built_at_utc": "2025-12-24T18:13:02+00:00",
+        "persisted_to_disk": true,
+        "shelf_path_hint": "lenses/sces/bundles/sces_CRT-SC-cluster-9f800442_20251224T181302Z.json",
+        "source": "module"
+      },
+      "module": "🛰 Supply-Chain Exposure Scanner",
+      "primary_entity": {
+        "id": "CRT-SC-cluster-9f800442",
+        "type": "supply_chain_cluster"
+      },
+      "relationships": [],
+      "structural_findings": {
+        "compensations": [],
+        "coverage": {
+          "distinct_contract_tiers_in_scope": 3,
+          "distinct_criticalities_in_scope": 2,
+          "distinct_dependency_types_in_scope": 1,
+          "distinct_service_types_in_scope": 2,
+          "entries_with_mapped_controls_in_scope": 3,
+          "total_entries_in_scope": 3
+        },
+        "dependency_paths": [],
+        "gaps": []
+      }
+    },
+    "📡 Telemetry & Signal Console · telemetry · Source: Telemetry source · 2025-12-24 18:13Z": {
+      "bundle_type": "telemetry",
+      "entities": {
+        "assets": [],
+        "controls": [],
+        "data_domains": [],
+        "failures": [],
+        "identities": [],
+        "telemetry": [
+          {
+            "catalogue": "CRT-T",
+            "id": "T-0001",
+            "mapped_controls": [
+              "CRT-C-0007",
+              "CRT-C-0009",
+              "CRT-C-0011",
+              "CRT-C-0049"
+            ],
+            "raw": {
+              "channel": "logs",
+              "enrichment_ready": "yes",
+              "linked_control_summary": "CRT-C-0007 — Multi-Factor Authentication (MFA); CRT-C-0009 — Federation and External User Management; CRT-C-0011 — Identity Lifecycle Management; CRT-C-0049 — Security Monitoring and Anomaly Detection",
+              "linked_zones": "corp;cloud",
+              "mapped_control_count": 4,
+              "mapped_control_ids": "CRT-C-0007;CRT-C-0009;CRT-C-0011;CRT-C-0049",
+              "notes": "Core identity telemetry",
+              "parsing_status": "native",
+              "retention_days": 365,
+              "signal_class": "auth",
+              "source_name": "IdP Authentication Logs",
+              "source_ref": "baseline",
+              "telemetry_id": "T-0001"
+            }
+          },
+          {
+            "catalogue": "CRT-T",
+            "id": "T-0002",
+            "mapped_controls": [
+              "CRT-C-0007",
+              "CRT-C-0049",
+              "CRT-C-0032"
+            ],
+            "raw": {
+              "channel": "logs",
+              "enrichment_ready": "yes",
+              "linked_control_summary": "CRT-C-0007 — Multi-Factor Authentication (MFA); CRT-C-0032 — Insider Threat Monitoring and Response; CRT-C-0049 — Security Monitoring and Anomaly Detection",
+              "linked_zones": "corp;cloud",
+              "mapped_control_count": 3,
+              "mapped_control_ids": "CRT-C-0007;CRT-C-0049;CRT-C-0032",
+              "notes": "Used for anomaly detection",
+              "parsing_status": "native",
+              "retention_days": 365,
+              "signal_class": "auth",
+              "source_name": "MFA Events",
+              "source_ref": "baseline",
+              "telemetry_id": "T-0002"
+            }
+          },
+          {
+            "catalogue": "CRT-T",
+            "id": "T-0003",
+            "mapped_controls": [
+              "CRT-C-0016",
+              "CRT-C-0017",
+              "CRT-C-0049"
+            ],
+            "raw": {
+              "channel": "logs",
+              "enrichment_ready": "yes",
+              "linked_control_summary": "CRT-C-0016 — Public Network Access Hardening; CRT-C-0017 — Secure DNS and Network Traffic Monitoring; CRT-C-0049 — Security Monitoring and Anomaly Detection",
+              "linked_zones": "net-edge",
+              "mapped_control_count": 3,
+              "mapped_control_ids": "CRT-C-0016;CRT-C-0017;CRT-C-0049",
+              "notes": "Incoming/outgoing network telemetry",
+              "parsing_status": "partial",
+              "retention_days": 90,
+              "signal_class": "network",
+              "source_name": "Firewall Logs",
+              "source_ref": "baseline",
+              "telemetry_id": "T-0003"
+            }
+          }
+        ],
+        "vendors": []
+      },
+      "guardrails": {
+        "no_advice": true,
+        "no_assurance": true,
+        "no_configuration": true
+      },
+      "lens_meta": {
+        "built_at_utc": "2025-12-24T18:13:21+00:00",
+        "persisted_to_disk": true,
+        "shelf_path_hint": "lenses/tsc/bundles/tsc_CRT-T-cluster-09da5152_20251224T181321Z.json",
+        "source": "module"
+      },
+      "module": "📡 Telemetry & Signal Console",
+      "primary_entity": {
+        "id": "CRT-T-cluster-09da5152",
+        "type": "telemetry_cluster"
+      },
+      "relationships": [],
+      "structural_findings": {
+        "compensations": [],
+        "coverage": {
+          "distinct_channels_in_scope": 1,
+          "distinct_parsing_status_in_scope": 2,
+          "distinct_signal_classes_in_scope": 2,
+          "sources_with_mapped_controls_in_scope": 3,
+          "total_sources_in_scope": 3
+        },
+        "dependency_paths": [],
+        "gaps": []
+      }
+    }
+  },
+  "context_notes": {},
+  "template": {
+    "scope_key": "standard",
+    "selection_mode": "template",
+    "template_id": "TPL-GOV-STANDARD-V1",
+    "template_name": "Standard",
+    "template_source": "default",
+    "sections": [
+      "Purpose",
+      "Scope",
+      "Control Statements",
+      "Evidence and Verification",
+      "Exceptions",
+      "Review and Maintenance"
+    ],
+    "notes": ""
+  },
+  "meta": {
+    "built_at_utc": "2025-12-24T21:04:07+00:00",
+    "source": "programme_task_builder"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "bundle_type": "telemetry",
+  "entities": {
+    "assets": [],
+    "controls": [],
+    "data_domains": [],
+    "failures": [],
+    "identities": [],
+    "telemetry": [
+      {
+        "catalogue": "CRT-T",
+        "id": "T-0001",
+        "mapped_controls": [
+          "CRT-C-0007",
+          "CRT-C-0009",
+          "CRT-C-0011",
+          "CRT-C-0049"
+        ],
+        "raw": {
+          "channel": "logs",
+          "enrichment_ready": "yes",
+          "linked_control_summary": "CRT-C-0007 — Multi-Factor Authentication (MFA); CRT-C-0009 — Federation and External User Management; CRT-C-0011 — Identity Lifecycle Management; CRT-C-0049 — Security Monitoring and Anomaly Detection",
+          "linked_zones": "corp;cloud",
+          "mapped_control_count": 4,
+          "mapped_control_ids": "CRT-C-0007;CRT-C-0009;CRT-C-0011;CRT-C-0049",
+          "notes": "Core identity telemetry",
+          "parsing_status": "native",
+          "retention_days": 365,
+          "signal_class": "auth",
+          "source_name": "IdP Authentication Logs",
+          "source_ref": "baseline",
+          "telemetry_id": "T-0001"
+        }
+      },
+      {
+        "catalogue": "CRT-T",
+        "id": "T-0002",
+        "mapped_controls": [
+          "CRT-C-0007",
+          "CRT-C-0049",
+          "CRT-C-0032"
+        ],
+        "raw": {
+          "channel": "logs",
+          "enrichment_ready": "yes",
+          "linked_control_summary": "CRT-C-0007 — Multi-Factor Authentication (MFA); CRT-C-0032 — Insider Threat Monitoring and Response; CRT-C-0049 — Security Monitoring and Anomaly Detection",
+          "linked_zones": "corp;cloud",
+          "mapped_control_count": 3,
+          "mapped_control_ids": "CRT-C-0007;CRT-C-0049;CRT-C-0032",
+          "notes": "Used for anomaly detection",
+          "parsing_status": "native",
+          "retention_days": 365,
+          "signal_class": "auth",
+          "source_name": "MFA Events",
+          "source_ref": "baseline",
+          "telemetry_id": "T-0002"
+        }
+      },
+      {
+        "catalogue": "CRT-T",
+        "id": "T-0003",
+        "mapped_controls": [
+          "CRT-C-0016",
+          "CRT-C-0017",
+          "CRT-C-0049"
+        ],
+        "raw": {
+          "channel": "logs",
+          "enrichment_ready": "yes",
+          "linked_control_summary": "CRT-C-0016 — Public Network Access Hardening; CRT-C-0017 — Secure DNS and Network Traffic Monitoring; CRT-C-0049 — Security Monitoring and Anomaly Detection",
+          "linked_zones": "net-edge",
+          "mapped_control_count": 3,
+          "mapped_control_ids": "CRT-C-0016;CRT-C-0017;CRT-C-0049",
+          "notes": "Incoming/outgoing network telemetry",
+          "parsing_status": "partial",
+          "retention_days": 90,
+          "signal_class": "network",
+          "source_name": "Firewall Logs",
+          "source_ref": "baseline",
+          "telemetry_id": "T-0003"
+        }
+      }
+    ],
+    "vendors": []
+  },
+  "guardrails": {
+    "no_advice": true,
+    "no_assurance": true,
+    "no_configuration": true
+  },
+  "lens_meta": {
+    "built_at_utc": "2025-12-24T18:13:21+00:00",
+    "persisted_to_disk": true,
+    "shelf_path_hint": "lenses/tsc/bundles/tsc_CRT-T-cluster-09da5152_20251224T181321Z.json",
+    "source": "module"
+  },
+  "module": "📡 Telemetry & Signal Console",
+  "primary_entity": {
+    "id": "CRT-T-cluster-09da5152",
+    "type": "telemetry_cluster"
+  },
+  "relationships": [],
+  "structural_findings": {
+    "compensations": [],
+    "coverage": {
+      "distinct_channels_in_scope": 1,
+      "distinct_parsing_status_in_scope": 2,
+      "distinct_signal_classes_in_scope": 2,
+      "sources_with_mapped_controls_in_scope": 3,
+      "total_sources_in_scope": 3
+    },
+    "dependency_paths": [],
+    "gaps": []
+  }
+}

@@ -1,0 +1,124 @@
+# apps/config/programme_tasks.yaml
+#
+# Optional extension list for 🎛 Programmes — Task Builder.
+# Users can append entries here to introduce additional task types
+# per programme. Descriptions are structural only and intended to
+# support Depth + Aperture = Platinum at the point where human
+# reasoning intersects with CRT data.
+#
+# Fields:
+# - programme: governance | architecture | metrics | simulation
+# - task_id: short identifier for this task type
+# - label: display label shown in the UI
+# - description: short explanation of what this task represents (optional)
+
+# ------------------------
+# Governance programme
+# ------------------------
+
+- programme: governance
+  task_id: GOV-POLICY
+  label: "Policy document"
+  description: "Structural bundle centred on a single policy (e.g. data security, privacy, access control)."
+
+- programme: governance
+  task_id: GOV-STD
+  label: "Standard"
+  description: "Structural bundle focused on a specific standard that supports one or more policies (e.g. secure admin access)."
+
+- programme: governance
+  task_id: GOV-RISK
+  label: "Risk management brief / register snapshot"
+  description: "High-level structural brief or snapshot derived from a risk register or specific risk domain."
+
+- programme: governance
+  task_id: GOV-TPQ
+  label: "Third-party questionnaire"
+  description: "Questionnaire or structured question set used for vendor / third-party security reviews."
+
+- programme: governance
+  task_id: GOV-AUDIT
+  label: "Audit checklist"
+  description: "Checklist or structured points used to frame an internal or external audit activity."
+
+- programme: governance
+  task_id: GOV-AWARE
+  label: "Awareness script / training outline"
+  description: "Outline or script used for security awareness briefings or training sessions."
+
+- programme: governance
+  task_id: GOV-EXC
+  label: "Exception register"
+  description: "Structural view or subset of exceptions to policies / standards for a given scope."
+
+- programme: governance
+  task_id: GOV-CCN
+  label: "Continuous control narrative"
+  description: "Narrative describing how continuous monitoring and control operations are structured."
+
+- programme: governance
+  task_id: GOV-VRS
+  label: "Vendor risk summary"
+  description: "Structured summary of a specific vendor’s risk profile and control posture."
+
+# ------------------------
+# Architecture programme
+# ------------------------
+
+- programme: architecture
+  task_id: ARCH-VIEW
+  label: "Security architecture view"
+  description: "High-level structural view of security architecture for a system, platform, or business service."
+
+- programme: architecture
+  task_id: ARCH-COVER
+  label: "Control coverage summary"
+  description: "Structural summary showing which controls apply across zones, services, or components."
+
+- programme: architecture
+  task_id: ARCH-ZONE
+  label: "Zoning / trust-boundary view"
+  description: "View focused on zones, trust boundaries, and how traffic or data traverses between them."
+
+- programme: architecture
+  task_id: ARCH-DF
+  label: "Data-flow / service-chain summary"
+  description: "Summary of key data flows or service chains between systems and services."
+
+# ------------------------
+# Metrics programme
+# ------------------------
+
+- programme: metrics
+  task_id: METRICS-BRIEF
+  label: "Resilience metrics brief"
+  description: "Short structural brief highlighting resilience metrics for a set of services or domains."
+
+- programme: metrics
+  task_id: METRICS-DOMAIN
+  label: "Domain-specific metrics summary"
+  description: "Metrics summary focused on a particular domain (e.g. identity, vendor, incidents)."
+
+- programme: metrics
+  task_id: METRICS-GAP
+  label: "Coverage / gap overview"
+  description: "Overview showing structural coverage and gaps against a control or requirement set."
+
+# ------------------------
+# Simulation programme
+# ------------------------
+
+- programme: simulation
+  task_id: SIM-PLAYBOOK
+  label: "Incident response playbook"
+  description: "Playbook structure for a particular incident scenario (e.g. ransomware, outage)."
+
+- programme: simulation
+  task_id: SIM-SCENARIO
+  label: "Scenario analysis summary"
+  description: "Structured summary of an analysed scenario and its main structural assumptions."
+
+- programme: simulation
+  task_id: SIM-WHATIF
+  label: "“What if” structural simulation brief"
+  description: "Structural brief for exploring a specific 'what if' question using the CRT lenses."

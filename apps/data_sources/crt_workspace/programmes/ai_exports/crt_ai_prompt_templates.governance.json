@@ -1,0 +1,24 @@
+{
+  "version": "0.1",
+  "updated_at": "2025-12-24T00:00:00Z",
+  "templates": [
+    {
+      "template_id": "CRT-GOV-DEFAULT-DELTA-V1",
+      "label": "Governance (default delta)",
+      "description": "Small additive delta for governance artefacts (policy, standard, risk brief, questionnaire, checklist, etc.).",
+      "applies_to": [
+        "policy document",
+        "standard",
+        "risk management brief / register snapshot",
+        "third-party questionnaire",
+        "audit checklist",
+        "awareness script / training outline",
+        "exception register",
+        "continuous control narrative",
+        "vendor risk summary"
+      ],
+      "system_append": "",
+      "user_append": "Focus on clarity, scope boundaries, accountability, and traceability to mapped structural context. Avoid implementation guidance."
+    }
+  ]
+}

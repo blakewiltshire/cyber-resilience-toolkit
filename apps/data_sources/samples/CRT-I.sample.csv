@@ -1,0 +1,2 @@
+﻿identity_id,name,type,zone,trust_anchor,policy_anchor,privilege_level,associated_assets,notes,source_ref,mapped_control_ids
+I-1000,PAM Vault,service,critical,yes,hardware-token,high,privileged-accounts,Manages secrets and high-privilege credentials,baseline,CRT-C-0010; CRT-C-0012; CRT-C-0049
