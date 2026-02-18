@@ -8,7 +8,7 @@ CRT provides consistent structure and traceability across these domains so that 
 
 ## Python Version
 
-Python 3.11–3.12 (tested on 3.12.x)
+Tested on 3.12.x
 
 ---
 
