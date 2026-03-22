@@ -1,4 +1,4 @@
-# 🧮 About This App — Data Classification Registry
+## Data Classification Registry
 
 The **Data Classification Registry** provides the structural foundation for how data behaves across
 the Cyber Resilience Toolkit (CRT).

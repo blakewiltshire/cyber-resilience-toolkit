@@ -1,6 +1,6 @@
-# 🎛 About This App — Programme Builder & AI Export
+## Programme Builder & AI Export
 
-The **🎛 Programme Builder & AI Export** module assembles **programme artefacts** from your selected governance context and optional operational inputs.
+The **Programme Builder & AI Export** module assembles **programme artefacts** from your selected governance context and optional operational inputs.
 
 It exists to produce **clean, portable outputs** for review, archiving, export, and (optionally) structured AI handoff.
 
@@ -60,7 +60,7 @@ This module does **not**:
 
 ---
 
-## 🎛 Task Builder
+##Task Builder
 
 Builds a programme artefact from:
 
@@ -74,7 +74,7 @@ Outputs:
 
 ---
 
-## 🧱 User Templates
+## User Templates
 
 Templates allow you to shape exported outputs into consistent layouts.
 
@@ -84,7 +84,7 @@ Templates allow you to shape exported outputs into consistent layouts.
 
 ---
 
-## 🔍 Verify
+## Verify
 
 Verify creates an export-ready **verified artefact**:
 
@@ -93,7 +93,7 @@ Verify creates an export-ready **verified artefact**:
 
 ---
 
-## 🧠 AI Prompt & Response
+## AI Prompt & Response
 
 This step packages a **verified artefact** into a structured handoff:
 
@@ -105,7 +105,7 @@ This module does not generate advice or perform analysis by itself — it produc
 
 ---
 
-## 🧹 Maintenance
+## Maintenance
 
 Maintenance provides safe housekeeping across:
 

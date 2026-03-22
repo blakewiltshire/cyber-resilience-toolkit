@@ -16,7 +16,7 @@
 # pylint: disable=simplifiable-if-expression
 
 """
-🔄 System Integrator Hub — Cyber Resilience Toolkit (CRT)
+System Integrator Hub — Cyber Resilience Toolkit (CRT)
 
 The System Integrator Hub (SIH) is the **single point of truth** for CRT catalogues.
 
@@ -234,16 +234,16 @@ def render_view_catalogue_health(catalogues: Dict[str, pd.DataFrame]) -> None:
     Shows a consolidated summary for all catalogues loaded via SIH,
     including backbone vs append-only, row counts, and likely identifier columns.
     """
-    st.header("📊 Catalogue Health Overview")
+    st.header("Catalogue Health Overview")
 
     st.markdown(
         """
-Use this view to confirm that the **System Integrator Hub** (SIH) has loaded
+Use this view to confirm that the **System Integrator Hub (SIH)** has loaded
 all CRT catalogues correctly, and that the backbone vs append-only distinction
 is applied as expected.
 
 - Backbone catalogues are **not modified** by the program.
-- Append-only catalogues may be extended via 📂 Structural Controls & Frameworks.
+- Append-only catalogues may be extended via **Structural Controls & Frameworks.**
 - All modules must read catalogue data through SIH.
 """
     )
@@ -260,7 +260,7 @@ is applied as expected.
     df_summary["type_sort"] = df_summary["type"].map(type_order).fillna(99)
     df_summary = df_summary.sort_values(by=["type_sort", "catalogue"]).drop(columns=["type_sort"])
 
-    st.markdown("### 🔎 High-Level Status")
+    st.markdown("### High-Level Status")
     c1, c2, c3 = st.columns(3)
     with c1:
         st.metric("Backbone catalogues", int((df_summary["type"] == "Backbone").sum()))
@@ -269,7 +269,7 @@ is applied as expected.
     with c3:
         st.metric("Empty catalogues", int(df_summary["empty"].sum()))
 
-    st.markdown("### 📋 Catalogue Summary (via SIH)")
+    st.markdown("### Catalogue Summary (via SIH)")
     display_cols = ["catalogue", "type", "rows", "columns", "likely_id_columns", "empty"]
     st.dataframe(
         df_summary[display_cols],
@@ -294,7 +294,7 @@ def render_view_catalogue_explorer(catalogues: Dict[str, pd.DataFrame]) -> None:
     Allows the user to inspect the schema and sample content of a single catalogue,
     purely via SIH, without reading CSV files directly.
     """
-    st.header("🗂️ Catalogue Explorer")
+    st.header("Catalogue Explorer")
 
     st.markdown(
         """
@@ -323,7 +323,7 @@ This is helpful for:
         st.info(f"`{selected_catalogue}` is currently empty or not loaded.")
         return
 
-    st.markdown(f"### 📁 {selected_catalogue} — Schema & Sample Rows")
+    st.markdown(f"### {selected_catalogue} — Schema & Sample Rows")
 
     c1, c2 = st.columns([1, 3])
     with c1:
@@ -367,7 +367,7 @@ def render_view_entity_probe(sih: Any, catalogues: Dict[str, pd.DataFrame]) -> N
     - A dropdown of IDs from the chosen catalogue (top N rows)
     """
 
-    st.header("🧪 Entity & Relationship Probe")
+    st.header("Entity & Relationship Probe")
 
     st.markdown(
         """
@@ -471,7 +471,7 @@ You can either:
 # Streamlit Page Configuration
 # -------------------------------------------------------------------------------------------------
 st.set_page_config(
-    page_title="🔄 System Integrator Hub",
+    page_title="System Integrator Hub",
     page_icon="🔄",
     layout="wide",
 )
@@ -488,14 +488,14 @@ with st.expander("📖 What is this app about?"):
     render_markdown_file(
         ABOUT_APP_MD,
         fallback=(
-            "# 🔄 System Integrator Hub\n\n"
+            "# System Integrator Hub\n\n"
             "This module provides a **read-only console** for the System Integrator Hub (SIH). "
             "It allows you to:\n\n"
             "- Verify that backbone and append-only catalogues are loaded\n"
             "- Inspect catalogue schemas and sample rows via SIH\n"
             "- Optionally probe entities and their structural relationships (if supported)\n\n"
             "No catalogue updates are performed here. All append-only changes are made via "
-            "📂 Structural Controls & Frameworks. All other modules consume catalogue data "
+            "Structural Controls & Frameworks. All other modules consume catalogue data "
             "via this hub."
         ),
     )
@@ -526,7 +526,7 @@ for path, label in build_sidebar_links():
 st.sidebar.divider()
 st.logo(BRAND_LOGO_PATH)  # pylint: disable=no-member
 
-st.sidebar.markdown("### 🚀 Getting Started")
+st.sidebar.markdown("### Getting Started")
 st.sidebar.caption(
     "Use the view selector below to switch between SIH perspectives.\n\n"
     "- **Catalogue Health** for a quick status check\n"
@@ -537,7 +537,7 @@ st.sidebar.caption(
 # Sidebar — contextual info
 st.sidebar.info(
     """
-**🔄 System Integrator Hub**
+**System Integrator Hub**
 
 This module shows:
 
@@ -556,13 +556,13 @@ with st.sidebar.expander("ℹ️ About & Support"):
     if support_md:
         st.markdown(support_md, unsafe_allow_html=True)
 
-st.sidebar.subheader("🗂️ View Options")
+st.sidebar.subheader("View Options")
 view_mode = st.sidebar.radio(
     "Choose a view",
     [
-        "📊 Catalogue Health",
-        "🗂️ Catalogue Explorer",
-        "🧪 Entity & Relationship Probe",
+        "Catalogue Health",
+        "Catalogue Explorer",
+        "Entity & Relationship Probe",
     ],
     index=0,
 )
@@ -570,11 +570,11 @@ view_mode = st.sidebar.radio(
 # -------------------------------------------------------------------------------------------------
 # Main View Routing
 # -------------------------------------------------------------------------------------------------
-if view_mode == "📊 Catalogue Health":
+if view_mode == "Catalogue Health":
     render_view_catalogue_health(CATALOGUES)
-elif view_mode == "🗂️ Catalogue Explorer":
+elif view_mode == "Catalogue Explorer":
     render_view_catalogue_explorer(CATALOGUES)
-elif view_mode == "🧪 Entity & Relationship Probe":
+elif view_mode == "Entity & Relationship Probe":
     render_view_entity_probe(SIH_INSTANCE, CATALOGUES)
 else:
     st.warning("Unknown view selected. Please choose an option from the sidebar.")

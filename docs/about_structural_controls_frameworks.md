@@ -1,5 +1,4 @@
-# 📂 Structural Controls & Frameworks  
-### About This App
+## Structural Controls & Frameworks  
 
 This module is the **command centre** of the Cyber Resilience Toolkit (CRT).
 
@@ -25,7 +24,7 @@ It provides **structure**.
 
 ---
 
-## 🧭 Framing: Depth, Aperture, Platinum
+## Framing: Depth, Aperture, Platinum
 
 - **Depth = CRT-C**  
   The structural control catalogue is the objective spine of the programme.
@@ -38,7 +37,7 @@ It provides **structure**.
 
 ---
 
-## 🚀 Flow Overview
+## Flow Overview
 
 1. **Org Governance Profile — define organisation profiles (industry, jurisdictions, frameworks, obligations).**  
 2. **CRT Defaults Browser — inspect the CRT backbone and all shipped catalogues.**  
@@ -55,7 +54,7 @@ Each step builds on the previous one:
 
 ---
 
-## 🗂️ View Options
+## View Options
 
 Use the view selector to choose:
 
@@ -98,35 +97,35 @@ This profile **frames** interpretation; it does **not** validate compliance or m
 
 The CRT ships with three catalogue families, all visible in a unified, read-only **Defaults Browser**.
 
-### 🧱 Core CRT Series (Locked Backbone)
+### Core CRT Series (Locked Backbone)
 
 Canonical and **read-only**:
 
-- 📘 **CRT-G — Domains**  
-- 🧱 **CRT-C — Controls**  
-- ⚠️ **CRT-F — Failures**  
-- 🧩 **CRT-N — Compensations**
+- **CRT-G — Domains**  
+- **CRT-C — Controls**  
+- **CRT-F — Failures**  
+- **CRT-N — Compensations**
 
 This is the raw backbone.  
 Everything else connects into it.
 
 ---
 
-### 📋 Governance Catalogues (Overlays)
+### Governance Catalogues (Overlays)
 
 These ship with baseline entries and can be extended via **Framework Onboarding** or **Policy & Standard Orchestration**:
 
-- 📋 **CRT-REQ — Requirements**  
-- 📜 **CRT-POL — Policies**  
-- 📏 **CRT-STD — Standards**  
-- ⚖️ **CRT-LR — Obligations**
+- **CRT-REQ — Requirements**  
+- **CRT-POL — Policies**  
+- **CRT-STD — Standards**  
+- **CRT-LR — Obligations**
 
 They act as **overlays** that bind into CRT-C using `mapped_control_ids`.  
 They do **not** modify CRT-G / CRT-C / CRT-F / CRT-N.
 
 ---
 
-### 🛰 Operational Structure (Org-Specific)
+### Operational Structure (Org-Specific)
 
 These catalogues describe **your real environment**:
 
@@ -201,10 +200,10 @@ The **Mapping Explorer** provides a read-only, structural lens over how governan
 
 It offers four anchor lenses:
 
-- 📋 **Requirements Lens** (CRT-REQ as anchor)  
-- 📜 **Policy Lens** (CRT-POL as anchor)  
-- 📏 **Standard Lens** (CRT-STD as anchor)  
-- ⚖️ **Obligation Lens** (CRT-LR as anchor)
+- **Requirements Lens** (CRT-REQ as anchor)  
+- **Policy Lens** (CRT-POL as anchor)  
+- **Standard Lens** (CRT-STD as anchor)  
+- **Obligation Lens** (CRT-LR as anchor)
 
 Each lens lets you:
 
@@ -225,7 +224,7 @@ Their mappings are consumed in the architecture, risk, IR, continuity, and aware
 
 ---
 
-## 🎯 Why This App Matters
+## Why This App Matters
 
 This app aligns:
 

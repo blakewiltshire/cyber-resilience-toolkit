@@ -16,7 +16,7 @@
 # pylint: disable=simplifiable-if-expression
 
 """
-📡 Telemetry & Signal Console — Cyber Resilience Toolkit (CRT)
+Telemetry & Signal Console — Cyber Resilience Toolkit (CRT)
 
 Read-only structural exploration of CRT-T telemetry sources. This module provides a
 structural view of what telemetry sources exist today, how they are described, and
@@ -29,18 +29,18 @@ for downstream CRT modules.
 
 Views provided:
 
-- 📊 Catalogue Overview
+- Catalogue Overview
   - Tabular view of all telemetry sources with lightweight filters
-  - Integrated 📈 Coverage & Metrics (descriptive only)
+  - Integrated Coverage & Metrics (descriptive only)
   - Optional per-source inspection panel
 
-- 📦 Optional Telemetry Scope for Tasks
+- Optional Telemetry Scope for Tasks
   - Optional, export-only `bundle_type = "telemetry"` context bundle
   - Supports single source, multi-source cluster, and segment scope
   - Download as JSON and/or save to the lens shelf
 
 Lens reuse, curation, templates, and AI handoff are handled exclusively
-by 🧠 AI Observation Console.
+by AI Observation Console.
 """
 
 from __future__ import annotations
@@ -380,7 +380,7 @@ def _row_to_telemetry_entity(row: pd.Series, colmap: Dict[str, Optional[str]]) -
 # View 1 — Catalogue Overview (with inspection)
 # -------------------------------------------------------------------------------------------------
 def render_view_overview(df_view: pd.DataFrame, colmap: Dict[str, Optional[str]]) -> None:
-    st.header("📊 Telemetry Catalogue Overview")
+    st.header("Telemetry Catalogue Overview")
     st.markdown(
         """
 Use this view to scan the **structure** of CRT-T:
@@ -408,7 +408,7 @@ score detection quality or provide assurance.
         st.warning("No telemetry sources found in CRT-T. Populate CRT-T via the Command Centre.")
         return
 
-    st.markdown("### 📈 Coverage & Metrics (structural, descriptive only)")
+    st.markdown("### Coverage & Metrics (structural, descriptive only)")
     coverage = _compute_coverage(df_view, colmap)
 
     m1, m2, m3 = st.columns(3)
@@ -434,7 +434,7 @@ and do not provide scoring or assurance.
 """
         )
 
-    st.markdown("### 📡 All Telemetry Sources")
+    st.markdown("### All Telemetry Sources")
 
     id_col = colmap.get("id_col")
     name_col = colmap.get("name_col")
@@ -448,7 +448,7 @@ and do not provide scoring or assurance.
     filter_col, table_col = st.columns([1, 3])
 
     with filter_col:
-        st.markdown("#### 🔎 Filters")
+        st.markdown("#### Filters")
 
         channel_choice = None
         class_choice = None
@@ -532,7 +532,7 @@ and do not provide scoring or assurance.
             st.dataframe(df_filtered[display_cols], width="stretch", hide_index=True)
 
     st.markdown("---")
-    st.markdown("### 🧬 Inspect a Single Telemetry Source (optional)")
+    st.markdown("### Inspect a Single Telemetry Source (optional)")
 
     if df_filtered.empty:
         st.caption("Adjust filters above to enable per-source inspection.")
@@ -615,11 +615,11 @@ and do not provide scoring or assurance.
 # View 2 — Optional Telemetry Scope for Tasks (export-only)
 # -------------------------------------------------------------------------------------------------
 def render_view_context_bundles(df_view: pd.DataFrame, colmap: Dict[str, Optional[str]]) -> None:
-    st.header("📦 Optional Telemetry Scope for Tasks")
+    st.header("Optional Telemetry Scope for Tasks")
 
     st.markdown(
         """
-Most users can **skip this step** and go straight to **🎛 Programmes — Task Builder**.
+Most users can **skip this step** and go straight to **Programmes — Task Builder**.
 
 Use this page only if you want downstream tasks or AI-assisted exploration to focus on a
 **specific slice of telemetry** (for example: authentication logs and MFA events, or network
@@ -629,7 +629,7 @@ Whatever you choose here:
 
 - It does **not** configure telemetry or activate collection
 - You will see the bundle JSON before exporting it
-- Lens maintenance and attachment happens in 🧠 AI Observation Console
+- Lens maintenance and attachment happens in AI Observation Console
 """
     )
 
@@ -938,7 +938,7 @@ Whatever you choose here:
 
     bundle: Dict[str, Any] = {
         "bundle_type": "telemetry",
-        "module": "📡 Telemetry & Signal Console",
+        "module": "Telemetry & Signal Console",
         "primary_entity": primary_entity,
         "entities": {
             "assets": [],
@@ -1010,13 +1010,13 @@ Whatever you choose here:
             ok = _save_json_file(path, bundle)
             if ok:
                 st.success(f"Saved to lens shelf: {filename}")
-                st.caption("Lens maintenance and attachment happens in 🧠 AI Observation Console.")
+                st.caption("Lens maintenance and attachment happens in AI Observation Console.")
             else:
                 st.error("Could not save to the lens shelf.")
 
     st.caption(
         "This lens is **export-only**. It does not configure telemetry, score detection quality, "
-        "or provide assurance. Review, attach, combine, or retire lenses in 🧠 AI Observation Console."
+        "or provide assurance. Review, attach, combine, or retire lenses in AI Observation Console."
     )
 
 
@@ -1042,7 +1042,7 @@ with st.expander("📖 What is this app about?"):
     render_markdown_file(
         ABOUT_APP_MD,
         fallback=(
-            "# 📡 Telemetry & Signal Console\n\n"
+            "## Telemetry & Signal Console\n\n"
             "This module surfaces the **effective CRT-T catalogue** in a structured, "
             "non-prescriptive way. It allows you to:\n\n"
             "- Explore telemetry channels and signal classes\n"
@@ -1071,7 +1071,7 @@ for path, label in build_sidebar_links():
 st.sidebar.divider()
 st.logo(BRAND_LOGO_PATH)  # pylint: disable=no-member
 
-st.sidebar.markdown("### 🚀 Getting Started")
+st.sidebar.markdown("### Getting Started")
 st.sidebar.caption(
     "Use the view selector below to switch between perspectives within the "
     "Telemetry & Signal Console."
@@ -1079,7 +1079,7 @@ st.sidebar.caption(
 
 st.sidebar.info(
     """
-**📡 Telemetry & Signal Console**
+**Telemetry & Signal Console**
 
 Use this module to:
 
@@ -1089,16 +1089,16 @@ Use this module to:
 - (Optionally) export a normalised `bundle_type = "telemetry"` scope lens
 
 All views are read-only. Catalogue updates and append operations are handled exclusively
-via the 📂 Structural Controls & Frameworks — Command Centre and 🛰 Org-Specific Catalogues.
+via the Structural Controls & Frameworks — Command Centre and Org-Specific Catalogues.
 """
 )
 
-st.sidebar.subheader("🗂️ View Options")
+st.sidebar.subheader("View Options")
 view_mode = st.sidebar.radio(
     "Choose a view",
     [
-        "📊 Catalogue Overview",
-        "📦 Optional Telemetry Scope for Tasks",
+        "Catalogue Overview",
+        "Optional Telemetry Scope for Tasks",
     ],
     index=0,
 )
@@ -1112,9 +1112,9 @@ with st.sidebar.expander("ℹ️ About & Support"):
 # -------------------------------------------------------------------------------------------------
 # Main View Routing
 # -------------------------------------------------------------------------------------------------
-if view_mode == "📊 Catalogue Overview":
+if view_mode == "Catalogue Overview":
     render_view_overview(DF_VIEW, COLMAP)
-elif view_mode == "📦 Optional Telemetry Scope for Tasks":
+elif view_mode == "Optional Telemetry Scope for Tasks":
     render_view_context_bundles(DF_VIEW, COLMAP)
 else:
     st.warning("Unknown view selected. Please choose an option from the sidebar.")

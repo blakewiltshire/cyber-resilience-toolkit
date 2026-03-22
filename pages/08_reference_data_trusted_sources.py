@@ -22,16 +22,16 @@ Read-only reference layer for the CRT ecosystem.
 
 This module provides a structured, non-prescriptive way to explore:
 
-1) 🌐 Cyber Resilience Reference Directory
+1) Cyber Resilience Reference Directory
    - External frameworks, standards, supervisory material, and authoritative
      reference sources that inform cyber, technology, and operational resilience.
 
-2) 🧠 AI Persona Reference
+2) AI Persona Reference
    - Role-aligned interpretive framings for cyber, operational, and governance
      contexts. Designed as scaffolding for AI-augmented exploration, not as
      advisory content.
 
-3) 🗂️ Index & Controls Viewer
+3) Index & Controls Viewer
    - A concept index (A–Z) and structural views into CRT technical control
      families.
 
@@ -445,7 +445,7 @@ def load_personas_yaml(path: str) -> Dict[str, Any]:
 def build_registry() -> List[Dict[str, Any]]:
     """
     Produce a unified list of persona dicts with a superset schema:
-    - name, icon, short_description, definition, focus, related
+    - name, short_description, definition, focus, related
     - behaviour, avoid, starters, gpt, prompt_template_key, perspective_frame (optional)
     """
     data = load_personas_yaml(AI_PERSONAS_YAML)
@@ -458,7 +458,6 @@ def build_registry() -> List[Dict[str, Any]]:
         registry.append(
             {
                 "name": name,
-                "icon": payload.get("icon", ""),
                 "short_description": payload.get("short_description", ""),
                 "definition": payload.get("definition", ""),
                 "focus": payload.get("focus", []),
@@ -480,7 +479,6 @@ REGISTRY: List[Dict[str, Any]] = build_registry()
 def render_persona(card: Dict[str, Any]) -> None:
     """Render a single persona card with neutral, non-leading presentation."""
     name = card.get("name", "Unnamed Persona")
-    icon = card.get("icon", "")
     short_desc = card.get("short_description", "")
     definition = card.get("definition", "")
     focus = card.get("focus", []) or []
@@ -490,7 +488,7 @@ def render_persona(card: Dict[str, Any]) -> None:
     starters = card.get("starters", []) or []
     gpt_meta = card.get("gpt", {}) or {}
 
-    st.markdown(f"#### {icon} **{name}**" if icon else f"#### **{name}**")
+    st.markdown(f"#### **{name}**")
     if short_desc:
         st.write(short_desc)
     if definition:
@@ -785,12 +783,12 @@ def filter_technical_controls(query: str, initial: str) -> List[Dict[str, Any]]:
 # -------------------------------------------------------------------------------------------------
 def render_reference_directory() -> None:
     """
-    🌐 Cyber Resilience Reference Directory
+    Cyber Resilience Reference Directory
 
     High-level directory of external frameworks, standards, and authoritative references,
     backed by `apps/config/cyber_references.yaml`.
     """
-    st.header("🌐 Cyber Resilience Reference Directory")
+    st.header("Cyber Resilience Reference Directory")
     st.caption(
         "Central hub for accessing key cybersecurity frameworks, resilience regulations, "
         "research portals, and structural reference systems used across the Cyber "
@@ -816,7 +814,7 @@ Any mapping into CRT catalogues occurs in the structural modules
     )
 
     # --- Section 1: Cybersecurity Standards & Control Frameworks ---
-    with st.expander("🧱 Cybersecurity Standards and Control Frameworks"):
+    with st.expander("Cybersecurity Standards and Control Frameworks"):
         st.markdown(
             """
 Core frameworks defining the structural logic of security controls, layered defence,
@@ -826,7 +824,7 @@ and governance alignment.
         render_reference_group(REFERENCE_DATA, "standards")
 
     # --- Section 2: Regulatory and Supervisory Authorities ---
-    with st.expander("⚖️ Regulatory and Supervisory Authorities"):
+    with st.expander("Regulatory and Supervisory Authorities"):
         st.markdown(
             """
 Regional and global authorities issuing cybersecurity and operational resilience mandates.
@@ -835,7 +833,7 @@ Regional and global authorities issuing cybersecurity and operational resilience
         render_reference_group(REFERENCE_DATA, "regulators")
 
     # --- Section 3: Operational Resilience & Continuity Frameworks ---
-    with st.expander("🏛️ Operational Resilience and Continuity Frameworks"):
+    with st.expander("Operational Resilience and Continuity Frameworks"):
         st.markdown(
             """
 Reference systems emphasising systemic resilience, continuity, and critical
@@ -845,7 +843,7 @@ infrastructure protection.
         render_reference_group(REFERENCE_DATA, "continuity")
 
     # --- Section 4: Industry Reports and Research Portals ---
-    with st.expander("📊 Industry Reports and Research Portals"):
+    with st.expander("Industry Reports and Research Portals"):
         st.markdown(
             """
 Research hubs, think tanks, and public–private alliances advancing understanding
@@ -855,7 +853,7 @@ of cyber risk and resilience.
         render_reference_group(REFERENCE_DATA, "research")
 
     # --- Section 5: International Organisations & Multilateral Initiatives ---
-    with st.expander("🌐 International Organisations and Multilateral Initiatives"):
+    with st.expander("International Organisations and Multilateral Initiatives"):
         st.markdown(
             """
 Bodies establishing shared policy, resilience cooperation, and cross-border standards.
@@ -864,7 +862,7 @@ Bodies establishing shared policy, resilience cooperation, and cross-border stan
         render_reference_group(REFERENCE_DATA, "international")
 
     # --- Section 6: Taxonomies, Classifications & Identifier Systems ---
-    with st.expander("🧩 Taxonomies, Classifications, and Identifier Systems"):
+    with st.expander("Taxonomies, Classifications, and Identifier Systems"):
         st.markdown(
             """
 Common reference systems ensuring consistent terminology and traceability across
@@ -874,7 +872,7 @@ resilience frameworks.
         render_reference_group(REFERENCE_DATA, "taxonomies")
 
     # --- Section 7: Vulnerability, Exposure & Threat Reference Systems ---
-    with st.expander("🔍 Vulnerability, Exposure, and Threat Reference Systems"):
+    with st.expander("Vulnerability, Exposure, and Threat Reference Systems"):
         st.markdown(
             """
 Public reference systems providing canonical identifiers and shared terminology
@@ -887,7 +885,7 @@ and traceability. They do not represent implementation guidance.
         render_reference_group(REFERENCE_DATA, "vulnerability_refs")
 
     # --- Section 8: National Cybersecurity Centres & CSIRTs (Supplementary) ---
-    with st.expander("🇺🇳 National Cybersecurity Centres & CSIRTs (Supplementary)"):
+    with st.expander("National Cybersecurity Centres & CSIRTs (Supplementary)"):
         st.markdown(
             """
 Additional reference points for national-level cybersecurity centres and incident
@@ -898,7 +896,7 @@ response networks.
 
     # --- Section 9: Application Security & Best-Practice Communities (Supplementary) ---
     with st.expander(
-        "🛠️ Application Security & Best-Practice Communities (Supplementary)"
+        "Application Security & Best-Practice Communities (Supplementary)"
     ):
         st.markdown(
             """
@@ -912,12 +910,12 @@ application-level resilience.
 
 def render_ai_persona_reference() -> None:
     """
-    🧠 AI Persona Reference
+    AI Persona Reference
 
     Read-only role lenses for structured exploration.
     These profiles describe how different roles tend to frame CRT structures.
     """
-    st.header("🧠 AI Persona Reference")
+    st.header("AI Persona Reference")
     st.markdown(
         """
 This view provides **reference profiles** for role-based lenses used across the CRT ecosystem.
@@ -973,12 +971,12 @@ not as required inputs for generating the artefact.
 
 def render_index_and_controls_viewer() -> None:
     """
-    🗂️ Index & Controls Viewer
+    Index & Controls Viewer
 
     Concept index (A–Z) and structural views of CRT technical control families.
     Backed by `index_glossary_cyber.yaml` and `technical_controls_index.yaml`.
     """
-    st.header("🗂️ Index & Controls Viewer")
+    st.header("Index & Controls Viewer")
     st.caption(
         "Concept index and technical control families underpinning the Cyber Resilience Toolkit (CRT)."
     )
@@ -1004,7 +1002,7 @@ Both layers are read-only and serve as a structural reference, not an implementa
     # Choose sub-view (Concept vs Technical) – local to this panel
     sub_view = st.radio(
         "Select reference layer",
-        ["📘 Concept Index", "🧰 Technical Controls Index"],
+        ["Concept Index", "Technical Controls Index"],
         index=0,
         horizontal=True,
         key="index_controls_layer_radio",
@@ -1013,7 +1011,7 @@ Both layers are read-only and serve as a structural reference, not an implementa
     # Shared search + A–Z filter, but contextualised by sub_view
     col1, col2 = st.columns([3, 2])
     with col1:
-        if sub_view == "📘 Concept Index":
+        if sub_view == "Concept Index":
             query = st.text_input(
                 "🔎 Search concepts, definitions, or related terms",
                 placeholder="e.g., ‘Adaptive Resilience’, ‘Zero-Trust Architecture’",
@@ -1038,7 +1036,7 @@ Both layers are read-only and serve as a structural reference, not an implementa
     st.markdown("---")
 
     # Results
-    if sub_view == "📘 Concept Index":
+    if sub_view == "Concept Index":
         results = filter_concepts(query, initial)
         if not results:
             st.info(
@@ -1104,7 +1102,7 @@ st.sidebar.divider()
 st.logo(BRAND_LOGO_PATH)  # pylint: disable=no-member
 
 # Sidebar — Getting Started / Context
-st.sidebar.markdown("### 🚀 Getting Started")
+st.sidebar.markdown("### Getting Started")
 st.sidebar.caption(
     "Follow the flow:\n\n"
     "1. Cyber Resilience Reference Directory — browse external frameworks, standards, "
@@ -1114,13 +1112,13 @@ st.sidebar.caption(
     "3. Index & Controls Viewer — explore CRT concepts and control families via an A–Z index.\n"
 )
 
-st.sidebar.subheader("🗂️ View Options")
+st.sidebar.subheader("View Options")
 view_mode = st.sidebar.radio(
     "Choose a view",
     [
-        "🌐 Cyber Resilience Reference Directory",
-        "🧠 AI Persona Reference",
-        "🗂️ Index & Controls Viewer",
+        "Cyber Resilience Reference Directory",
+        "AI Persona Reference",
+        "Index & Controls Viewer",
     ],
     index=0,
 )
@@ -1137,11 +1135,11 @@ with st.sidebar.expander("ℹ️ About & Support"):
 # -------------------------------------------------------------------------------------------------
 # Main View Routing
 # -------------------------------------------------------------------------------------------------
-if view_mode == "🌐 Cyber Resilience Reference Directory":
+if view_mode == "Cyber Resilience Reference Directory":
     render_reference_directory()
-elif view_mode == "🧠 AI Persona Reference":
+elif view_mode == "AI Persona Reference":
     render_ai_persona_reference()
-elif view_mode == "🗂️ Index & Controls Viewer":
+elif view_mode == "Index & Controls Viewer":
     render_index_and_controls_viewer()
 else:
     # Defensive fallback — should not occur given the fixed radio options.

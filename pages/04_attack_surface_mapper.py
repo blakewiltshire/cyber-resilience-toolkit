@@ -16,7 +16,7 @@
 # pylint: disable=simplifiable-if-expression
 
 """
-🧩 Attack Surface Mapper — Cyber Resilience Toolkit (CRT)
+Attack Surface Mapper — Cyber Resilience Toolkit (CRT)
 
 This view shows how your attack-surface assets appear across environments,
 boundaries, vendors, and recorded links to CRT-D data classes and CRT-C controls.
@@ -506,7 +506,7 @@ def _build_relationships_from_scope(
 # -------------------------------------------------------------------------------------------------
 def render_view_overview(df_view: pd.DataFrame, colmap: Dict[str, Optional[str]]) -> None:
     """High-level view across all attack-surface assets with lightweight filters + descriptive metrics."""
-    st.header("📊 Attack Surface Catalogue Overview")
+    st.header("Attack Surface Catalogue Overview")
     st.markdown(
         """
 Use this view to explore the **structure** of your attack surface:
@@ -535,7 +535,7 @@ coverage, or assurance. They simply reflect what is present in your catalogue.
         st.warning("No assets found in CRT-AS. Populate CRT-AS via the Command Centre.")
         return
 
-    st.markdown("### 📈 Coverage & Metrics (structural, descriptive only)")
+    st.markdown("### Coverage & Metrics (structural, descriptive only)")
     coverage = _compute_coverage(df_view, colmap)
 
     m1, m2, m3 = st.columns(3)
@@ -564,7 +564,7 @@ coverage, or assurance. They simply reflect what is present in your catalogue.
             ),
         )
 
-    st.markdown("### 🧩 All Attack-Surface Assets")
+    st.markdown("### All Attack-Surface Assets")
 
     asset_type_col = colmap.get("asset_type_col")
     env_col = colmap.get("env_col")
@@ -577,7 +577,7 @@ coverage, or assurance. They simply reflect what is present in your catalogue.
     filter_col, table_col = st.columns([1, 3])
 
     with filter_col:
-        st.markdown("#### 🔎 Filters")
+        st.markdown("#### Filters")
 
         atype_choice = None
         env_choice = None
@@ -669,7 +669,7 @@ coverage, or assurance. They simply reflect what is present in your catalogue.
             st.dataframe(df_filtered[display_cols], width="stretch", hide_index=True)
 
     st.markdown("---")
-    st.markdown("### 🧬 Inspect a Single Asset (optional)")
+    st.markdown("### Inspect a Single Asset (optional)")
 
     if df_filtered.empty:
         st.caption("Adjust filters above to enable per-asset inspection.")
@@ -775,11 +775,11 @@ coverage, or assurance. They simply reflect what is present in your catalogue.
 # View 2 — Optional Asset Scope for Tasks (export-only + session publish + disk shelf)
 # -------------------------------------------------------------------------------------------------
 def render_view_context_bundles(df_view: pd.DataFrame, colmap: Dict[str, Optional[str]]) -> None:
-    st.header("📦 Optional Asset Scope for Tasks")
+    st.header("Optional Asset Scope for Tasks")
 
     st.markdown(
         """
-Most users can skip this step and go straight to **🎛 Programmes — Task Builder**.
+Most users can skip this step and go straight to **Programmes — Task Builder**.
 
 Use this page **only if you want AI-driven tasks to talk about a specific patch of data**
 of your attack surface.
@@ -788,7 +788,7 @@ Whatever you choose here:
 
 - It does **not** edit CRT-AS, CRT-D, or configure controls
 - You will see the bundle JSON before using it
-- You can review and adjust scope again in **🧠 AI Observation Console**
+- You can review and adjust scope again in **AI Observation Console**
   before anything is sent to an external AI model
 """
     )
@@ -1040,7 +1040,7 @@ Whatever you choose here:
 
     bundle: Dict[str, Any] = {
         "bundle_type": "attack_surface",
-        "module": "🧩 Attack Surface Mapper",
+        "module": "Attack Surface Mapper",
         "primary_entity": primary_entity,
         "entities": {
             "assets": asset_entities,
@@ -1110,14 +1110,14 @@ Whatever you choose here:
             ok = _save_json_file(path, bundle)
             if ok:
                 st.success(f"Saved to lens shelf: {filename}")
-                st.caption("Lens maintenance and attachment happens in 🧠 AI Observation Console.")
+                st.caption("Lens maintenance and attachment happens in AI Observation Console.")
             else:
                 st.error("Could not save to the lens shelf.")
 
     st.caption(
         "This lens is **export-only**. It does not configure controls, score maturity, "
         "or provide assurance. Review, attach, combine, or retire lenses in "
-        "🧠 AI Observation Console."
+        "AI Observation Console."
     )
 
 # -------------------------------------------------------------------------------------------------
@@ -1142,7 +1142,7 @@ with st.expander("📖 What is this app about?"):
     render_markdown_file(
         ABOUT_APP_MD,
         fallback=(
-            "# 🧩 Attack Surface Mapper\n\n"
+            "# Attack Surface Mapper\n\n"
             "Use this module to explore how assets are arranged across environments, "
             "boundaries, vendors, and any recorded references to CRT-D data classes "
             "or CRT-C controls.\n\n"
@@ -1174,12 +1174,12 @@ for path, label in build_sidebar_links():
 st.sidebar.divider()
 st.logo(BRAND_LOGO_PATH)  # pylint: disable=no-member
 
-st.sidebar.markdown("### 🚀 Getting Started")
+st.sidebar.markdown("### Getting Started")
 st.sidebar.caption("Use the view selector below to switch between perspectives within the Attack Surface Mapper.")
 
 st.sidebar.info(
     """
-**🧩 Attack Surface Mapper**
+**Attack Surface Mapper**
 
 Explore how assets appear across environments, boundaries, vendors, and any
 recorded links to CRT-D data classes and CRT-C controls.
@@ -1189,15 +1189,15 @@ recorded links to CRT-D data classes and CRT-C controls.
 - No risk scoring
 - No configuration
 
-All catalogue updates happen in the 📂 Structural Controls & Frameworks —
-Command Centre and 🛰 Org-Specific Catalogues.
+All catalogue updates happen in the Structural Controls & Frameworks —
+Command Centre and Org-Specific Catalogues.
 """
 )
 
-st.sidebar.subheader("🗂️ View Options")
+st.sidebar.subheader("View Options")
 view_mode = st.sidebar.radio(
     "Choose a view",
-    ["📊 Catalogue Overview", "📦 Optional Asset Scope for Tasks"],
+    ["Catalogue Overview", "Optional Asset Scope for Tasks"],
     index=0,
 )
 
@@ -1210,9 +1210,9 @@ with st.sidebar.expander("ℹ️ About & Support"):
 # -------------------------------------------------------------------------------------------------
 # Main View Routing
 # -------------------------------------------------------------------------------------------------
-if view_mode == "📊 Catalogue Overview":
+if view_mode == "Catalogue Overview":
     render_view_overview(DF_VIEW, COLMAP)
-elif view_mode == "📦 Optional Asset Scope for Tasks":
+elif view_mode == "Optional Asset Scope for Tasks":
     render_view_context_bundles(DF_VIEW, COLMAP)
 else:
     st.warning("Unknown view selected. Please choose an option from the sidebar.")

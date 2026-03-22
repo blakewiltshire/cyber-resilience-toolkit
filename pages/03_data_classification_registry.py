@@ -25,16 +25,16 @@ environments.
 
 Views provided:
 
-- 📊 Catalogue Overview
+- Catalogue Overview
   - Tabular view of all data classes with lightweight filters
-  - Integrated 📈 Coverage & Metrics (descriptive only)
+  - Integrated Coverage & Metrics (descriptive only)
   - Optional per-class inspection panel
 
-- 📦 Optional Data Scope for Tasks
+- Optional Data Scope for Tasks
   - Export-only, normalised `bundle_type = "data"` context bundle
   - Supports single class, multi-class cluster, and segment scopes
   - Lens pages are **build + preview + persist** (disk shelf only)
-  - Maintenance / attachment is handled in 🧠 AI Observation Console
+  - Maintenance / attachment is handled in AI Observation Console
 """
 
 from __future__ import annotations
@@ -136,7 +136,7 @@ def crt_footer() -> None:
 
 
 # -------------------------------------------------------------------------------------------------
-# Lens shelf helpers (Disk persistence only — maintenance handled in 🧠 AI Observation Console)
+# Lens shelf helpers (Disk persistence only — maintenance handled in AI Observation Console)
 # -------------------------------------------------------------------------------------------------
 def _ensure_dir(path: str) -> None:
     try:
@@ -162,13 +162,13 @@ def _safe_filename(text: str) -> str:
 
 
 def _derive_lens_label(bundle: Dict[str, Any]) -> str:
-    # Example: "🧮 DCR — Data Scope (data_cluster: CRT-D-cluster-abcdef12)"
+    # Example: "DCR — Data Scope (data_cluster: CRT-D-cluster-abcdef12)"
     pe = bundle.get("primary_entity") if isinstance(bundle.get("primary_entity"), dict) else {}
     pe_type = pe.get("type") if isinstance(pe, dict) else None
     pe_id = pe.get("id") if isinstance(pe, dict) else None
     if pe_type and pe_id:
-        return f"🧮 DCR — Data Scope ({pe_type}: {pe_id})"
-    return "🧮 DCR — Data Scope"
+        return f"DCR — Data Scope ({pe_type}: {pe_id})"
+    return "DCR — Data Scope"
 
 
 def _save_json_file(path: str, payload: Dict[str, Any]) -> bool:
@@ -415,7 +415,7 @@ def _compute_coverage(df_scope: pd.DataFrame, colmap: Dict[str, Optional[str]]) 
 # View 1 — Catalogue Overview (with inspection)
 # -------------------------------------------------------------------------------------------------
 def render_view_overview(df_view: pd.DataFrame, colmap: Dict[str, Optional[str]]) -> None:
-    st.header("📊 Classification Catalogue Overview")
+    st.header("Classification Catalogue Overview")
     st.markdown(
         """
 Use this view to **scan the overall structure** of your data classification model:
@@ -442,7 +442,7 @@ Metrics shown here are **structural and descriptive only**. They do not score ma
         st.warning("No data classes found in CRT-D. Populate CRT-D via the Command Centre.")
         return
 
-    st.markdown("### 📈 Coverage & Metrics (structural, descriptive)")
+    st.markdown("### Coverage & Metrics (structural, descriptive)")
     coverage = _compute_coverage(df_view, colmap)
 
     m1, m2, m3 = st.columns(3)
@@ -470,7 +470,7 @@ Metrics shown here are **structural and descriptive only**. They do not score ma
             ),
         )
 
-    st.markdown("### 🧮 All Data Classes")
+    st.markdown("### All Data Classes")
 
     tier_col = colmap.get("tier_col")
     category_col = colmap.get("category_col")
@@ -482,7 +482,7 @@ Metrics shown here are **structural and descriptive only**. They do not score ma
     filter_col, table_col = st.columns([1, 3])
 
     with filter_col:
-        st.markdown("#### 🔎 Filters")
+        st.markdown("#### Filters")
 
         tier_choice = None
         category_choice = None
@@ -562,7 +562,7 @@ Metrics shown here are **structural and descriptive only**. They do not score ma
             st.dataframe(df_filtered[display_cols], width="stretch", hide_index=True)
 
     st.markdown("---")
-    st.markdown("### 🧬 Inspect a Single Data Class (optional)")
+    st.markdown("### Inspect a Single Data Class (optional)")
 
     if df_filtered.empty:
         st.caption("Adjust filters above to enable per-class inspection.")
@@ -640,11 +640,11 @@ Metrics shown here are **structural and descriptive only**. They do not score ma
 # View 2 — Optional Data Scope for Tasks (export-only + disk shelf persistence)
 # -------------------------------------------------------------------------------------------------
 def render_view_context_bundles(df_view: pd.DataFrame, colmap: Dict[str, Optional[str]]) -> None:
-    st.header("📦 Optional Data Scope for Tasks")
+    st.header("Optional Data Scope for Tasks")
 
     st.markdown(
         """
-Most users can **skip this step** and go straight to **🎛 Programmes — Task Builder**.
+Most users can **skip this step** and go straight to **Programmes — Task Builder**.
 
 Use this page **only if you want AI-driven tasks to talk about a specific patch of data**
 (for example, “Tier 1 customer data in EU production systems”).
@@ -653,7 +653,7 @@ Whatever you choose here:
 
 - It does **not** edit CRT-D or configure controls
 - You will see the bundle JSON before using it
-- You can review and attach lenses in **🧠 AI Observation Console**
+- You can review and attach lenses in **AI Observation Console**
   **before anything is sent to an external AI model**
 """
     )
@@ -672,7 +672,7 @@ Whatever you choose here:
         index=0,
         help=(
             "If you’re not sure, use the first option. Lens maintenance and attachment happens in "
-            "🧠 AI Observation Console."
+            "AI Observation Console."
         ),
     )
 
@@ -686,7 +686,7 @@ Whatever you choose here:
     st.info(
         "You’re defining a **focused data scope**. This does **not** change CRT-D.\n\n"
         "This module will: **build → preview → persist** the lens (disk shelf). "
-        "Attachment and maintenance is handled in 🧠 AI Observation Console."
+        "Attachment and maintenance is handled in AI Observation Console."
     )
 
     id_col = _detect_id_column(df_view)
@@ -900,7 +900,7 @@ Whatever you choose here:
 
     bundle: Dict[str, Any] = {
         "bundle_type": "data",
-        "module": "🧮 Data Classification Registry",
+        "module": "Data Classification Registry",
         "primary_entity": primary_entity,
         "entities": {
             "assets": [],
@@ -928,7 +928,7 @@ Whatever you choose here:
             "lens_family": "dcr",
             "lens_label": _derive_lens_label({"primary_entity": primary_entity}),
             "built_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat() + "Z",
-            "source_module": "🧮 Data Classification Registry",
+            "source_module": "Data Classification Registry",
             "persisted_to_disk": False,
         },
     }
@@ -973,13 +973,13 @@ Whatever you choose here:
             ok = _save_json_file(path, bundle)
             if ok:
                 st.success(f"Saved to lens shelf: {filename}")
-                st.caption("Load, tag, attach, or retire lenses inside 🧠 AI Observation Console.")
+                st.caption("Load, tag, attach, or retire lenses inside AI Observation Console.")
             else:
                 st.error("Could not save to the lens shelf. Check filesystem permissions and path availability.")
 
     st.caption(
         "This lens is **export-only**. It does not configure controls, score maturity, or provide assurance. "
-        "Lens maintenance and attachment happens in 🧠 AI Observation Console."
+        "Lens maintenance and attachment happens in AI Observation Console."
     )
 
 
@@ -1033,12 +1033,12 @@ for path, label in build_sidebar_links():
 st.sidebar.divider()
 st.logo(BRAND_LOGO_PATH)  # pylint: disable=no-member
 
-st.sidebar.markdown("### 🚀 Getting Started")
+st.sidebar.markdown("### Getting Started")
 st.sidebar.caption("Use the view selector below to switch between perspectives within the Data Classification Registry.")
 
 st.sidebar.info(
     """
-**🧮 Data Classification Registry**
+**Data Classification Registry**
 
 Use this module to:
 
@@ -1048,14 +1048,14 @@ Use this module to:
 - (Optionally) build an export-only `bundle_type = "data"` lens for downstream use
 
 All views are read-only. Catalogue updates and append operations are handled exclusively
-via the 📂 Structural Controls & Frameworks — Command Centre and 🛰 Org-Specific Catalogues.
+via the Structural Controls & Frameworks — Command Centre and Org-Specific Catalogues.
 """
 )
 
-st.sidebar.subheader("🗂️ View Options")
+st.sidebar.subheader("View Options")
 view_mode = st.sidebar.radio(
     "Choose a view",
-    ["📊 Catalogue Overview", "📦 Optional Data Scope for Tasks"],
+    ["Catalogue Overview", "Optional Data Scope for Tasks"],
     index=0,
 )
 
@@ -1068,9 +1068,9 @@ with st.sidebar.expander("ℹ️ About & Support"):
 # -------------------------------------------------------------------------------------------------
 # Main View Routing
 # -------------------------------------------------------------------------------------------------
-if view_mode == "📊 Catalogue Overview":
+if view_mode == "Catalogue Overview":
     render_view_overview(DF_VIEW, COLMAP)
-elif view_mode == "📦 Optional Data Scope for Tasks":
+elif view_mode == "Optional Data Scope for Tasks":
     render_view_context_bundles(DF_VIEW, COLMAP)
 else:
     st.warning("Unknown view selected. Please choose an option from the sidebar.")

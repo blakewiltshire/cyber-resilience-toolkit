@@ -112,7 +112,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
         "filename": "CRT-G.csv",
 # supported if edited manually, but not via UI
         "id_column": "group_id",
-        "label": "📘 CRT-G — Group Domains",
+        "label": "CRT-G — Group Domains",
         "group": "Core CRT Series",
         "description": (
             "Domain groupings used to organise CRT controls, failures, and compensations."
@@ -121,7 +121,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-C": {
         "filename": "CRT-C.csv",
 "id_column": "control_id",
-        "label": "🧱 CRT-C — Control Reference Catalogue",
+        "label": "CRT-C — Control Reference Catalogue",
         "group": "Core CRT Series",
         "description": (
             "Structural control coordinates for identity, data, monitoring, containment, "
@@ -131,7 +131,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-F": {
         "filename": "CRT-F.csv",
 "id_column": "failure_id",
-        "label": "⚠️ CRT-F — Failure-Mode Dictionary",
+        "label": "CRT-F — Failure-Mode Dictionary",
         "group": "Core CRT Series",
         "description": (
             "Failure modes describing how systems degrade or collapse under stress."
@@ -140,7 +140,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-N": {
         "filename": "CRT-N.csv",
 "id_column": "n_id",
-        "label": "🧩 CRT-N — Compensating Controls Registry",
+        "label": "CRT-N — Compensating Controls Registry",
         "group": "Core CRT Series",
         "description": (
             "Compensating controls and adaptive mechanisms using NIST CSF 2.0–aligned \
@@ -153,7 +153,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-AS": {
         "filename": "CRT-AS.csv",
 "id_column": "asset_id",
-        "label": "🛰 CRT-AS — Asset Surface Catalogue",
+        "label": "CRT-AS — Asset Surface Catalogue",
         "group": "Operational Structure",
         "description": (
             "Assets, exposure types, boundaries, and linked controls supporting the "
@@ -163,7 +163,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-D": {
         "filename": "CRT-D.csv",
 "id_column": "data_id",
-        "label": "📦 CRT-D — Data & Classification Catalogue",
+        "label": "CRT-D — Data & Classification Catalogue",
         "group": "Operational Structure",
         "description": (
             "Data domains, classifications, regulatory flags, and lineage mappings across "
@@ -173,7 +173,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-I": {
         "filename": "CRT-I.csv",
 "id_column": "identity_id",
-        "label": "🔐 CRT-I — Identity & Trust Anchors",
+        "label": "CRT-I — Identity & Trust Anchors",
         "group": "Operational Structure",
         "description": (
             "Identity zones, trust anchors, privilege tiers, and structural mappings back "
@@ -183,7 +183,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-SC": {
         "filename": "CRT-SC.csv",
 "id_column": "vendor_id",
-        "label": "🚢 CRT-SC — Supply-Chain & Vendor Catalogue",
+        "label": "CRT-SC — Supply-Chain & Vendor Catalogue",
         "group": "Operational Structure",
         "description": (
             "Vendors, suppliers, and transitive dependencies, including obligations and "
@@ -193,7 +193,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-T": {
         "filename": "CRT-T.csv",
 "id_column": "telemetry_id",
-        "label": "📡 CRT-T — Telemetry & Signal Sources",
+        "label": "CRT-T — Telemetry & Signal Sources",
         "group": "Operational Structure",
         "description": (
             "Telemetry sources, log streams, and monitoring signals used by CRT modules."
@@ -203,7 +203,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-UC": {
         "filename": "CRT-UC.csv",
 "id_column": "user_control_id",
-        "label": "🧭 CRT-UC — User Control Catalogue",
+        "label": "CRT-UC — User Control Catalogue",
         "group": "Governance",
         "description": (
             "Organisation-specific control statements, including external frameworks such "
@@ -213,7 +213,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-REQ": {
         "filename": "CRT-REQ.csv",
 "id_column": "requirement_id",
-        "label": "📋 CRT-REQ — Requirements Catalogue",
+        "label": "CRT-REQ — Requirements Catalogue",
         "group": "Governance",
         "description": (
             "Requirements across regulatory, standards-based, internal governance "
@@ -223,7 +223,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-POL": {
         "filename": "CRT-POL.csv",
 "id_column": "policy_id",
-        "label": "📜 CRT-POL — Policy Catalogue",
+        "label": "CRT-POL — Policy Catalogue",
         "group": "Governance",
         "description": (
             "High-level policy statements structuring governance intent and linkage to "
@@ -233,7 +233,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-LR": {
         "filename": "CRT-LR.csv",
 "id_column": "lr_id",
-        "label": "⚖️ CRT-LR — Legal & Regulatory Obligations",
+        "label": "CRT-LR — Legal & Regulatory Obligations",
         "group": "Governance",
         "description": (
             "Legal, regulatory, and contractual obligations that influence control and "
@@ -243,7 +243,7 @@ CATALOGUES_CONFIG: Dict[str, Dict[str, Optional[str]]] = {
     "CRT-STD": {
         "filename": "CRT-STD.csv",
 "id_column": "standard_id",
-        "label": "📏 CRT-STD — Standard Catalogue",
+        "label": "CRT-STD — Standard Catalogue",
         "group": "Governance",
         "description": (
             "Standards that operationalise policies and link to detailed user controls."
@@ -695,7 +695,7 @@ def render_generic_catalogue(name: str, df: pd.DataFrame) -> None:
 # -------------------------------------------------------------------------------------------------
 def render_crt_g(df: pd.DataFrame) -> None:
     """Render CRT-G domain groups."""
-    st.subheader("📘 CRT-G — Group Domains")
+    st.subheader("CRT-G — Group Domains")
     cfg = CATALOGUES_CONFIG["CRT-G"]
     st.markdown(cfg["description"])
 
@@ -741,7 +741,7 @@ def render_crt_g(df: pd.DataFrame) -> None:
 
 def render_crt_c(df: pd.DataFrame, df_g: pd.DataFrame) -> None:
     """Render CRT-C controls with group context."""
-    st.subheader("🧱 CRT-C — Control Reference Catalogue")
+    st.subheader("CRT-C — Control Reference Catalogue")
     cfg = CATALOGUES_CONFIG["CRT-C"]
     st.markdown(cfg["description"])
 
@@ -808,7 +808,7 @@ def render_crt_c(df: pd.DataFrame, df_g: pd.DataFrame) -> None:
 
 def render_crt_f(df: pd.DataFrame) -> None:
     """Render CRT-F failure modes."""
-    st.subheader("⚠️ CRT-F — Failure-Mode Dictionary")
+    st.subheader("CRT-F — Failure-Mode Dictionary")
     cfg = CATALOGUES_CONFIG["CRT-F"]
     st.markdown(cfg["description"])
 
@@ -859,7 +859,7 @@ def render_crt_f(df: pd.DataFrame) -> None:
 
 def render_crt_n(df: pd.DataFrame) -> None:
     """Render CRT-N compensating controls."""
-    st.subheader("🧩 CRT-N — Compensating Controls Registry")
+    st.subheader("CRT-N — Compensating Controls Registry")
     cfg = CATALOGUES_CONFIG["CRT-N"]
     st.markdown(cfg["description"])
 
@@ -943,7 +943,7 @@ def render_user_control_lens(
 
     sel_row = uc_df[uc_df["user_control_id"] == selected_uc_id].iloc[0]
 
-    st.markdown("#### 🎯 Selected User Control")
+    st.markdown("#### Selected User Control")
     meta_cols = st.columns(2)
     with meta_cols[0]:
         st.write(f"**ID:** {sel_row.get('user_control_id', '')}")
@@ -957,7 +957,7 @@ def render_user_control_lens(
     st.write(sel_row.get("control_summary", ""))
 
     # Linked CRT Controls
-    st.markdown("#### 🧱 Linked CRT Controls (CRT-C)")
+    st.markdown("#### Linked CRT Controls (CRT-C)")
     mapped_controls = parse_id_list(sel_row.get("mapped_crt_controls", ""))
     if not mapped_controls or c_df.empty or "control_id" not in c_df.columns:
         st.info("No CRT controls mapped to this user control yet.")
@@ -969,7 +969,7 @@ def render_user_control_lens(
             st.dataframe(df_controls, width="stretch")
 
     # Linked Policies
-    st.markdown("#### 📜 Linked Policies (CRT-POL)")
+    st.markdown("#### Linked Policies (CRT-POL)")
     pol_uc_exploded = explode_mapped_ids(pol_df, "mapped_user_controls", "_user_control_id")
     if pol_uc_exploded.empty or "_user_control_id" not in pol_uc_exploded.columns:
         st.info("No policies reference this user control yet.")
@@ -982,7 +982,7 @@ def render_user_control_lens(
             st.dataframe(df_pols, width="stretch")
 
     # Linked Obligations
-    st.markdown("#### ⚖️ Linked Obligations (CRT-LR)")
+    st.markdown("#### Linked Obligations (CRT-LR)")
     lr_uc_exploded = explode_mapped_ids(lr_df, "mapped_user_controls", "_user_control_id")
     if lr_uc_exploded.empty or "_user_control_id" not in lr_uc_exploded.columns:
         st.info("No obligations reference this user control yet.")
@@ -1039,7 +1039,7 @@ def render_requirement_lens(
         st.error("CRT-REQ catalogue is missing the 'requirement_id' column.")
         return
 
-    st.markdown("### 📋 Requirements Lens (CRT-REQ as anchor)")
+    st.markdown("### Requirements Lens (CRT-REQ as anchor)")
 
     # ----------------------------
     # 1) Select a requirement set (framework / source)
@@ -1120,7 +1120,7 @@ def render_requirement_lens(
     # ----------------------------
     # 3) Requirement metadata
     # ----------------------------
-    st.markdown("#### 🧾 Requirement Overview")
+    st.markdown("#### Requirement Overview")
 
     meta_cols = st.columns(2)
     with meta_cols[0]:
@@ -1159,7 +1159,7 @@ def render_requirement_lens(
     # ----------------------------
     # 4) Control bundle (CRT-C + F + N)
     # ----------------------------
-    st.markdown("#### 🧱 Control Bundle for this Requirement (CRT-C)")
+    st.markdown("#### Control Bundle for this Requirement (CRT-C)")
 
     bundle_control_ids: List[str] = parse_id_list(sel_row.get("mapped_control_ids", ""))
 
@@ -1206,7 +1206,7 @@ def render_requirement_lens(
     # ----------------------------
     # 5) Pick a specific control from the bundle
     # ----------------------------
-    st.markdown("#### 🎯 Focus on a Single Control in the Bundle")
+    st.markdown("#### Focus on a Single Control in the Bundle")
 
     control_labels = {
         row["control_id"]: f"{row['control_id']} — {row.get('control_name', '')}"
@@ -1223,7 +1223,7 @@ def render_requirement_lens(
 
     control_row = controls_view[controls_view["control_id"] == selected_control_id].iloc[0]
 
-    st.markdown("##### 🧩 Control Detail (CRT-C)")
+    st.markdown("##### Control Detail (CRT-C)")
     with st.expander("View control metadata", expanded=True):
         c_meta_cols = st.columns(2)
         with c_meta_cols[0]:
@@ -1259,7 +1259,7 @@ def render_requirement_lens(
     # ----------------------------
     # 6) Failure Modes & Compensating Controls – per-control
     # ----------------------------
-    st.markdown("##### ⚠️ CRT-F — Failure Modes for this Control")
+    st.markdown("##### CRT-F — Failure Modes for this Control")
 
     control_failure_ids: List[str] = []
     for col in control_row.index:
@@ -1282,7 +1282,7 @@ def render_requirement_lens(
             ]
             st.dataframe(cf[show_cols] if show_cols else cf, width="stretch")
 
-    st.markdown("##### 🧩 CRT-N — Compensating Controls for this Control")
+    st.markdown("##### CRT-N — Compensating Controls for this Control")
 
     control_comp_ids: List[str] = []
     for col in control_row.index:
@@ -1311,7 +1311,7 @@ def render_requirement_lens(
     # ----------------------------
     # 7) Obligations – per-control view (CRT-LR)
     # ----------------------------
-    st.markdown("#### ⚖️ CRT-LR — Obligations for this Control")
+    st.markdown("#### CRT-LR — Obligations for this Control")
 
     if lr_df.empty or "mapped_control_ids" not in lr_df.columns:
         st.info("CRT-LR catalogue not loaded or missing 'mapped_control_ids' for obligations.")
@@ -1342,7 +1342,7 @@ def render_requirement_lens(
     # ----------------------------
     # 8) Obligations – requirement bundle summary (CRT-LR)
     # ----------------------------
-    st.markdown("#### 📊 CRT-LR — Obligations Across this Requirement's Control Bundle")
+    st.markdown("#### CRT-LR — Obligations Across this Requirement's Control Bundle")
 
     if lr_df.empty or "mapped_control_ids" not in lr_df.columns:
         st.info("CRT-LR catalogue not loaded or missing 'mapped_control_ids'.")
@@ -1376,7 +1376,7 @@ def render_requirement_lens(
     # ----------------------------
     # 9) Failure Modes & Compensations – requirement bundle summaries
     # ----------------------------
-    st.markdown("#### 📊 CRT-F — Failure Modes for this Requirement's Control Bundle")
+    st.markdown("#### CRT-F — Failure Modes for this Requirement's Control Bundle")
     if failures_view.empty:
         st.info("No failure modes mapped via the CRT controls for this requirement.")
     else:
@@ -1391,7 +1391,7 @@ def render_requirement_lens(
             width="stretch",
         )
 
-    st.markdown("#### 📊 CRT-N — Compensating Controls for this Requirement's Control Bundle")
+    st.markdown("#### CRT-N — Compensating Controls for this Requirement's Control Bundle")
     if comps_view.empty:
         st.info("No compensating controls mapped via the CRT controls for this requirement.")
     else:
@@ -1435,7 +1435,7 @@ def render_policy_lens(
         st.info("No policies found in CRT-POL catalogue.")
         return
 
-    st.markdown("### 📜 Policy Lens (CRT-POL as anchor)")
+    st.markdown("### Policy Lens (CRT-POL as anchor)")
 
     # ----------------------------
     # 1) Select a policy
@@ -1466,7 +1466,7 @@ def render_policy_lens(
     # ----------------------------
     # Policy metadata
     # ----------------------------
-    st.markdown("#### 🧾 Policy Overview")
+    st.markdown("#### Policy Overview")
 
     meta_cols = st.columns(2)
     with meta_cols[0]:
@@ -1489,7 +1489,7 @@ def render_policy_lens(
     # ----------------------------
     # 2) Control bundle (CRT-C + F + N)
     # ----------------------------
-    st.markdown("#### 🧱 Control Bundle for this Policy (CRT-C)")
+    st.markdown("#### Control Bundle for this Policy (CRT-C)")
 
     bundle_control_ids: List[str] = parse_id_list(pol_row.get("mapped_control_ids", ""))
 
@@ -1534,7 +1534,7 @@ def render_policy_lens(
     # ----------------------------
     # 3) Pick a specific control from the bundle
     # ----------------------------
-    st.markdown("#### 🎯 Focus on a Single Control in the Bundle")
+    st.markdown("#### Focus on a Single Control in the Bundle")
 
     control_labels = {
         row["control_id"]: f"{row['control_id']} — {row.get('control_name', '')}"
@@ -1551,7 +1551,7 @@ def render_policy_lens(
 
     control_row = controls_view[controls_view["control_id"] == selected_control_id].iloc[0]
 
-    st.markdown("##### 🧩 Control Detail (CRT-C)")
+    st.markdown("##### Control Detail (CRT-C)")
     with st.expander("View control metadata", expanded=True):
         meta_cols = st.columns(2)
         with meta_cols[0]:
@@ -1587,7 +1587,7 @@ def render_policy_lens(
     # ----------------------------
     # 4) Failure Modes & Compensating Controls – per-control
     # ----------------------------
-    st.markdown("##### ⚠️ CRT-F — Failure Modes for this Control")
+    st.markdown("##### CRT-F — Failure Modes for this Control")
 
     control_failure_ids: List[str] = []
     for col in control_row.index:
@@ -1609,7 +1609,7 @@ def render_policy_lens(
             ]
             st.dataframe(cf[show_cols] if show_cols else cf, width='stretch')
 
-    st.markdown("##### 🧩 CRT-N — Compensating Controls for this Control")
+    st.markdown("##### CRT-N — Compensating Controls for this Control")
 
     control_comp_ids: List[str] = []
     for col in control_row.index:
@@ -1639,7 +1639,7 @@ def render_policy_lens(
     # ----------------------------
     # 5) Obligations – per-control view (CRT-LR)
     # ----------------------------
-    st.markdown("#### ⚖️ CRT-LR — Obligations for this Control")
+    st.markdown("#### CRT-LR — Obligations for this Control")
 
     if lr_df.empty or "mapped_control_ids" not in lr_df.columns:
         st.info("CRT-LR catalogue not loaded or missing 'mapped_control_ids' for obligations.")
@@ -1674,7 +1674,7 @@ def render_policy_lens(
     # ----------------------------
     # 6) Failure Modes & Compensations – policy bundle summaries
     # ----------------------------
-    st.markdown("#### 📊 CRT-F — Failure Modes for this Policy's Control Bundle")
+    st.markdown("#### CRT-F — Failure Modes for this Policy's Control Bundle")
     if failures_view.empty:
         st.info("No failure modes mapped via the CRT controls for this policy.")
     else:
@@ -1689,7 +1689,7 @@ def render_policy_lens(
             width='stretch',
         )
 
-    st.markdown("#### 📊 CRT-N — Compensating Controls for this Policy's Control Bundle")
+    st.markdown("#### CRT-N — Compensating Controls for this Policy's Control Bundle")
     if comps_view.empty:
         st.info("No compensating controls mapped via the CRT controls for this policy.")
     else:
@@ -1706,7 +1706,7 @@ def render_policy_lens(
     # ----------------------------
     # 7) Obligations – policy bundle summary (CRT-LR)
     # ----------------------------
-    st.markdown("#### 📊 CRT-LR — Obligations Across this Policy's Control Bundle")
+    st.markdown("#### CRT-LR — Obligations Across this Policy's Control Bundle")
 
     if lr_df.empty or "mapped_control_ids" not in lr_df.columns:
         st.info("CRT-LR catalogue not loaded or missing 'mapped_control_ids'.")
@@ -1771,7 +1771,7 @@ def render_standard_lens(
         st.info("No standards found in CRT-STD catalogue.")
         return
 
-    st.markdown("### 📏 Standard Lens (CRT-STD as anchor)")
+    st.markdown("### Standard Lens (CRT-STD as anchor)")
 
     if "standard_id" not in std_df.columns:
         st.error("CRT-STD catalogue is missing the 'standard_id' column.")
@@ -1802,7 +1802,7 @@ def render_standard_lens(
     # ----------------------------
     # 2) Standard metadata
     # ----------------------------
-    st.markdown("#### 🧾 Standard Overview")
+    st.markdown("#### Standard Overview")
 
     meta_cols = st.columns(2)
     with meta_cols[0]:
@@ -1822,7 +1822,7 @@ def render_standard_lens(
     # ----------------------------
     # 3) Control bundle (CRT-C + F + N)
     # ----------------------------
-    st.markdown("#### 🧱 Control Bundle for this Standard (CRT-C)")
+    st.markdown("#### Control Bundle for this Standard (CRT-C)")
 
     bundle_control_ids: List[str] = parse_id_list(sel_row.get("mapped_control_ids", ""))
 
@@ -1870,7 +1870,7 @@ def render_standard_lens(
     # ----------------------------
     # 4) Pick a specific control from the bundle
     # ----------------------------
-    st.markdown("#### 🎯 Focus on a Single Control in the Bundle")
+    st.markdown("#### Focus on a Single Control in the Bundle")
 
     control_labels = {
         row["control_id"]: f"{row['control_id']} — {row.get('control_name', '')}"
@@ -1887,7 +1887,7 @@ def render_standard_lens(
 
     control_row = controls_view[controls_view["control_id"] == selected_control_id].iloc[0]
 
-    st.markdown("##### 🧩 Control Detail (CRT-C)")
+    st.markdown("##### Control Detail (CRT-C)")
     with st.expander("View control metadata", expanded=True):
         meta_cols = st.columns(2)
         with meta_cols[0]:
@@ -1923,7 +1923,7 @@ def render_standard_lens(
     # ----------------------------
     # 5) Failure Modes & Compensating Controls – per-control
     # ----------------------------
-    st.markdown("##### ⚠️ CRT-F — Failure Modes for this Control")
+    st.markdown("##### CRT-F — Failure Modes for this Control")
 
     control_failure_ids: List[str] = []
     for col in control_row.index:
@@ -1946,7 +1946,7 @@ def render_standard_lens(
             ]
             st.dataframe(cf[show_cols] if show_cols else cf, width="stretch")
 
-    st.markdown("##### 🧩 CRT-N — Compensating Controls for this Control")
+    st.markdown("##### CRT-N — Compensating Controls for this Control")
 
     control_comp_ids: List[str] = []
     for col in control_row.index:
@@ -1976,7 +1976,7 @@ def render_standard_lens(
     # ----------------------------
     # 6) Obligations – per-control view (CRT-LR)
     # ----------------------------
-    st.markdown("#### ⚖️ CRT-LR — Obligations for this Control")
+    st.markdown("#### CRT-LR — Obligations for this Control")
 
     if lr_df.empty or "mapped_control_ids" not in lr_df.columns:
         st.info("CRT-LR catalogue not loaded or missing 'mapped_control_ids' for obligations.")
@@ -2009,7 +2009,7 @@ def render_standard_lens(
     # ----------------------------
     # 7) Failure Modes & Compensations – standard bundle summaries
     # ----------------------------
-    st.markdown("#### 📊 CRT-F — Failure Modes for this Standard's Control Bundle")
+    st.markdown("#### CRT-F — Failure Modes for this Standard's Control Bundle")
     if failures_view.empty:
         st.info("No failure modes mapped via the CRT controls for this standard.")
     else:
@@ -2024,7 +2024,7 @@ def render_standard_lens(
             width="stretch",
         )
 
-    st.markdown("#### 📊 CRT-N — Compensating Controls for this Standard's Control Bundle")
+    st.markdown("#### CRT-N — Compensating Controls for this Standard's Control Bundle")
     if comps_view.empty:
         st.info("No compensating controls mapped via the CRT controls for this standard.")
     else:
@@ -2041,7 +2041,7 @@ def render_standard_lens(
     # ----------------------------
     # 8) Obligations – standard bundle summary (CRT-LR)
     # ----------------------------
-    st.markdown("#### 📊 CRT-LR — Obligations Across this Standard's Control Bundle")
+    st.markdown("#### CRT-LR — Obligations Across this Standard's Control Bundle")
 
     if lr_df.empty or "mapped_control_ids" not in lr_df.columns:
         st.info("CRT-LR catalogue not loaded or missing 'mapped_control_ids'.")
@@ -2108,7 +2108,7 @@ def render_obligation_lens(
         st.error("CRT-LR catalogue is missing the 'lr_id' column.")
         return
 
-    st.markdown("### ⚖️ Obligation Lens (CRT-LR as anchor)")
+    st.markdown("### Obligation Lens (CRT-LR as anchor)")
 
     # ----------------------------
     # 1) Select an obligation
@@ -2134,7 +2134,7 @@ def render_obligation_lens(
     # ----------------------------
     # 2) Obligation metadata
     # ----------------------------
-    st.markdown("#### 🧾 Obligation Overview")
+    st.markdown("#### Obligation Overview")
 
     meta_cols = st.columns(2)
     with meta_cols[0]:
@@ -2167,7 +2167,7 @@ def render_obligation_lens(
     # ----------------------------
     # 3) Control bundle (CRT-C) for this obligation
     # ----------------------------
-    st.markdown("#### 🧱 CRT-C — Control Bundle for this Obligation")
+    st.markdown("#### CRT-C — Control Bundle for this Obligation")
 
     mapped_controls = parse_id_list(sel_row.get("mapped_control_ids", ""))
 
@@ -2207,7 +2207,7 @@ def render_obligation_lens(
     # ----------------------------
     # 4) Failure Modes & Compensations – obligation bundle summaries
     # ----------------------------
-    st.markdown("#### 📊 CRT-F — Failure Modes for this Obligation's Control Bundle")
+    st.markdown("#### CRT-F — Failure Modes for this Obligation's Control Bundle")
     if failures_view.empty:
         st.info("No failure modes mapped via the CRT controls for this obligation.")
     else:
@@ -2222,7 +2222,7 @@ def render_obligation_lens(
             width="stretch",
         )
 
-    st.markdown("#### 📊 CRT-N — Compensating Controls for this Obligation's Control Bundle")
+    st.markdown("#### CRT-N — Compensating Controls for this Obligation's Control Bundle")
     if comps_view.empty:
         st.info("No compensating controls mapped via the CRT controls for this obligation.")
     else:
@@ -2239,7 +2239,7 @@ def render_obligation_lens(
     # ----------------------------
     # 5) Policies linked via shared CRT controls (CRT-POL)
     # ----------------------------
-    st.markdown("#### 📜 CRT-POL — Policies Linked via this Obligation's Controls")
+    st.markdown("#### CRT-POL — Policies Linked via this Obligation's Controls")
 
     if pol_df.empty or "mapped_control_ids" not in pol_df.columns:
         st.info("CRT-POL catalogue not loaded or missing 'mapped_control_ids'.")
@@ -2272,7 +2272,7 @@ def render_obligation_lens(
     # ----------------------------
     # 6) Standards linked via shared CRT controls (CRT-STD)
     # ----------------------------
-    st.markdown("#### 📏 CRT-STD — Standards Linked via this Obligation's Controls")
+    st.markdown("#### CRT-STD — Standards Linked via this Obligation's Controls")
 
     if std_df.empty or "mapped_control_ids" not in std_df.columns:
         st.info("CRT-STD catalogue not loaded or missing 'mapped_control_ids'.")
@@ -2396,7 +2396,7 @@ for path, label in build_sidebar_links():
 st.sidebar.divider()
 st.logo(BRAND_LOGO_PATH)  # pylint: disable=no-member
 
-with st.sidebar.expander("🧾 Catalogue JSON reference models", expanded=False):
+with st.sidebar.expander("Catalogue JSON reference models", expanded=False):
     st.caption(
         "CRT builds a derived **JSON view** for each catalogue (meta + records) under "
         "`apps/data_sources/crt_catalogues/json/`. CSV remains the source of truth."
@@ -2412,7 +2412,7 @@ with st.sidebar.expander("🧾 Catalogue JSON reference models", expanded=False)
                 for k, p in sorted(results.items()):
                     st.write(f"- **{k}** → `{os.path.relpath(p, PROJECT_PATH)}`")
 
-st.sidebar.markdown("### 🚀 Flow Overview")
+st.sidebar.markdown("### Flow Overview")
 st.sidebar.caption(
     "1. **Org Governance Profile** — define organisation profiles (industry, jurisdictions, "
     "frameworks, obligations).\n"
@@ -2422,7 +2422,7 @@ st.sidebar.caption(
     "5. **Mapping Explorer** — inspect structural relationships."
 )
 
-st.sidebar.subheader("🗂️ View Options")
+st.sidebar.subheader("View Options")
 view_mode = st.sidebar.radio(
     "Choose a view",
     [
@@ -2457,7 +2457,7 @@ st.session_state.setdefault("active_org_profile", None)
 # Org Governance Profile Panel (Org & Scope — org_profiles only)
 # -------------------------------------------------------------------------------------------------
 if view_mode == "Org Governance Profile (Org & Scope)":
-    st.header("🏛️ Org Governance Profile — Organisation & Scope")
+    st.header("Org Governance Profile — Organisation & Scope")
     st.markdown(
         """
 Use this view to define **organisation profiles** that capture:
@@ -3049,7 +3049,7 @@ from other modules (e.g. Governance Orchestration, Architecture Workspace, etc.)
 
     # Build scope bundle directly from the **current UI state**
     # (so the JSON reflects what you see, even before saving).
-    st.markdown("#### 🧩 Org Governance Scope Bundle (for AI Context)")
+    st.markdown("#### Org Governance Scope Bundle (for AI Context)")
 
     scope_bundle: Dict[str, Any] = {
         "bundle_type": "org_governance_scope",
@@ -3107,7 +3107,7 @@ from other modules (e.g. Governance Orchestration, Architecture Workspace, etc.)
     st.caption(
         "Profiles are stored in-memory for this session under `org_profiles` and also "
         f"persisted to `{ORG_PROFILES_PATH}`. "
-        "Other modules (e.g. 🧭 Governance Orchestration) can consume the active profile via "
+        "Other modules (e.g. Governance Orchestration) can consume the active profile via "
         "`active_org_profile` + `org_profiles` when building AI-ready bundles. "
         "The JSON preview above always reflects the current on-screen selections."
     )
@@ -3118,7 +3118,7 @@ from other modules (e.g. Governance Orchestration, Architecture Workspace, etc.)
 # Governance Setup Panel
 # -------------------------------------------------------------------------------------------------
 if view_mode == "Governance Setup (Framework Onboarding)":
-    st.header("🧭 Governance Setup — Framework Onboarding")
+    st.header("Governance Setup — Framework Onboarding")
     st.markdown(
     """
     This section allows you to update your organisation’s governance catalogues:
@@ -3152,8 +3152,8 @@ if view_mode == "Governance Setup (Framework Onboarding)":
         "Choose a governance catalogue to view / extend",
         options=governance_options,
         format_func=lambda x: {
-            "CRT-REQ": "📋 CRT-REQ — Requirements Catalogue",
-            "CRT-LR": "⚖️ CRT-LR — Legal & Regulatory Obligations",
+            "CRT-REQ": "CRT-REQ — Requirements Catalogue",
+            "CRT-LR": "CRT-LR — Legal & Regulatory Obligations",
         }.get(x, x),
     )
 
@@ -3178,7 +3178,7 @@ if view_mode == "Governance Setup (Framework Onboarding)":
     def _df_to_csv_bytes(df: pd.DataFrame) -> bytes:
         return df.to_csv(index=False).encode("utf-8")
 
-    st.markdown("#### 📄 Current Effective Catalogue")
+    st.markdown("#### Current Effective Catalogue")
     eff_df = catalogues_effective.get(selected_name, pd.DataFrame())
     if eff_df.empty:
         st.info("No data found for this catalogue yet.")
@@ -3292,7 +3292,7 @@ if view_mode == "Governance Setup (Framework Onboarding)":
                     st.button("⬇️ Sample template", disabled=True, use_container_width=True)
             else:
                 st.button("⬇️ Sample template", disabled=True, use_container_width=True)
-    st.markdown("#### 📤 Upload & Overwrite (Active Catalogue)")
+    st.markdown("#### Upload & Overwrite (Active Catalogue)")
     st.caption(
         "Upload a CSV to overwrite the active working file (e.g. `CRT-LR.csv`). "
         "CRT creates a timestamped backup in `/backup` and regenerates the JSON view in `/json` automatically.\n\n"
@@ -3302,7 +3302,7 @@ if view_mode == "Governance Setup (Framework Onboarding)":
     # --------------------
     # Sample / Template Files (preview)
     # --------------------
-    with st.expander("📘 Sample & Template Files — Requirements & Obligations", expanded=False):
+    with st.expander("Sample & Template Files — Requirements & Obligations", expanded=False):
         if sample_path and os.path.exists(sample_path):
             try:
                 sample_df = read_csv_with_fallback(sample_path)
@@ -3354,7 +3354,7 @@ if view_mode == "Governance Setup (Framework Onboarding)":
 # -------------------------------------------------------------------------------------------------
 elif view_mode == "CRT Defaults Browser":
     # Page-level intro
-    st.header("📂 CRT Defaults Browser")
+    st.header("CRT Defaults Browser")
     st.markdown(
         """
 Browse all shipped CRT catalogues — both the **locked backbone** and the **governance / operational layers**.
@@ -3365,13 +3365,13 @@ This view is **read-only** and exists to give you structural clarity **before** 
     )
 
     # Core CRT Series (locked backbone)
-    st.subheader("🧱 Core CRT Series (Locked Backbone)")
+    st.subheader("Core CRT Series (Locked Backbone)")
     st.caption(
         "The foundational CRT catalogues that define the structural spine of the programme. "
         "These are shipped read-only and form the basis for all mappings and outputs."
     )
     tab_g, tab_c, tab_f, tab_n = st.tabs(
-        ["📘 CRT-G Domains", "🧱 CRT-C Controls", "⚠️ CRT-F Failures", "🧩 CRT-N Compensations"]
+        ["CRT-G Domains", "CRT-C Controls", "CRT-F Failures", "CRT-N Compensations"]
     )
     with tab_g:
         render_crt_g(catalogues_effective.get("CRT-G", pd.DataFrame()))
@@ -3388,17 +3388,17 @@ This view is **read-only** and exists to give you structural clarity **before** 
     st.markdown("---")
 
     # Governance Catalogues
-    st.subheader("📋 Governance Catalogues (Shipped)")
+    st.subheader("Governance Catalogues (Shipped)")
     st.caption(
         "Baseline governance layers that can be extended via **Governance Setup**. "
         "These catalogues express expectations, policies, standards, and obligations that connect back into CRT-C."
     )
     gov_tabs = st.tabs(
         [
-            "📋 CRT-REQ Requirements",
-            "📜 CRT-POL Policies",
-            "📏 CRT-STD Standards",
-            "⚖️ CRT-LR Obligations",
+            "CRT-REQ Requirements",
+            "CRT-POL Policies",
+            "CRT-STD Standards",
+            "CRT-LR Obligations",
         ]
     )
     with gov_tabs[0]:
@@ -3413,18 +3413,18 @@ This view is **read-only** and exists to give you structural clarity **before** 
     st.markdown("---")
 
     # Operational Structure (organisation-specific extensions)
-    st.subheader("🛰 Operational Structure (Organisation-Specific)")
+    st.subheader("Operational Structure (Organisation-Specific)")
     st.caption(
         "Shipped baselines for assets, data, identity, supply-chain, and telemetry. "
         "These catalogues describe **your real environment** once extended, and connect back into CRT-D and CRT-C."
     )
     op_tabs = st.tabs(
         [
-            "🛰 CRT-AS Assets",
-            "📦 CRT-D Data",
-            "🔐 CRT-I Identity Zones",
-            "🚢 CRT-SC Supply Chain",
-            "📡 CRT-T Telemetry",
+            "CRT-AS Assets",
+            "CRT-D Data",
+            "CRT-I Identity Zones",
+            "CRT-SC Supply Chain",
+            "CRT-T Telemetry",
         ]
     )
     with op_tabs[0]:
@@ -3442,7 +3442,7 @@ This view is **read-only** and exists to give you structural clarity **before** 
 # Operational Extensions Panel
 # -------------------------------------------------------------------------------------------------
 elif view_mode == "Operational Extensions (Org-Specific)":
-    st.header("🛰 Operational Extensions — Org-Specific Catalogues")
+    st.header("Operational Extensions — Org-Specific Catalogues")
     st.markdown(
         """
 This section lets you update the **operational surface** of your programme by maintaining the following org-specific catalogues:
@@ -3495,7 +3495,7 @@ If mistakes occur, restore the shipped default catalogue from the `/defaults` fo
     sample_filename = f"{selected_op_name}.sample.csv"
     sample_path = os.path.join(SAMPLES_DIR, sample_filename)
 
-    st.markdown("#### 📄 Current Effective Catalogue")
+    st.markdown("#### Current Effective Catalogue")
     eff_op_df = catalogues_effective.get(selected_op_name, pd.DataFrame())
     if eff_op_df.empty:
         st.info("No data found for this catalogue yet.")
@@ -3608,7 +3608,7 @@ If mistakes occur, restore the shipped default catalogue from the `/defaults` fo
                     st.button("⬇️ Sample template", disabled=True, use_container_width=True)
             else:
                 st.button("⬇️ Sample template", disabled=True, use_container_width=True)
-    st.markdown("#### 📤 Upload & Overwrite (Active Catalogue)")
+    st.markdown("#### Upload & Overwrite (Active Catalogue)")
     st.caption(
         "Upload a CSV to overwrite the active working file (e.g. `CRT-AS.csv`). "
         "CRT creates a timestamped backup in `/backup` and regenerates the JSON view in `/json` automatically.\n\n"
@@ -3616,7 +3616,7 @@ If mistakes occur, restore the shipped default catalogue from the `/defaults` fo
     )
 
     # Sample / Template Files for operational catalogues (generic pattern)
-    with st.expander("📘 Sample & Template Files — Operational Catalogues", expanded=False):
+    with st.expander("Sample & Template Files — Operational Catalogues", expanded=False):
         st.markdown(f"### {CATALOGUES_CONFIG.get(selected_op_name, {}).get('label', selected_op_name)} Sample")
 
         if os.path.exists(sample_path):
@@ -3663,7 +3663,7 @@ If mistakes occur, restore the shipped default catalogue from the `/defaults` fo
 # Mapping Explorer Panel
 # -------------------------------------------------------------------------------------------------
 elif view_mode == "Mapping Explorer":
-    st.header("🔗 Structural Mapping Explorer — Requirements, Policies, Standards, Obligations")
+    st.header("Structural Mapping Explorer — Requirements, Policies, Standards, Obligations")
     st.markdown(
         """
 This read-only view shows how governance catalogues map structurally into the CRT backbone.
@@ -3706,10 +3706,10 @@ The lenses shown below reflect structural relationships based on the catalogue d
     else:
         tab_req, tab_pol, tab_std, tab_lr = st.tabs(
             [
-                "📋 Requirements Lens",
-                "📜 Policy Lens",
-                "📏 Standard Lens",
-                "⚖️ Obligation Lens",
+                "Requirements Lens",
+                "Policy Lens",
+                "Standard Lens",
+                "Obligation Lens",
             ]
         )
 

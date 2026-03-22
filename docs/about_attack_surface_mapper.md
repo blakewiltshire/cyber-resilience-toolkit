@@ -1,5 +1,4 @@
-# 🧩 Attack Surface Mapper  
-### Structural Exposure Mapping Across Identities, Services, Integrations, and Vendors
+## Attack Surface Mapper  
 
 The **Attack Surface Mapper** provides a systemic view of the organisation’s exposure pathways.  
 It does not predict compromise, measure vulnerability, or compute exploitability.  

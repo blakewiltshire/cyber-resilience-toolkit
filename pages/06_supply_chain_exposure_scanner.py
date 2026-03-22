@@ -16,7 +16,7 @@
 # pylint: disable=simplifiable-if-expression
 
 """
-🛰 Supply-Chain Exposure Scanner — Cyber Resilience Toolkit (CRT)
+Supply-Chain Exposure Scanner — Cyber Resilience Toolkit (CRT)
 
 Explore vendor and supply-chain dependencies, service types, criticality
 tiers, and structural control mappings. This module provides a structural,
@@ -28,12 +28,12 @@ in CRT-SC and lets you optionally export a normalised
 
 Views provided:
 
-- 📊 Catalogue Overview
+- Catalogue Overview
   - Tabular view of all supply-chain entries with lightweight filters
-  - Integrated 📈 Coverage & Metrics (descriptive only)
+  - Integrated Coverage & Metrics (descriptive only)
   - Optional per-entry inspection panel
 
-- 📦 Optional Supply-Chain Scope for Tasks
+- Optional Supply-Chain Scope for Tasks
   - Optional, export-only `bundle_type = "supply_chain"` context bundle
   - Supports single entry, multi-entry cluster, and segment scope
   - Download as JSON and/or save to the lens shelf
@@ -419,7 +419,7 @@ def _compute_coverage(df_scope: pd.DataFrame, colmap: Dict[str, Optional[str]]) 
 # View 1 — Catalogue Overview (with inspection)
 # -------------------------------------------------------------------------------------------------
 def render_view_overview(df_view: pd.DataFrame, colmap: Dict[str, Optional[str]]) -> None:
-    st.header("📊 Supply-Chain Catalogue Overview")
+    st.header("Supply-Chain Catalogue Overview")
     st.markdown(
         """
 Use this view to scan the **structure** of your supply-chain model:
@@ -447,7 +447,7 @@ score vendor risk or provide assurance.
         st.warning("No supply-chain entries found in CRT-SC. Populate CRT-SC via the Command Centre.")
         return
 
-    st.markdown("### 📈 Coverage & Metrics (structural, descriptive only)")
+    st.markdown("### Coverage & Metrics (structural, descriptive only)")
     coverage = _compute_coverage(df_view, colmap)
 
     m1, m2, m3 = st.columns(3)
@@ -475,7 +475,7 @@ descriptive** and do not provide scoring or assurance.
 """
         )
 
-    st.markdown("### 🧾 All Supply-Chain Entries")
+    st.markdown("### All Supply-Chain Entries")
 
     service_type_col = colmap.get("service_type_col")
     dependency_type_col = colmap.get("dependency_type_col")
@@ -489,7 +489,7 @@ descriptive** and do not provide scoring or assurance.
     filter_col, table_col = st.columns([1, 3])
 
     with filter_col:
-        st.markdown("#### 🔎 Filters")
+        st.markdown("#### Filters")
 
         svc_choice = None
         dep_choice = None
@@ -585,7 +585,7 @@ descriptive** and do not provide scoring or assurance.
             st.dataframe(df_filtered[display_cols], width="stretch", hide_index=True)
 
     st.markdown("---")
-    st.markdown("### 🧬 Inspect a Single Supply-Chain Entry (optional)")
+    st.markdown("### Inspect a Single Supply-Chain Entry (optional)")
 
     if df_filtered.empty:
         st.caption("Adjust filters above to enable per-entry inspection.")
@@ -667,11 +667,11 @@ descriptive** and do not provide scoring or assurance.
 # View 2 — Optional Supply-Chain Scope for Tasks (export-only)
 # -------------------------------------------------------------------------------------------------
 def render_view_context_bundles(df_view: pd.DataFrame, colmap: Dict[str, Optional[str]]) -> None:
-    st.header("📦 Optional Supply-Chain Scope for Tasks")
+    st.header("Optional Supply-Chain Scope for Tasks")
 
     st.markdown(
         """
-Most users can **skip this step** and go straight to **🎛 Programmes — Task Builder**.
+Most users can **skip this step** and go straight to **Programmes — Task Builder**.
 
 Use this page only if you want downstream tasks or AI-assisted exploration to focus on a
 **specific patch of your supply-chain landscape** (for example: direct, high-critical SaaS
@@ -681,7 +681,7 @@ Whatever you choose here:
 
 - It does **not** edit CRT-SC or configure controls
 - You will see the bundle JSON before exporting it
-- Lens maintenance and attachment happens in 🧠 AI Observation Console
+- Lens maintenance and attachment happens in AI Observation Console
 """
     )
 
@@ -985,7 +985,7 @@ Whatever you choose here:
 
     bundle: Dict[str, Any] = {
         "bundle_type": "supply_chain",
-        "module": "🛰 Supply-Chain Exposure Scanner",
+        "module": "Supply-Chain Exposure Scanner",
         "primary_entity": primary_entity,
         "entities": {
             "assets": [],
@@ -1056,14 +1056,14 @@ Whatever you choose here:
             ok = _save_json_file(path, bundle)
             if ok:
                 st.success(f"Saved to lens shelf: {filename}")
-                st.caption("Lens maintenance and attachment happens in 🧠 AI Observation Console.")
+                st.caption("Lens maintenance and attachment happens in AI Observation Console.")
             else:
                 st.error("Could not save to the lens shelf.")
 
     st.caption(
         "This lens is **export-only**. It does not configure controls, score maturity, "
         "or provide assurance. Review, attach, combine, or retire lenses in "
-        "🧠 AI Observation Console."
+        "AI Observation Console."
     )
 
 
@@ -1086,7 +1086,7 @@ with st.expander("📖 What is this app about?"):
     render_markdown_file(
         ABOUT_APP_MD,
         fallback=(
-            "# 🛰 Supply-Chain Exposure Scanner\n\n"
+            "## Supply-Chain Exposure Scanner\n\n"
             "This module surfaces the **effective CRT-SC catalogue** in a structured, "
             "non-prescriptive way.\n\n"
             "- Explore service types, dependency types, criticality, and contract tiers\n"
@@ -1115,12 +1115,12 @@ for path, label in build_sidebar_links():
 st.sidebar.divider()
 st.logo(BRAND_LOGO_PATH)  # pylint: disable=no-member
 
-st.sidebar.markdown("### 🚀 Getting Started")
+st.sidebar.markdown("### Getting Started")
 st.sidebar.caption("Use the view selector below to switch between perspectives within the Supply-Chain Exposure Scanner.")
 
 st.sidebar.info(
     """
-**🛰 Supply-Chain Exposure Scanner**
+**Supply-Chain Exposure Scanner**
 
 Use this module to:
 
@@ -1130,15 +1130,15 @@ Use this module to:
 - Export a normalised `bundle_type = "supply_chain"` context bundle
 
 All views are read-only. Catalogue updates and append operations are handled
-exclusively via the 📂 Structural Controls & Frameworks — Command Centre and
-🛰 Org-Specific Catalogues.
+exclusively via the Structural Controls & Frameworks — Command Centre and
+Org-Specific Catalogues.
 """
 )
 
-st.sidebar.subheader("🗂️ View Options")
+st.sidebar.subheader("View Options")
 view_mode = st.sidebar.radio(
     "Choose a view",
-    ["📊 Catalogue Overview", "📦 Optional Supply-Chain Scope for Tasks"],
+    ["Catalogue Overview", "Optional Supply-Chain Scope for Tasks"],
     index=0,
 )
 
@@ -1151,9 +1151,9 @@ with st.sidebar.expander("ℹ️ About & Support"):
 # -------------------------------------------------------------------------------------------------
 # Main View Routing
 # -------------------------------------------------------------------------------------------------
-if view_mode == "📊 Catalogue Overview":
+if view_mode == "Catalogue Overview":
     render_view_overview(DF_VIEW, COLMAP)
-elif view_mode == "📦 Optional Supply-Chain Scope for Tasks":
+elif view_mode == "Optional Supply-Chain Scope for Tasks":
     render_view_context_bundles(DF_VIEW, COLMAP)
 else:
     st.warning("Unknown view selected. Please choose an option from the sidebar.")

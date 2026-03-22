@@ -1,4 +1,4 @@
-# 🔄 System Integrator Hub (SIH)
+## System Integrator Hub (SIH)
 
 The **System Integrator Hub (SIH)** is the *registry-level hub* for the Cyber Resilience Toolkit (CRT).
 It provides a **single, read-only integration layer** over all CRT catalogues and exposes them in a
@@ -58,7 +58,7 @@ treats them as **append-only registries**. It never changes existing rows.
 
 The SIH sits at the centre of the CRT architecture and is used by multiple modules:
 
-### 📂 Structural Controls & Frameworks
+### Structural Controls & Frameworks
 
 - Reads `CRT-C`, `CRT-F`, `CRT-N`, `CRT-G`, and select append-only catalogues via SIH.
 - Presents a structured view of:
@@ -66,13 +66,13 @@ The SIH sits at the centre of the CRT architecture and is used by multiple modul
   - Cross-mappings between controls, failures, and compensations.
 - Acts as the **primary entry point** for extending catalogues (e.g. via Governance Setup and Operational Extensions).
 
-### 🧮 Data Classification Registry (DCR)
+### Data Classification Registry (DCR)
 
 - Uses SIH to read `CRT-D`, `CRT-C`, and other relevant catalogues.
 - Builds **bundles** that link data sets, classifications, and control sets for downstream AI usage.
 - Bundles are **runtime objects or exports**, not new catalogues. They are *not* currently stored back into SIH.
 
-### 🧭 Policy & Standards Orchestration
+### Policy & Standards Orchestration
 
 - Uses SIH to read `CRT-POL`, `CRT-STD`, `CRT-C`, `CRT-LR`, and `CRT-REQ`.
 - Accepts bundles (e.g. generated in DCR) as **inputs** for AI context and orchestration flows.
@@ -104,18 +104,18 @@ bundle index or log) that SIH can load, rather than overloading the existing CRT
 
 The SIH Streamlit console provides three perspectives:
 
-1. **📊 Catalogue Health Overview**
+1. **Catalogue Health Overview**
    - Quickly validate which catalogues are loaded and how many rows / columns each has.
    - Check:
      - Backbone vs append-only flags.
      - Whether any catalogue is unexpectedly empty.
      - Likely ID columns (e.g. `policy_id`, `standard_id`, `requirement_id`).
 
-2. **🗂️ Catalogue Explorer**
+2. **Catalogue Explorer**
    - Inspect schema and sample records for a single catalogue.
    - Confirm that append-only extensions are visible to all modules.
 
-3. **🧪 Entity & Relationship Probe** *(optional, if implemented)*
+3. **Entity & Relationship Probe** *(optional, if implemented)*
    - Look up a single entity (e.g. control, requirement, policy) using its ID.
    - Explore structural relationships if `build_relationships` is implemented in SIH.
 

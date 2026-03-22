@@ -16,13 +16,13 @@
 # pylint: disable=simplifiable-if-expression
 
 """
-🎛 Programmes — Task Builder — Cyber Resilience Toolkit (CRT)
+Programmes — Task Builder — Cyber Resilience Toolkit (CRT)
 
 Unified task builder for:
-- 🧭 Governance
-- 🧱 Security Architecture
-- 📈 Resilience Metrics
-- 📊 Incident Simulation
+- Governance
+- Security Architecture
+- Resilience Metrics
+- Incident Simulation
 
 This page:
 - DOES NOT edit catalogues, lenses, or org profiles.
@@ -31,7 +31,7 @@ This page:
   - a compact manifest (human-facing build summary)
   - a normalised bundle (schema-clean structural container)
 and hands them to:
-  - 🧠 AI Observation Console (via session_state), and/or
+  - AI Observation Console (via session_state), and/or
   - External tools via JSON downloads.
 
 Platinum principle:
@@ -139,19 +139,19 @@ MODULE_NAME = "ProgrammesAndOutputs"  # Used by module_pattern
 
 # Label → bundle_type key used by downstream tools
 PROGRAMME_MODES: Dict[str, str] = {
-    "🧭 Governance": "governance",
-    "🧱 Security Architecture": "architecture",
-    "📈 Resilience Metrics": "metrics",
-    "📊 Incident Simulation": "simulation",
+    "Governance": "governance",
+    "Security Architecture": "architecture",
+    "Resilience Metrics": "metrics",
+    "Incident Simulation": "simulation",
 }
 
 # Lens bundles — expected to be set by lens pages (historic / session pattern)
 LENS_SESSION_KEYS: Dict[str, str] = {
-    "🧮 Data Classification Registry (DCR)": "dcr_last_bundle",
-    "🧩 Attack Surface Mapper (ASM)": "asm_last_bundle",
-    "🔐 Identity & Access Lens (IAL)": "ial_last_bundle",
-    "🛰 Supply-Chain Exposure Scanner (SCES)": "sces_last_bundle",
-    "📡 Telemetry & Signal Console (TSC)": "tsc_last_bundle",
+    "Data Classification Registry (DCR)": "dcr_last_bundle",
+    "Attack Surface Mapper (ASM)": "asm_last_bundle",
+    "Identity & Access Lens (IAL)": "ial_last_bundle",
+    "Supply-Chain Exposure Scanner (SCES)": "sces_last_bundle",
+    "Telemetry & Signal Console (TSC)": "tsc_last_bundle",
 }
 
 # Org profile + governance scope bundle (in-session keys)
@@ -650,11 +650,11 @@ def _template_scope_key(programme_mode_label: str, task_type: str) -> str:
     p = (programme_mode_label or "").strip()
     t = (task_type or "").strip().lower()
 
-    if p == "🧱 Security Architecture":
+    if p == "Security Architecture":
         return "architecture"
-    if p == "📈 Resilience Metrics":
+    if p == "Resilience Metrics":
         return "metrics"
-    if p == "📊 Incident Simulation":
+    if p == "Incident Simulation":
         return "simulation"
 
     if "policy" in t:
@@ -695,10 +695,10 @@ def render_templates_after_manifest_notes(
     """
     NOT a tab.
 
-    Sits directly after 📝 Manifest Notes, aligned to Task Type,
+    Sits directly after Manifest Notes, aligned to Task Type,
     and writes template selection into session_state for the build.
     """
-    st.markdown("### 🧱 Templates")
+    st.markdown("### Templates")
     st.caption("Template selection is included in the exported handoff payload.")
 
     scope_key = _template_scope_key(programme_mode_label, task_type)
@@ -1095,7 +1095,7 @@ def get_org_profile_and_scope() -> Tuple[Optional[Dict[str, Any]], Optional[Dict
             index=default_index,
             help=(
                 "Profiles are defined in 📂 Structural Controls & Frameworks → "
-                "🏛 Org Governance Profile — Organisation & Scope."
+                "Org Governance Profile — Organisation & Scope."
             ),
         )
 
@@ -1127,7 +1127,7 @@ def render_sidebar() -> None:
     st.sidebar.divider()
     st.logo(BRAND_LOGO_PATH)  # pylint: disable=no-member
 
-    st.sidebar.markdown("### 🔄 Programme artefacts flow")
+    st.sidebar.markdown("### Programme artefacts flow")
     st.sidebar.caption(
         "- Structural Controls & Frameworks → Org context\n"
         "- Structural Lenses → Lens bundles\n"
@@ -1146,11 +1146,11 @@ def render_sidebar() -> None:
 # Section 1 — Governance Context Summary (read-only)
 # -------------------------------------------------------------------------------------------------
 def render_context_summary(org_profile: Optional[Dict[str, Any]], org_scope: Optional[Dict[str, Any]]) -> None:
-    st.subheader("1. 🏛 Governance Context")
+    st.subheader("1. Governance Context")
     if not org_profile and not org_scope:
         st.info(
             "No Org Governance Profile or scope bundle found in this session or on disk.\n\n"
-            "Set these in **📂 Structural Controls & Frameworks → 🏛 Org Governance Profile — Organisation & Scope**.\n"
+            "Set these in **📂 Structural Controls & Frameworks → Org Governance Profile — Organisation & Scope**.\n"
             "You can still build artefacts, but they may be less precise."
         )
         st.divider()
@@ -1232,10 +1232,10 @@ def render_programme_mode_selector() -> str:
     )
 
     mode_help = {
-        "🧭 Governance": "Policies, standards, questionnaires, checklists, awareness material.",
-        "🧱 Security Architecture": "Architecture views, zoning, trust boundaries, service chains.",
-        "📈 Resilience Metrics": "Structural metrics briefs, coverage and gap overviews.",
-        "📊 Incident Simulation": "Scenario bundles, incident playbooks, and 'what if' structures.",
+        "Governance": "Policies, standards, questionnaires, checklists, awareness material.",
+        "Security Architecture": "Architecture views, zoning, trust boundaries, service chains.",
+        "Resilience Metrics": "Structural metrics briefs, coverage and gap overviews.",
+        "Incident Simulation": "Scenario bundles, incident playbooks, and 'what if' structures.",
     }
     st.caption(mode_help.get(mode_label, ""))
     st.divider()
@@ -1248,11 +1248,11 @@ def _task_to_manifest_example_key(programme_mode_label: str, task_type: str) -> 
     t = (task_type or "").strip().lower()
     p = (programme_mode_label or "").strip()
 
-    if p == "🧱 Security Architecture":
+    if p == "Security Architecture":
         return "architecture"
-    if p == "📈 Resilience Metrics":
+    if p == "Resilience Metrics":
         return "metrics"
-    if p == "📊 Incident Simulation":
+    if p == "Incident Simulation":
         return "simulation"
 
     if "policy" in t:
@@ -1278,7 +1278,7 @@ def _task_to_manifest_example_key(programme_mode_label: str, task_type: str) -> 
 
 
 def render_manifest_notes(task_type: str, programme_mode_label: str) -> Dict[str, Any]:
-    st.markdown("### 📝 Manifest Notes")
+    st.markdown("### Manifest Notes")
     st.caption("Additional context included in the exported handoff payload.")
 
     example_key = _task_to_manifest_example_key(programme_mode_label, task_type)
@@ -1348,7 +1348,7 @@ def render_task_type_selector(
     anchor_id: Optional[str] = None
     anchor_name: Optional[str] = None
 
-    if mode_label == "🧭 Governance" and task_type in ("Policy document", "Standard"):
+    if mode_label == "Governance" and task_type in ("Policy document", "Standard"):
         anchor_mode = st.radio(
             "How do you want to anchor this task?",
             options=["Select existing", "Custom artefact"],
@@ -1771,7 +1771,7 @@ def render_input_bundles_panel(programme_mode_label: str, task_type: str) -> Dic
                     included[final_label] = bundle
 
     if historic_last:
-        with st.expander("🧩 Recent lens bundles (session last_bundle keys)", expanded=False):
+        with st.expander("Recent lens bundles (session last_bundle keys)", expanded=False):
             st.caption(
                 "Compatibility view from historic per-lens session keys (read-only). "
                 "Use only if the published registry wasn’t used."
@@ -1934,7 +1934,7 @@ def _build_manifest(
         "handoff": {
             "bundle_session_key": CURRENT_PROGRAMME_BUNDLE_KEY,
             "manifest_session_key": CURRENT_PROGRAMME_MANIFEST_KEY,
-            "next_module": "🧠 AI Observation Console",
+            "next_module": "AI Observation Console",
         },
     }
 
@@ -2030,17 +2030,17 @@ def render_build_save_handoff(
     c1, c2, c3 = st.columns(3)
 
     with c1:
-        build_clicked = st.button("🔧 Build & Save", disabled=build_disabled, use_container_width=True)
+        build_clicked = st.button("Build & Save", disabled=build_disabled, use_container_width=True)
 
     with c2:
         clear_clicked = st.button(
-            "🧹 Clear Current",
+            "Clear Current",
             disabled=st.session_state.get(CURRENT_PROGRAMME_MANIFEST_KEY) is None,
             use_container_width=True,
         )
 
     with c3:
-        open_console = st.button("➡️ Open 🧠 AI Observation Console", use_container_width=True)
+        open_console = st.button("➡️ Open AI Observation Console", use_container_width=True)
 
     if clear_clicked:
         for k in (CURRENT_PROGRAMME_BUNDLE_KEY, CURRENT_PROGRAMME_MANIFEST_KEY):
@@ -2137,8 +2137,8 @@ def render_header() -> None:
 
 
 def render_user_templates_tab() -> None:
-    """🧱 User Templates — optional workbench (not part of the main build flow)."""
-    st.markdown("## 🧱 User Templates")
+    """User Templates — optional workbench (not part of the main build flow)."""
+    st.markdown("## User Templates")
     st.caption(
         "Reusable section layouts created by you. Templates affect structure only; they do not contain content."
     )
@@ -2300,7 +2300,7 @@ def render_user_templates_tab() -> None:
             st.error("Failed to save user template.")
 
     with b:
-        if st.button("🧽 Clear editor", use_container_width=True):
+        if st.button("Clear editor", use_container_width=True):
             st.session_state.pop("user_tpl_draft", None)
             st.rerun()
 
@@ -2309,11 +2309,11 @@ def render_user_templates_tab() -> None:
         st.code(USER_TEMPLATES_JSON, language="text")
 
 # -------------------------------------------------------------------------------------------------
-# 🔍 Verify (Current Artefact)
+# Verify (Current Artefact)
 # -------------------------------------------------------------------------------------------------
 def render_review_tab() -> None:
     """
-    🔍 Verify
+    Verify
 
     Purpose:
     - Turn the Current manifest + bundle into a **verified artefact** for downstream interpretation.
@@ -2327,7 +2327,7 @@ def render_review_tab() -> None:
     - Call AI
     - Edit catalogues, profiles, or lenses
     """
-    st.markdown("## 🔍 Verify")
+    st.markdown("## Verify")
     st.caption("Prepare a verified artefact for downstream interpretation.")
 
     # ------------------------------------------------------------
@@ -2635,7 +2635,7 @@ def render_review_tab() -> None:
 
         bundle_ids = _list_bundle_ids_on_disk()
         if not bundle_ids:
-            st.info("No saved manifests/bundles found on disk yet. Build an artefact in **🎛 Task Builder** first.")
+            st.info("No saved manifests/bundles found on disk yet. Build an artefact in **Task Builder** first.")
             return
 
         chosen_id = st.selectbox("Saved bundle_id", options=bundle_ids, index=0, key="crt_verify_load_bundle_id")
@@ -2801,7 +2801,7 @@ def render_review_tab() -> None:
     st.caption("Writes a single immutable JSON artefact for downstream interpretation.")
 
     if not bundle_id:
-        st.info("A verified artefact requires a bundle_id. Build the artefact again in **🎛 Task Builder**.")
+        st.info("A verified artefact requires a bundle_id. Build the artefact again in **Task Builder**.")
         return
 
     confirm = st.checkbox("Confirm create verified artefact", value=False, key=f"crt_verify_confirm_{bundle_id}")
@@ -3409,12 +3409,12 @@ def _compact_list(value: Any) -> List[str]:
 
 
 # -------------------------------------------------------------------------------------------------
-# 🧠 AI Prompt & Response — export-only (no API, no personas, JSON-in → SYSTEM/USER out)
+# AI Prompt & Response — export-only (no API, no personas, JSON-in → SYSTEM/USER out)
 #   Template selection is implicit (derived from task_type → filename suffix)
 # -------------------------------------------------------------------------------------------------
 
 # -------------------------------------------------------------------------------------------------
-# 🧠 AI Prompt & Response — export-only (no API, no personas, JSON-in → SYSTEM/USER out)
+# AI Prompt & Response — export-only (no API, no personas, JSON-in → SYSTEM/USER out)
 #   - Source of truth for AI interpretation is the VERIFIED artefact (immutable input)
 #   - Saved AI handoffs are stored under /ai_exports (separate from prompt templates)
 #   - Prompt template selection is implicit (derived from programme_mode and task_type)
@@ -3718,10 +3718,10 @@ def build_user_message_locked(
 
 
 # -------------------------------------------------------------------------------------------------
-# 🧠 AI Prompt & Response (UI)
+# AI Prompt & Response (UI)
 # -------------------------------------------------------------------------------------------------
 def render_ai_prompt_response_tab() -> None:
-    st.markdown("## 🧠 AI Prompt & Response")
+    st.markdown("## AI Prompt & Response")
     st.caption(
         "Attach prompt context and save an AI-ready handoff. "
         "Uses the verified artefact as immutable input."
@@ -3758,7 +3758,7 @@ def render_ai_prompt_response_tab() -> None:
                 "bundle": cb,
             }
         else:
-            st.info("No current artefact in session. Build one in 🎛 Task Builder.")
+            st.info("No current artefact in session. Build one in Task Builder.")
     elif source_mode == "Saved AI handoffs":
         files = [f for f in _list_json_files(WORKSPACE_AI_EXPORTS_DIR) if not f.startswith("crt_ai_prompt_templates.")]
         if not files:
@@ -3771,7 +3771,7 @@ def render_ai_prompt_response_tab() -> None:
         # Verified (recommended)
         vfiles = _list_json_files(WORKSPACE_VERIFIED_DIR)
         if not vfiles:
-            st.info("No verified artefacts found yet. Create one in 🔍 Verify first.")
+            st.info("No verified artefacts found yet. Create one in Verify first.")
         else:
             chosen = st.selectbox("Choose verified artefact", options=vfiles, index=0)
             payload_path = os.path.join(WORKSPACE_VERIFIED_DIR, chosen)
@@ -3780,9 +3780,9 @@ def render_ai_prompt_response_tab() -> None:
     st.divider()
 
     # -----------------------------------------
-    # ✏️ Manual Customisation (Optional)
+    # Manual Customisation (Optional)
     # -----------------------------------------
-    st.markdown("### ✏️ Notes (optional)")
+    st.markdown("### Notes (optional)")
     st.caption("These notes are appended into the USER message (they do not change the verified input).")
 
     manual_instructions = st.text_area(
@@ -3795,7 +3795,7 @@ def render_ai_prompt_response_tab() -> None:
 
     clear_col, _ = st.columns([1, 3])
     with clear_col:
-        if st.button("🧽 Clear notes", use_container_width=True):
+        if st.button("Clear notes", use_container_width=True):
             st.session_state[CRT_AI_MANUAL_INSTRUCTIONS_KEY] = ""
             st.rerun()
 
@@ -3816,7 +3816,7 @@ def render_ai_prompt_response_tab() -> None:
 
     # Detect context (internal) + apply template delta silently
     task_type = _extract_task_type(payload) or "Governance artefact"
-    programme_mode = _extract_programme_mode(payload) or "🧭 Governance"
+    programme_mode = _extract_programme_mode(payload) or "Governance"
     template_sections = _extract_template_sections(payload)
 
     # Resolve template family file (no dropdown UI)
@@ -3839,7 +3839,7 @@ def render_ai_prompt_response_tab() -> None:
         manual_instructions=manual_instructions,
     )
 
-    with st.expander("🧩 SYSTEM (copy from here)", expanded=False):
+    with st.expander("SYSTEM (copy from here)", expanded=False):
         st.code(system_msg, language="text")
 
     with st.expander("👤 USER (copy from here)", expanded=False):
@@ -3914,7 +3914,7 @@ def render_ai_prompt_response_tab() -> None:
 
 def render_maintenance_tab() -> None:
     """
-    🧹 Maintenance
+    Maintenance
 
     Platinum intent:
     - Keep workspaces tidy and transparent
@@ -3929,7 +3929,7 @@ def render_maintenance_tab() -> None:
     5) Programme artefacts (manifests / bundles / verified / AI handoffs)
     6) User output templates (delete ONE template + backup)
     """
-    st.markdown("## 🧹 Maintenance")
+    st.markdown("## Maintenance")
     st.caption("Housekeeping and storage management.")
 
     # ----------------------------
@@ -4240,11 +4240,11 @@ def render_maintenance_tab() -> None:
     def _lens_folder_label(code: str) -> str:
         code = (code or "").strip().lower()
         mapping = {
-            "dcr": "🧮 Data Classification Registry (CRT-D)",
-            "asm": "🧩 Attack Surface Mapper (CRT-AS)",
-            "ial": "🔐 Identity Access Lens (CRT-I)",
-            "sces": "🛰️ Supply Chain Exposure Scanner (CRT-SC)",
-            "tsc": "📡 Telemetry Signal Console (CRT-T)",
+            "dcr": "Data Classification Registry (CRT-D)",
+            "asm": "Attack Surface Mapper (CRT-AS)",
+            "ial": "Identity Access Lens (CRT-I)",
+            "sces": "Supply Chain Exposure Scanner (CRT-SC)",
+            "tsc": "Telemetry Signal Console (CRT-T)",
         }
         return mapping.get(code, code)
 
@@ -4507,13 +4507,13 @@ def render_maintenance_tab() -> None:
     # =====================================================================
     st.markdown("### 5) Programme artefacts")
     st.caption("Saved artefacts produced during the workflow. Preview to inspect, or delete items you no longer need.")
-    st.caption("Flow: 🧾 Manifest → 📦 Bundle → ✅ Verified → 🧠 AI handoff")
+    st.caption("Flow: Manifest → Bundle → Verified → AI handoff")
 
     shelves: Dict[str, Dict[str, Any]] = {
-        "🧾 Manifests (Task Builder)": {"dir": WORKSPACE_MANIFESTS_DIR, "extensions": (".json",)},
-        "📦 Bundles (Task Builder)": {"dir": WORKSPACE_BUNDLES_DIR, "extensions": (".json",)},
-        "✅ Verified (for export)": {"dir": WORKSPACE_VERIFIED_DIR, "extensions": (".json",)},
-        "🧠 AI handoffs (SYSTEM + USER)": {"dir": WORKSPACE_AI_EXPORTS_DIR, "extensions": (".json",)},
+        "Manifests (Task Builder)": {"dir": WORKSPACE_MANIFESTS_DIR, "extensions": (".json",)},
+        "Bundles (Task Builder)": {"dir": WORKSPACE_BUNDLES_DIR, "extensions": (".json",)},
+        "Verified (for export)": {"dir": WORKSPACE_VERIFIED_DIR, "extensions": (".json",)},
+        "AI handoffs (SYSTEM + USER)": {"dir": WORKSPACE_AI_EXPORTS_DIR, "extensions": (".json",)},
     }
 
     shelf_label = st.selectbox(
@@ -4671,7 +4671,7 @@ def main() -> None:
         render_markdown_file(
             ABOUT_APP_MD,
             fallback=(
-                "# 🎛 Programme Builder & AI Export\n\n"
+                "# Programme Builder & AI Export\n\n"
                 "This module assembles **programme artefacts** (manifest + bundle) from your selected context and inputs.\n\n"
                 "It is designed for **structural, portable outputs** — suitable for review, archiving, and (optionally) AI handoff.\n\n"
                 "---\n\n"
@@ -4705,10 +4705,10 @@ def main() -> None:
             ),
         )
 
-    tabs = st.tabs(["🎛 Task Builder", "🧱 User Templates", "🔍 Verify", "🧠 AI Prompt & Response", "🧹 Maintenance"])
+    tabs = st.tabs(["Task Builder", "User Templates", "Verify", "AI Prompt & Response", "Maintenance"])
 
     with tabs[0]:
-        st.markdown("## 🎛 Task Builder")
+        st.markdown("## Task Builder")
         st.caption("Build a programme artefact as a compact manifest and a normalised structural bundle.")
         org_profile, org_scope = get_org_profile_and_scope()
         render_context_summary(org_profile, org_scope)
