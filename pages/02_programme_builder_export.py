@@ -4667,7 +4667,7 @@ def main() -> None:
     # -------------------------------------------------------------------------------------------------
     # Info Panel
     # -------------------------------------------------------------------------------------------------
-    with st.expander("📖 What is this app about?"):
+    with st.expander("ℹ️ About This App"):
         render_markdown_file(
             ABOUT_APP_MD,
             fallback=(

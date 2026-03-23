@@ -1082,7 +1082,7 @@ st.caption(
     "read-only structural view of your CRT-SC supply-chain model."
 )
 
-with st.expander("📖 What is this app about?"):
+with st.expander("ℹ️ About This App"):
     render_markdown_file(
         ABOUT_APP_MD,
         fallback=(
