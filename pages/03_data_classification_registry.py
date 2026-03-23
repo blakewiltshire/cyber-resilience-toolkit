@@ -662,7 +662,7 @@ Whatever you choose here:
         st.warning("No data classes available — cannot build a data scope bundle.")
         return
 
-    st.markdown("### 0️⃣ Do you want a focused data scope?")
+    st.markdown("### Do you want a focused data scope?")
     activation_mode = st.radio(
         "Choose an option:",
         [

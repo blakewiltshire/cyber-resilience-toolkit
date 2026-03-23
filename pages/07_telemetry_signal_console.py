@@ -659,7 +659,7 @@ Whatever you choose here:
     zones_col = colmap.get("zones_col")
     notes_col = colmap.get("notes_col")
 
-    st.markdown("### 0️⃣ How should telemetry be handled for this export?")
+    st.markdown("### How should telemetry be handled for this export?")
     scope_activation = st.radio(
         "Choose how to handle telemetry scope:",
         [

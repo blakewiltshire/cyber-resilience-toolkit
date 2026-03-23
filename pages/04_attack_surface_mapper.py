@@ -797,7 +797,7 @@ Whatever you choose here:
         st.warning("No assets available — cannot build a context bundle.")
         return
 
-    st.markdown("### 0️⃣ How should assets be handled for this session?")
+    st.markdown("### How should assets be handled for this session?")
 
     scope_activation = st.radio(
         "Choose how to handle assets for tasks built from this session:",

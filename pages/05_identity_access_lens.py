@@ -688,7 +688,7 @@ Whatever you choose here:
     privilege_col = colmap.get("privilege_col")
     notes_col = colmap.get("notes_col")
 
-    st.markdown("### 0️⃣ How should identities be handled for this session?")
+    st.markdown("### How should identities be handled for this session?")
 
     scope_activation = st.radio(
         "Choose how to handle identities for this scope export:",

@@ -2027,7 +2027,7 @@ def render_build_save_handoff(
     missing_anchor = not _safe_str(anchor_name)
     build_disabled = missing_task or missing_anchor
 
-    c1, c2, c3 = st.columns(3)
+    c1, c2 = st.columns(2)
 
     with c1:
         build_clicked = st.button("Build & Save", disabled=build_disabled, use_container_width=True)
@@ -2038,21 +2038,6 @@ def render_build_save_handoff(
             disabled=st.session_state.get(CURRENT_PROGRAMME_MANIFEST_KEY) is None,
             use_container_width=True,
         )
-
-    with c3:
-        open_console = st.button("➡️ Open AI Observation Console", use_container_width=True)
-
-    if clear_clicked:
-        for k in (CURRENT_PROGRAMME_BUNDLE_KEY, CURRENT_PROGRAMME_MANIFEST_KEY):
-            st.session_state.pop(k, None)
-        st.success("Cleared current handoff. Saved artefacts on disk are unchanged.")
-        st.rerun()
-
-    if open_console:
-        try:
-            st.switch_page("pages/09_🧠_ai_observation_console.py")
-        except Exception:
-            st.warning("Open the AI Observation Console from the sidebar.")
 
     if build_clicked and not build_disabled:
         # Pull the latest template choice (in case user changed it and didn’t rerender)

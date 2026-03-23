@@ -707,7 +707,7 @@ Whatever you choose here:
     data_access_level_col = colmap.get("data_access_level_col")
     notes_col = colmap.get("notes_col")
 
-    st.markdown("### 0️⃣ How should supply-chain entries be handled for this session?")
+    st.markdown("### How should supply-chain entries be handled for this session?")
 
     scope_activation = st.radio(
         "Choose how to handle supply-chain scope for this export:",
