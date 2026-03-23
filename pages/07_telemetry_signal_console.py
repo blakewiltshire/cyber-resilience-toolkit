@@ -590,7 +590,7 @@ and do not provide scoring or assurance.
                 st.write(str(val))
 
     with controls_col:
-        st.markdown("#### 🧱 Structural Control Links (CRT-C)")
+        st.markdown("#### Structural Control Links (CRT-C)")
 
         mapped_controls_col = colmap.get("mapped_controls_col")
         if mapped_controls_col and mapped_controls_col in entry_row.columns:

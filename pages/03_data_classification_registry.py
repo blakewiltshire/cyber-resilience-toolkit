@@ -616,7 +616,7 @@ Metrics shown here are **structural and descriptive only**. They do not score ma
                 st.code(str(rules), language="text")
 
     with col_controls:
-        st.markdown("#### 🧱 Structural Control Inheritance")
+        st.markdown("#### Structural Control Inheritance")
 
         if linked_controls_col and linked_controls_col in class_row.columns:
             raw_links = class_row[linked_controls_col].iloc[0]

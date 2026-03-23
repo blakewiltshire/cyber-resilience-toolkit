@@ -626,7 +626,7 @@ descriptive** and do not provide scoring or assurance.
                 st.write(str(notes_val))
 
     with col_controls:
-        st.markdown("#### 🧱 Structural Control Links (CRT-C)")
+        st.markdown("#### Structural Control Links (CRT-C)")
 
         if linked_controls_col and linked_controls_col in identity_row.columns:
             raw_links = identity_row[linked_controls_col].iloc[0]

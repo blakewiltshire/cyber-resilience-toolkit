@@ -2216,7 +2216,7 @@ def render_user_templates_tab() -> None:
                 base = next((d for d in default_items if d.get("template_id") == base_id), None)
                 if base:
                     st.caption("This creates a new user template based on the default structure. Structure only.")
-                    if st.button("🧬 Create draft from default", use_container_width=True):
+                    if st.button("Create draft from default", use_container_width=True):
                         new_id = f"TPL-USER-{uuid.uuid4().hex[:8].upper()}"
                         st.session_state["user_tpl_draft"] = {
                             "template_id": new_id,
