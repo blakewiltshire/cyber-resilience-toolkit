@@ -3804,7 +3804,7 @@ def render_ai_prompt_response_tab() -> None:
     # -----------------------------------------
     # 3) Messages
     # -----------------------------------------
-    st.markdown("### 3) Messages")
+    st.markdown("### 2) Messages")
     st.caption(
         "Copy SYSTEM + USER into your AI tool. "
         "If the USER message is too large to paste, use the AI handoff (JSON) below."
@@ -3856,7 +3856,7 @@ def render_ai_prompt_response_tab() -> None:
     # -----------------------------------------
     # AI handoff (JSON)
     # -----------------------------------------
-    st.markdown("### AI handoff (JSON)")
+    st.markdown("### 3) AI handoff (JSON)")
     st.caption("Download to upload into your AI tool, or save to reuse later.")
 
     safe_task = "".join([c if c.isalnum() or c in ("_", "-") else "_" for c in (task_type or "governance").strip().lower()])
