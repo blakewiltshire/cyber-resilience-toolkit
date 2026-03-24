@@ -86,7 +86,7 @@ An assessment engine, automated assurance tool, configuration system, or advisor
 
 ---
 
-### 🧭 Portal Home — Structural Orientation
+### Portal Home — Structural Orientation
 
 ![CRT Portal](docs/screenshots/01-portal.png)
 
@@ -100,7 +100,7 @@ This is the conceptual anchor before moving into structured views.
 
 ---
 
-### 📂 Structural Controls & Frameworks — Model Backbone
+### Structural Controls & Frameworks — Model Backbone
 
 ![Structural Controls](docs/screenshots/02-structural-controls.png)
 
@@ -115,7 +115,7 @@ This module provides the structural grounding for downstream artefacts.
 
 ---
 
-### 🔐 Identity & Access Lens — Structural Lens
+### Identity & Access Lens — Structural Lens
 
 ![Structural Lenses](docs/screenshots/03-identity-lens.png)
 
@@ -130,7 +130,7 @@ This lens produces a normalised identity context for downstream use.
 
 ---
 
-### 🎛 Programme Builder — Artefact Assembly
+### Programme Builder — Artefact Assembly
 
 ![Programme Builder](docs/screenshots/04-programme-builder.png)
 
@@ -145,7 +145,7 @@ All outputs preserve lineage to the underlying CRT catalogues.
 
 ---
 
-### 🎛 Verify & AI Handoff — Output Preparation
+### Verify & AI Handoff — Output Preparation
 
 ![Programme Builder - Verify](docs/screenshots/05-programme-verify.png)
 
