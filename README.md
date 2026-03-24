@@ -8,7 +8,7 @@ CRT provides consistent structure and traceability across these domains so that 
 
 ## Python Version
 
-Tested on 3.12.x
+Python 3.11–3.12 (tested on 3.12.x)
 
 ---
 
@@ -84,16 +84,17 @@ An assessment engine, automated assurance tool, configuration system, or advisor
 
 ## Screenshots
 
+---
+
 ### 🧭 Portal Home — Structural Orientation
 
 ![CRT Portal](docs/screenshots/01-portal.png)
 
-The home portal introduces the shared structural model and clarifies:
+The portal establishes the shared structural model and clarifies:
 
 - What the CRT brings into view  
 - What the environment produces  
 - How modules interrelate  
-- Where to begin  
 
 This is the conceptual anchor before moving into structured views.
 
@@ -103,31 +104,58 @@ This is the conceptual anchor before moving into structured views.
 
 ![Structural Controls](docs/screenshots/02-structural-controls.png)
 
-The backbone view of CRT’s shared model:
+The backbone of CRT’s shared model:
 
-- Control architecture (CRT-C / CRT-F / CRT-N)
-- Governance intent and policy alignment
-- Requirements and structural mapping
-- Consistent catalogue relationships
+- Control architecture (CRT-C / CRT-F / CRT-N)  
+- Governance intent and policy alignment  
+- Requirements and structural mapping  
+- Consistent catalogue relationships  
 
-This module provides the structural grounding for downstream exports and artefacts.
+This module provides the structural grounding for downstream artefacts.
 
 ---
 
-### 🎛 Programme Builder & AI Export — Structured Artefact Assembly
+### 🔐 Identity & Access Lens — Structural Lens
 
-![Programme Builder](docs/screenshots/03-programme-builder.png)
+![Structural Lenses](docs/screenshots/03-identity-lens.png)
 
-The Programme Builder organises catalogue elements into structured bundles suitable for:
+A structural view across identities, privilege tiers, and trust anchors:
 
-- Governance artefacts  
-- Policy and standard drafting  
-- Third-party questionnaires  
-- Control narratives  
-- Architecture notes  
-- AI-assisted interpretation workflows  
+- Identity zones and access boundaries  
+- Trust anchors and privilege structures  
+- Linkage to control frameworks (where recorded)  
+- Optional scoped identity context  
 
-Exports preserve lineage to the underlying CRT catalogues.
+This lens produces a normalised identity context for downstream use.
+
+---
+
+### 🎛 Programme Builder — Artefact Assembly
+
+![Programme Builder](docs/screenshots/04-programme-builder.png)
+
+The Programme Builder assembles structured artefacts from governance context and optional operational inputs.
+
+Outputs include:
+
+- Manifests (summary views)  
+- Bundles (structured containers)  
+
+All outputs preserve lineage to the underlying CRT catalogues.
+
+---
+
+### 🎛 Verify & AI Handoff — Output Preparation
+
+![Programme Builder - Verify](docs/screenshots/05-programme-verify.png)
+
+The verification stage prepares artefacts for export and downstream use:
+
+- Verified artefacts (stable, shareable outputs)  
+- Restore behaviour (where enabled)  
+- Structured AI handoff packaging  
+
+This stage produces clean, portable outputs for review, archiving, or external tooling.
 
 ---
 
@@ -187,7 +215,7 @@ The toolkit can be used independently.
 The guide provides deeper architectural framing for those exploring the underlying structural model.
 
 Further context:  
-https://blakewiltshire.com
+www.blakewiltshire.com
 
 ---
 
