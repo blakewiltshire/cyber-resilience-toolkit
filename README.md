@@ -215,7 +215,7 @@ The toolkit can be used independently.
 The guide provides deeper architectural framing for those exploring the underlying structural model.
 
 Further context:  
-www.blakewiltshire.com
+https://blakewiltshire.com
 
 ---
 
